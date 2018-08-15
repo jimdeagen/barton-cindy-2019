@@ -1,0 +1,42 @@
+.generic-content-container {
+  width: 85%;
+  margin: 40px auto 0 auto;
+
+  @mixin atSmall {
+    width: 80%;
+    margin: 30px auto 0 auto;
+  }
+
+  @mixin atLarge {
+    width: 100%;
+    margin: -20px auto 0 auto;
+  }
+
+  @mixin atMedLand {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 1.65;
+    margin: 0 0 1.8rem 0;
+
+    @mixin atSmall {
+      font-size: 1.3rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.125rem;
+    }
+
+    @mixin atMedLand {
+      font-size: 1.125rem;
+      margin: 0 0 1.8rem 1rem;
+    }
+  }
+
+  p a {
+    font-weight: 700;
+  }
+}

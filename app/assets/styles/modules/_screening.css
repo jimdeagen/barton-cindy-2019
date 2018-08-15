@@ -1,0 +1,155 @@
+.screening {
+  display: block;
+  border-top: 6px solid $mainBlue;
+  border-bottom: 6px solid $mainBlue;
+
+  &__t-padding {
+    padding-top: 20px;
+
+    @mixin atSmall {
+      padding-top: 1rem;
+    }
+
+    @mixin atLarge {
+      padding-top: 6rem;
+    }
+  }
+
+  &__header {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: $mainBlue;
+    width: 120%;
+    margin: 0 0 22px;
+
+    @mixin atXSmall {
+      font-size: 1.9rem;
+    }
+
+    @mixin atSmall {
+      font-size: 2.875rem;
+    }
+
+    @mixin atMedLand {
+      margin: 0 0 40px;
+    }
+  }
+
+  p&__permission {
+    font-size: 0.8rem;
+  }
+
+  &__list {
+    padding-top: 0;
+    padding-left: 2rem;
+    color: &mainBlue;
+    font-size: 1rem;
+    line-height: 1.65;
+    font-weight: 300;
+    letter-spacing: normal;
+
+    @mixin atSmall {
+      font-size: 1.125rem;
+      padding-left: 4rem;
+    }
+  }
+
+  &__form-title {
+    color: $mainOrange;
+    font-size: 1.8rem;
+  }
+
+  &__form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__form-section--image img {
+    @mixin atSmall {
+    }
+
+    @mixin atLarge {
+      width: 70%;
+      margin-right: 0px;
+    }
+  }
+
+  &__form--input {
+    margin-bottom: 2rem;
+    margin-top: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    background-color: #f7f7f7;
+
+    @mixin atSmall {
+      min-width: 100%;
+      padding: 0.4rem 0.6rem;
+    }
+  }
+
+  &__form-section--form {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+
+    @mixin atSmall {
+      display: inline-block;
+      width: 50%;
+      height: auto;
+      padding: 0 2rem 0 0;
+    }
+  }
+
+  &__form-section--image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    transform: scale(1.1);
+
+    @mixin atSmall {
+      display: inline-block;
+      width: 45%;
+      height: auto;
+      margin-top: 86px;
+    }
+  }
+}
+
+form {
+  padding: 0 0;
+
+  @mixin atSmall {
+    padding: 0 0 0 0;
+    width: 140%;
+  }
+
+  @mixin atLarge {
+    padding: 0 4rem 0 0;
+  }
+}
+
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 120px;
+}
+
+input[type="submit"] {
+  background-color: $mainOrange;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: $mainOrange;
+}
+
+option {
+  padding: 0.3rem 0;
+}

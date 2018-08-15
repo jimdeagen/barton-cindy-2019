@@ -1,0 +1,91 @@
+@define-mixin atXXSmall {
+  @media (min-width: 320px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atXSmall {
+  @media (min-width: 375px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmall {
+  @media (min-width: 530px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  @media (min-width: 1010px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atXLarge {
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMax1200 {
+  @media (max-width: 1200px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin at1025to1200 {
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atTabLand {
+  @media (max-width: 1050px) and (orientation: landscape) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedLand {
+  @media (max-width: 850px) and (orientation: landscape) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmallLand {
+  @media (max-width: 750px) and (orientation: landscape) {
+    @mixin-content;
+  }
+}
+
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@define-mixin atMax420 {
+  @media (max-width: 420px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMax340 {
+  @media (max-width: 340px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMax670Land {
+  @media (max-width: 670px) and (orientation: landscape) {
+    @mixin-content;
+  }
+}

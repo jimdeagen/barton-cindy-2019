@@ -1,0 +1,93 @@
+.flex-container {
+  display: flex;
+}
+
+.feature-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+  //   background-color: lightskyblue;
+  margin-bottom: 3rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @mixin atSmall {
+    padding-left: 94px;
+    width: 100%;
+  }
+  @mixin atMedium {
+    display: flex;
+    width: 100%;
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    margin-top: -0.7rem;
+    width: 50px;
+
+    @mixin atSmall {
+      position: absolute;
+      left: 0;
+      width: 80px;
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-left: 4rem;
+    margin-top: 0.7em;
+    margin-bottom: 0.8rem;
+    text-align: left;
+
+    @mixin atSmall {
+      text-align: left;
+      font-size: 1.875rem;
+      padding-left: 1rem;
+      margin-bottom: 1em;
+    }
+
+    @mixin atMedium {
+      min-width: 300px;
+    }
+
+    @mixin atMedLand {
+      font-size: 1.4rem;
+      min-width: 200px;
+    }
+  }
+
+  &__list {
+    padding-top: 30px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.65;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+
+    @mixin atSmall {
+      font-size: 1.125rem;
+    }
+
+    @mixin atMedLand {
+      padding-top: 0;
+    }
+  }
+
+  &__permission {
+    font-size: 0.7rem;
+    font-weight: 200;
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    line-height: 1.4rem;
+
+    @mixin atSmall {
+      max-width: 800px;
+    }
+  }
+}

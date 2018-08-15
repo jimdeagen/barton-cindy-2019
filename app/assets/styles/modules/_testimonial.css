@@ -1,0 +1,82 @@
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 18px 1px 18px;
+  margin-bottom: 98px;
+
+  @mixin atSmall {
+    padding: 0 4rem 1px 4rem;
+    margin-bottom: 130px;
+  }
+
+  @mixin atLarge {
+    padding: 0 1.8125rem 1px 1.8125rem;
+    margin-bottom: 0;
+  }
+
+  @mixin atTabLand {
+    padding: 0 4rem 1px 4rem;
+    height: 400px;
+    margin-bottom: 130px;
+  }
+
+  @mixin atSmallLand {
+    height: 320px;
+  }
+
+  &__photo {
+    border-radius: 80px;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto -70px auto;
+    position: relative;
+    top: -80px;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.2);
+  }
+
+  &__title {
+    color: $mainBlue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $mainOrange;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    margin: 0.25rem 0 1rem 0;
+  }
+
+  &--last {
+    margin-bottom: 40px;
+
+    @mixin atSmall {
+      margin-bottom: 0;
+    }
+  }
+
+  & p {
+    padding: 0 1rem;
+
+    @mixin atSmall {
+      padding: 0 1rem 2rem 1rem;
+      font-size: 1.1rem;
+    }
+
+    @mixin atLarge {
+      padding: 0;
+    }
+
+    @mixin atTabLand {
+      font-size: 1rem;
+    }
+  }
+}
+
+.item {
+  align-self: stretch;
+}

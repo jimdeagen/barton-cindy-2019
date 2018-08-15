@@ -1,0 +1,49 @@
+.about-cindy-section {
+  &__t-padding {
+    @mixin atSmall {
+      padding-top: 20px;
+
+      @mixin atMedLand {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &__image {
+    @mixin atSmall {
+      width: 40%;
+      margin-left: 60px;
+    }
+
+    @mixin atMedLand {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @mixin atSmallLand {
+      width: 25%;
+      margin-left: 60px;
+    }
+
+    @mixin atLarge {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &__h2 {
+    @mixin atSmall {
+      margin: 0 0 3rem 4.2rem;
+      width: 100%;
+    }
+
+    @mixin atMedLand {
+      margin: 0 0 3rem 0;
+    }
+
+    @mixin atLarge {
+      margin: 0 0 2.5rem 0;
+      width: 100%;
+    }
+  }
+}

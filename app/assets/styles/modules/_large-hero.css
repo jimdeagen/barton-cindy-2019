@@ -1,0 +1,237 @@
+.large-hero {
+  border-bottom: 5px solid $mainBlue;
+  position: relative;
+  margin-top: 52px;
+  height: auto;
+
+  @mixin atXSmall {
+    margin-top: 20px;
+  }
+
+  @mixin atSmall {
+    margin-top: 0;
+  }
+
+  @mixin atXLarge {
+    margin-top: 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+
+    @mixin atXXSmall {
+    }
+
+    @mixin atXSmall {
+      width: 100%;
+      position: relative;
+      right: 0;
+    }
+
+    @mixin atSmall {
+      width: 60%;
+      position: relative;
+      right: 150px;
+    }
+
+    @mixin atLarge {
+      width: 50%;
+      position: relative;
+      right: 140px;
+    }
+
+    @mixin atTabLand {
+      top: 0;
+      right: 200px;
+    }
+
+    @mixin atMedLand {
+      top: -50px;
+      right: 160px;
+    }
+
+    @mixin atSmallLand {
+      width: 50%;
+      top: 55px;
+      right: 150px;
+    }
+
+    @mixin atMax670Land {
+      width: 63%;
+    }
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
+    @mixin atMax420 {
+    }
+    @mixin atMax670Land {
+    }
+  }
+
+  &__text-content {
+    padding-top: 88px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    height: auto;
+
+    @mixin atMax420 {
+      padding-top: 50px;
+    }
+
+    @mixin atMax340 {
+      padding-top: 24px;
+    }
+
+    @mixin atMedium {
+      padding-top: 160px;
+    }
+
+    @mixin atMax670Land {
+      padding-top: 0;
+      width: 90%;
+
+      left: 50px;
+    }
+
+    @mixin atSmallLand {
+      top: 42%;
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    max-width: 50%;
+
+    @mixin atSmall {
+      font-size: 2rem;
+      max-width: 600px;
+      margin: 0 0 1.4rem 0;
+    }
+
+    @mixin atLarge {
+      font-size: 2.8rem;
+      max-width: 600px;
+      margin: 0 0 3rem 0;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 50%;
+    padding: 0.1rem 0;
+    border-top: 1px solid $mainBlue;
+    border-bottom: 1px solid $mainBlue;
+
+    @mixin atXSmall {
+      font-size: 1.05rem;
+      padding: 1.1rem 0;
+    }
+
+    @mixin atSmall {
+      font-size: 1.4rem;
+      max-width: 600px;
+      margin-bottom: 1rem;
+      padding: 1rem 0;
+    }
+
+    @mixin atLarge {
+      font-size: 2.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      padding: 1rem 0;
+    }
+
+    @mixin atTabLand {
+      font-size: 1.8rem;
+    }
+
+    @mixin atSmallLand {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__description {
+    color: $mainBlue;
+
+    -webkit-margin-before: 0.4rem;
+    -webkit-margin-after: 1em;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 100;
+    max-width: 50%;
+
+    @mixin atXSmall {
+      font-size: 1.1rem;
+      padding: 0.5rem 0.2rem;
+    }
+
+    @mixin atSmall {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @mixin atSmallLand {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__sub-section {
+    display: block;
+    width: 100vw;
+    border-bottom: 5px solid $mainBlue;
+    padding: 3.2rem 0 3.8rem 0;
+  }
+
+  &__p-button {
+    display: block;
+    text-align: center;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-top: 2rem;
+    margin-bottom: 3.4rem;
+  }
+
+  &__p-button a {
+    display: inline;
+    padding: 16px 28px;
+    text-align: center;
+  }
+
+  &__cert-image {
+    width: 180px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-bottom: 1.4rem; */
+
+    @mixin atTabLand {
+      margin: 4px 0 0 auto;
+      padding: 0 8px 0 0;
+    }
+  }
+}
