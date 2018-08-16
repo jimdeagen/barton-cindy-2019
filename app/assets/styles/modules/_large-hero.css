@@ -29,7 +29,7 @@
     }
 
     @mixin atSmall {
-      width: 60%;
+      width: 50%;
       position: relative;
       right: 150px;
     }
@@ -37,7 +37,7 @@
     @mixin atLarge {
       width: 50%;
       position: relative;
-      right: 140px;
+      right: 220px;
     }
 
     @mixin atTabLand {
@@ -158,7 +158,7 @@
     }
 
     @mixin atTabLand {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
 
     @mixin atSmallLand {

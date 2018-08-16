@@ -49,7 +49,7 @@
     }
   }
 
-  &__icon-achievers {
+  /* &__icon-achievers {
     display: inline-block;
     position: relative;
     top: 8px;
@@ -61,5 +61,5 @@
       top: 24px;
       right: 8px;
     }
-  }
+  } */
 }

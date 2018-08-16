@@ -1,0 +1,45 @@
+.blockquote {
+  font-family: "Open Sans", sans-serif;
+  width: 88%;
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 1.8;
+  background-color: $mainBlue;
+  color: white;
+  padding: 1.5rem 3rem;
+  margin: 2.4rem auto;
+
+  @mixin atSmall {
+    width: 40%;
+    position: absolute;
+    top: 118px;
+    right: 60%;
+    padding: 1.75rem 3.5rem;
+    display: inline-block;
+  }
+
+  @mixin atMedLand {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    left: 0;
+    padding: 1.75rem 3.5rem;
+    display: inline-block;
+  }
+
+  @mixin atSmallLand {
+    width: 52%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 0.6rem 2rem;
+    top: 120px;
+  }
+
+  @mixin atLarge {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 3rem;
+  }
+}

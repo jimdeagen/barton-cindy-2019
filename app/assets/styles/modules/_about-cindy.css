@@ -11,8 +11,8 @@
 
   &__image {
     @mixin atSmall {
-      width: 40%;
-      margin-left: 60px;
+      width: 100%;
+      margin-left: 0;
     }
 
     @mixin atMedLand {

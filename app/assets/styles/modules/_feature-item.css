@@ -3,6 +3,7 @@
 }
 
 .feature-item {
+  display: block;
   position: relative;
   padding-bottom: 2.5rem;
   //   background-color: lightskyblue;
@@ -11,12 +12,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  @mixin atSmall {
-    padding-left: 94px;
-    width: 100%;
-  }
   @mixin atMedium {
-    display: flex;
     width: 100%;
   }
 
@@ -24,35 +20,32 @@
     display: block;
     position: absolute;
     top: 0;
+    left: 0;
     margin: 0 auto;
     margin-top: -0.7rem;
     width: 50px;
-
-    @mixin atSmall {
-      position: absolute;
-      left: 0;
-      width: 80px;
-      margin-top: 0;
-    }
   }
 
   &__title {
+    display: block;
     font-size: 1.6rem;
     font-weight: 300;
     padding-left: 4rem;
     margin-top: 0.7em;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0;
     text-align: left;
 
     @mixin atSmall {
       text-align: left;
       font-size: 1.875rem;
       padding-left: 1rem;
-      margin-bottom: 1em;
+      margin-bottom: 0;
     }
 
     @mixin atMedium {
-      min-width: 300px;
+      min-width: 200px;
+      max-width: 240px;
+      margin-top: 0;
     }
 
     @mixin atMedLand {
