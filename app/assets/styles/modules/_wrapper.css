@@ -44,18 +44,18 @@
   }
 
   &--b-margin {
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
 
     @mixin atSmall {
-      margin-bottom: 3.875rem;
+      margin-bottom: 6.2rem;
     }
   }
 
   &--b-padding {
-    padding-bottom: 1rem;
+    padding-bottom: 1.6rem;
 
     @mixin atSmall {
-      padding-bottom: 3.875rem;
+      padding-bottom: 6.2rem;
     }
   }
 }

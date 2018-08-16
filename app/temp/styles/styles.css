@@ -450,9 +450,17 @@ template {
   display: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #333;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 img {
@@ -465,12 +473,16 @@ img {
           box-sizing: border-box;
 }
 
+strong {
+  font-weight: 600;
+}
+
 a {
   color: #d59541;
 }
 
 hr {
-  margin: 3rem 0;
+  margin: 4.8rem 0;
 }
 
 .large-hero {
@@ -633,37 +645,37 @@ hr {
 .large-hero__title {
     font-weight: 300;
     color: #2f5572;
-    font-size: 1.5rem;
-    margin: 0 0 1rem 0;
+    font-size: 2.4rem;
+    margin: 0 0 1.6rem 0;
     max-width: 50%;
   }
 
 @media (min-width: 530px) {
 
 .large-hero__title {
-      font-size: 2rem;
+      font-size: 3.2rem;
       max-width: 600px;
-      margin: 0 0 1.4rem 0
+      margin: 0 0 2.25rem 0
   }
   }
 
 @media (min-width: 1010px) {
 
 .large-hero__title {
-      font-size: 2.8rem;
+      font-size: 4.4rem;
       max-width: 600px;
-      margin: 0 0 3rem 0
+      margin: 0 0 4.8rem 0
   }
   }
 
 .large-hero__subtitle {
     font-weight: 300;
     color: #2f5572;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin: 0;
     margin-bottom: 20px;
     max-width: 50%;
-    padding: 0.1rem 0;
+    padding: 0.2rem 0;
     border-top: 1px solid #2f5572;
     border-bottom: 1px solid #2f5572;
   }
@@ -671,52 +683,52 @@ hr {
 @media (min-width: 375px) {
 
 .large-hero__subtitle {
-      font-size: 1.05rem;
-      padding: 1.1rem 0
+      font-size: 1.6rem;
+      padding: 1.7rem 0
   }
   }
 
 @media (min-width: 530px) {
 
 .large-hero__subtitle {
-      font-size: 1.4rem;
+      font-size: 3.5rem;
       max-width: 600px;
-      margin-bottom: 1rem;
-      padding: 1rem 0
+      margin-bottom: 2.6rem;
+      padding: 2.6rem 0
   }
   }
 
 @media (min-width: 1010px) {
 
 .large-hero__subtitle {
-      font-size: 2.2rem;
+      font-size: 3.5rem;
       max-width: 600px;
-      margin-bottom: 2rem;
-      padding: 1rem 0
+      margin-bottom: 3.2rem;
+      padding: 1.6rem 0
   }
   }
 
 @media (max-width: 1050px) and (orientation: landscape) {
 
 .large-hero__subtitle {
-      font-size: 1.5rem
+      font-size: 2.4rem
   }
   }
 
 @media (max-width: 750px) and (orientation: landscape) {
 
 .large-hero__subtitle {
-      font-size: 1.4rem
+      font-size: 2.2rem
   }
   }
 
 .large-hero__description {
     color: #2f5572;
 
-    -webkit-margin-before: 0.4rem;
-    -webkit-margin-after: 1em;
-    padding: 0.5rem 0;
-    font-size: 1rem;
+    -webkit-margin-before: 0.7rem;
+    -webkit-margin-after: 1.6em;
+    padding: 0.8rem 0;
+    font-size: 1.6rem;
     font-weight: 100;
     max-width: 50%;
   }
@@ -724,15 +736,15 @@ hr {
 @media (min-width: 375px) {
 
 .large-hero__description {
-      font-size: 1.1rem;
-      padding: 0.5rem 0.2rem
+      font-size: 1.75rem;
+      padding: 0.8rem 0.32rem
   }
   }
 
 @media (min-width: 530px) {
 
 .large-hero__description {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
       max-width: 600px;
       margin-left: 0;
       margin-right: 0
@@ -742,7 +754,7 @@ hr {
 @media (min-width: 1010px) {
 
 .large-hero__description {
-      font-size: 1.5rem;
+      font-size: 2.4rem;
       max-width: 600px;
       margin-left: 0;
       margin-right: 0
@@ -760,7 +772,7 @@ hr {
     display: block;
     width: 100vw;
     border-bottom: 5px solid #2f5572;
-    padding: 3.2rem 0 3.8rem 0;
+    padding: 5.125rem 0 6.8rem 0;
   }
 
 .large-hero__p-button {
@@ -768,8 +780,8 @@ hr {
     text-align: center;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
-    margin-top: 2rem;
-    margin-bottom: 3.4rem;
+    margin-top: 3.2rem;
+    margin-bottom: 5.45rem;
   }
 
 .large-hero__p-button a {
@@ -786,8 +798,6 @@ hr {
             transform: translateX(-50%);
   }
 
-/* margin-bottom: 1.4rem; */
-
 @media (max-width: 1050px) and (orientation: landscape) {
 
 .large-hero__cert-image {
@@ -802,12 +812,13 @@ hr {
   text-decoration: none;
   padding: 0.75rem 1.2rem;
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 530px) {
 
 .btn {
-    padding: 0.97rem 1.2rem
+    padding: 1.5rem 2rem
 }
   }
 
@@ -824,28 +835,28 @@ hr {
   }
 
 .btn--large {
-    padding: 1.1rem 1.9rem;
+    padding: 1.7rem 3.4rem;
   }
 
 @media (min-width: 375px) {
 
 .btn--large {
       font-size: 1rem;
-      padding: 0.4rem 1.2rem
+      padding: 0.6rem 1.9rem
   }
   }
 
 @media (min-width: 530px) {
 
 .btn--large {
-      font-size: 1.25rem
+      font-size: 2rem
   }
   }
 
 @media (max-width: 750px) and (orientation: landscape) {
 
 .btn--large {
-      font-size: 1.1rem
+      font-size: 1.7rem
   }
   }
 
@@ -905,35 +916,35 @@ hr {
   }
 
 .wrapper--b-margin {
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
   }
 
 @media (min-width: 530px) {
 
 .wrapper--b-margin {
-      margin-bottom: 3.875rem
+      margin-bottom: 6.2rem
   }
   }
 
 .wrapper--b-padding {
-    padding-bottom: 1rem;
+    padding-bottom: 1.6rem;
   }
 
 @media (min-width: 530px) {
 
 .wrapper--b-padding {
-      padding-bottom: 3.875rem
+      padding-bottom: 6.2rem
   }
   }
 
 .page-section {
-  padding: 4rem 0;
+  padding: 6.2rem 0;
 }
 
 @media (min-width: 800px) {
 
 .page-section {
-    padding: 4.5rem 0
+    padding: 7rem 0
 }
   }
 
@@ -944,7 +955,7 @@ hr {
 @media (min-width: 800px) {
 
 .page-section--no-b-padding-until-medium {
-      padding-bottom: 4.5rem
+      padding-bottom: 7-rem
   }
   }
 
@@ -955,7 +966,7 @@ hr {
 @media (min-width: 1010px) {
 
 .page-section--no-b-padding-until-large {
-      padding-bottom: 4.5rem
+      padding-bottom: 7rem
   }
   }
 
@@ -977,46 +988,49 @@ hr {
   }
 
 .headline {
+  display: inline;
   font-weight: 300;
   font-size: 1.8rem;
   color: #2f5572;
-  background-color: #ddd;
   width: 96%;
-  margin: 0 auto 22px;
+  margin: 0 0 60px;
 }
+
+.headline__white {
+    color: white;
+  }
 
 @media (min-width: 375px) {
 
 .headline {
-    width: 100%;
-    font-size: 1.9rem
+    font-size: 3rem
 }
   }
 
 @media (min-width: 530px) {
 
 .headline {
-    width: 83%;
-    font-size: 2.875rem
+    font-size: 4.6rem
 }
   }
 
 @media (min-width: 1010px) {
 
 .headline {
-    font-size: 2.875rem
+    font-size: 4.6rem
 }
   }
 
 @media (max-width: 850px) and (orientation: landscape) {
 
 .headline {
-    width: 93%;
-    font-size: 2.2rem
+    font-size: 3.5rem
 }
   }
 
 .headline--centered {
+    display: block;
+    width: 100%;
     text-align: center;
   }
 
@@ -1025,49 +1039,23 @@ hr {
   }
 
 .headline--small {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
   }
 
 @media (min-width: 530px) {
 
 .headline--small {
-      font-size: 1.875rem
+      font-size: 3rem
   }
-  }
-
-.headline--narrow {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
 .headline--light {
     font-weight: 100;
   }
 
-.headline strong {
-    font-weight: 400;
-  }
-
-.headline--b-margin-small {
-    margin-bottom: 0.5em;
-  }
-
-.headline--b-margin-large {
-    margin-bottom: 1.6em;
-  }
-
-.headline--no-t-margin {
-    margin-top: 0;
-  }
-
-.headline--no-l-margin {
-    margin-left: 0;
-  }
-
 .headline--quote-attribution {
     display: inline-quote;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 200;
     text-align: right;
     padding-right: 2rem;
@@ -1077,31 +1065,22 @@ hr {
     border-bottom: 5px solid #2f5572;
   }
 
-@media (min-width: 530px) {
-
-.headline--quote-attribution {
-      font-size: 1.2rem;
-      padding-right: 10rem;
-      margin-top: -2rem
-  }
-  }
-
 .headline--top-margin {
-    margin-top: 6rem;
+    margin-top: 9.6rem;
   }
 
 @media (min-width: 530px) {
 
 .headline--top-margin {
-      margin-top: 6rem
+      margin-top: 9.6rem
   }
   }
 
 .headline__list {
     padding-top: 0;
-    padding-left: 2rem;
+    padding-left: 3rem;
     color: &mainBlue;
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.65;
     font-weight: 300;
     letter-spacing: normal;
@@ -1110,16 +1089,18 @@ hr {
 @media (min-width: 530px) {
 
 .headline__list {
-      font-size: 1.125rem;
-      padding-left: 4rem
+      font-size: 1.8rem;
+      padding-left: 6.4rem
   }
   }
 
 .row {
   position: relative;
+  display: block;
+  width: 100%;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .row::after {
@@ -1159,12 +1140,12 @@ hr {
 
 .row--image {
     display: block;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: 0;
   }
 
 .row__b-until-medium {
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
   }
 
 @media (min-width: 800px) {
@@ -1283,143 +1264,20 @@ hr {
       display: flex;
     }
 
-.generic-content-container {
-  width: 85%;
-  margin: 40px auto 0 auto;
-}
-
-@media (min-width: 530px) {
-
-.generic-content-container {
-    width: 100%;
-    margin: 30px 0 0 0
-}
-  }
-
-@media (min-width: 1010px) {
-
-.generic-content-container {
-    width: 100%;
-    margin: -20px auto 0 auto
-}
-  }
-
-@media (max-width: 850px) and (orientation: landscape) {
-
-.generic-content-container {
-    width: 100%;
-    margin: 0 auto 0 auto
-}
-  }
-
-.generic-content-container p {
-    font-weight: 300;
-    line-height: 1.65;
-    margin: 0 0 1.8rem 0;
-  }
-
-@media (min-width: 530px) {
-
-.generic-content-container p {
-      font-size: 1.13rem
-  }
-  }
-
-@media (min-width: 1010px) {
-
-.generic-content-container p {
-      font-size: 1.125rem
-  }
-  }
-
-@media (max-width: 850px) and (orientation: landscape) {
-
-.generic-content-container p {
-      font-size: 1.125rem;
-      margin: 0 0 1.8rem 1rem
-  }
-  }
-
-.generic-content-container p a {
-    font-weight: 700;
-  }
-
 .section-title {
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 300;
   text-align: center;
   margin-bottom: 80px;
-
-  /* &__icon-achievers {
-    display: inline-block;
-    position: relative;
-    top: 8px;
-    right: 8px;
-
-    @mixin atSmall {
-      display: inline-block;
-      position: relative;
-      top: 24px;
-      right: 8px;
-    }
-  } */
+  text-align: center;
 }
-
-@media (min-width: 375px) {
-
-.section-title {
-    font-size: 2.55rem
-}
-  }
-
-@media (min-width: 530px) {
-
-.section-title {
-    font-size: 3.75rem
-}
-  }
-
-@media (max-width: 850px) and (orientation: landscape) {
-
-.section-title {
-    font-size: 2.2rem;
-    margin-top: 0
-}
-  }
-
-.section-title strong {
-    font-weight: 500;
-  }
-
-.section-title--blue {
-    color: #2f5572;
-  }
-
-.section-title--less-margin {
-    margin-bottom: 1.3rem;
-    margin-top: 0;
-  }
 
 .section-title__icon {
-    display: inline-block;
+    display: inline;
     width: 60px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: -0.5rem;
-  }
-
-@media (min-width: 530px) {
-
-.section-title__icon {
-      display: block;
-      width: 80px;
-      position: relative;
-      top: 8px;
-      margin-right: 0.5rem;
-      margin-left: 0;
-      display: inline-block;
-      margin-bottom: 0
-  }
+    margin-bottom: -0.8rem;
   }
 
 .flex-container {
@@ -1429,58 +1287,45 @@ hr {
 }
 
 .feature-item {
+  display: block;
   position: relative;
-  padding-bottom: 2.5rem;
-  //   background-color: lightskyblue;
-  margin-bottom: 3rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4.8rem;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 0;
 }
-
-@media (min-width: 530px) {
-
-.feature-item {
-    padding-left: 94px;
-    width: 100%
-}
-  }
 
 @media (min-width: 800px) {
 
 .feature-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 100%
 }
   }
 
+.feature-item__header-group {
+    width: 100%;
+    text-align: center;
+  }
+
 .feature-item__icon {
-    display: block;
-    position: absolute;
+    display: inline;
+    position: relative;
     top: 0;
+    left: 0;
     margin: 0 auto;
-    margin-top: -0.7rem;
+    margin-top: -1rem;
     width: 50px;
   }
 
-@media (min-width: 530px) {
-
-.feature-item__icon {
-      position: absolute;
-      left: 0;
-      width: 80px;
-      margin-top: 0
-  }
-  }
-
 .feature-item__title {
-    font-size: 1.6rem;
+    display: inline;
+    font-size: 2.55rem;
     font-weight: 300;
-    padding-left: 4rem;
-    margin-top: 0.7em;
-    margin-bottom: 0.8rem;
+    padding-left: 6.44rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
     text-align: left;
   }
 
@@ -1488,9 +1333,9 @@ hr {
 
 .feature-item__title {
       text-align: left;
-      font-size: 1.875rem;
-      padding-left: 1rem;
-      margin-bottom: 1em
+      font-size: 3rem;
+      padding-left: 1.6rem;
+      margin-bottom: 0
   }
   }
 
@@ -1499,14 +1344,14 @@ hr {
 .feature-item__title {
       min-width: 200px;
       max-width: 240px;
-      margin-top: -8px
+      margin-top: 0
   }
   }
 
 @media (max-width: 850px) and (orientation: landscape) {
 
 .feature-item__title {
-      font-size: 1.4rem;
+      font-size: 2rem;
       min-width: 200px
   }
   }
@@ -1514,16 +1359,16 @@ hr {
 .feature-item__list {
     padding-top: 30px;
     color: white;
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.65;
     font-weight: 200;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.16rem;
   }
 
 @media (min-width: 530px) {
 
 .feature-item__list {
-      font-size: 1.125rem
+      font-size: 1.8rem
   }
   }
 
@@ -1535,12 +1380,12 @@ hr {
   }
 
 .feature-item__permission {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     font-weight: 200;
     max-width: 80%;
     display: block;
     margin: auto;
-    line-height: 1.4rem;
+    line-height: 2.2rem;
   }
 
 @media (min-width: 530px) {
@@ -1559,7 +1404,7 @@ hr {
 @media (min-width: 530px) {
 
 .testimonial {
-    padding: 0 4rem 1px 4rem;
+    padding: 0 6.4rem 1px 6.4rem;
     margin-bottom: 130px
 }
   }
@@ -1567,7 +1412,7 @@ hr {
 @media (min-width: 1010px) {
 
 .testimonial {
-    padding: 0 1.8125rem 1px 1.8125rem;
+    padding: 0 2.9rem 1px 2.9rem;
     margin-bottom: 0
 }
   }
@@ -1575,7 +1420,7 @@ hr {
 @media (max-width: 1050px) and (orientation: landscape) {
 
 .testimonial {
-    padding: 0 4rem 1px 4rem;
+    padding: 0 6.4rem 1px 6.4rem;
     height: 400px;
     margin-bottom: 130px
 }
@@ -1604,7 +1449,7 @@ hr {
 .testimonial__title {
     color: #2f5572;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: 500;
     margin: 0;
   }
@@ -1613,8 +1458,8 @@ hr {
     color: #d59541;
     text-align: center;
     font-weight: 400;
-    font-size: 0.9375rem;
-    margin: 0.25rem 0 1rem 0;
+    font-size: 1.5rem;
+    margin: 0.4rem 0 1.6rem 0;
   }
 
 .testimonial--last {
@@ -1629,14 +1474,14 @@ hr {
   }
 
 .testimonial p {
-    padding: 0 1rem;
+    padding: 0 1.6rem;
   }
 
 @media (min-width: 530px) {
 
 .testimonial p {
-      padding: 0 1rem 2rem 1rem;
-      font-size: 1.1rem
+      padding: 0 1.6rem 3.2rem 1.6rem;
+      font-size: 1.8rem
   }
   }
 
@@ -1650,7 +1495,7 @@ hr {
 @media (max-width: 1050px) and (orientation: landscape) {
 
 .testimonial p {
-      font-size: 1rem
+      font-size: 1.6rem
   }
   }
 
@@ -1752,25 +1597,25 @@ hr {
 	}
 
 .site-footer {
-	background-color: #2f5572;
-	color: white;
-	padding: .5rem 0;
-	text-align: center;
+  background-color: #2f5572;
+  color: white;
+  padding: 0.8rem 0;
+  text-align: center;
 }
 
 .site-footer__text {
-		display: block;
-		margin-bottom: 1rem;
-		font-weight: 200;
-	}
+    display: block;
+    margin-bottom: 1.6rem;
+    font-weight: 200;
+  }
 
 @media (min-width: 800px) {
 
 .site-footer__text {
-			display: inline;
-			margin-bottom: 0;
-			margin-right: 1.4rem
-	}
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 2rem
+  }
   }
 
 .site-header {
@@ -1868,7 +1713,7 @@ hr {
 @media (min-width: 800px) {
 
 .site-header__logo {
-      width: 25rem;
+      width: 40rem;
       opacity: 1;
       left: auto;
       -webkit-transform: translateX(0);
@@ -1910,7 +1755,7 @@ hr {
 
 .site-header__logo--icon {
       width: 40px;
-      margin-right: 1rem;
+      margin-right: 1.6rem;
     }
 
 @media (max-width: 1050px) and (orientation: landscape) {
@@ -1927,7 +1772,7 @@ hr {
     font-weight: 300;
     /* text-indent: -9999px; */
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 2.24rem;
     max-width: 320px;
     text-align: center;
     height: 0;
@@ -1940,14 +1785,14 @@ hr {
       position: relative;
       top: -6px;
       max-width: 300px;
-      font-size: 2rem
+      font-size: 3.2rem
   }
   }
 
 @media (max-width: 1050px) and (orientation: landscape) {
 
 .site-header__logo__text {
-      font-size: 1.4rem
+      font-size: 2.2rem
   }
   }
 
@@ -2173,13 +2018,13 @@ hr {
     list-style: none;
     padding-right: 0px;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
 @media (min-width: 800px) {
 
 .primary-nav li {
-      font-size: 1rem;
+      font-size: 1.4rem;
       float: left;
       display: block;
       padding-right: 20px
@@ -2203,34 +2048,28 @@ hr {
     font-weight: 300;
     display: block;
     padding: 8px 12px;
-    font-size: 0.9rem;
+    font-size: 1.6rem;
     margin-top: 10px;
     margin-bottom: 12px;
   }
 
-@media (min-width: 530px) {
+.primary-nav a.is-current-link {
+      color: #fabb69;
+    }
 
-.primary-nav a {
+/* @mixin atSmall {
       font-size: 1rem;
       margin: 0;
-      padding: 12px
-  }
-  }
+      padding: 12px;
+    }
 
-@media (min-width: 800px) {
-
-.primary-nav a {
+    @mixin atMedium {
       font-size: 1rem;
       padding: 12px;
       margin-top: 0;
       margin-bottom: 0;
-      background-color: transparent
-  }
-
-      .primary-nav a.is-current-link {
-        color: #fabb69;
-      }
-  }
+      background-color: transparent;
+    } */
 
 @media (max-width: 1050px) and (orientation: landscape) {
 
@@ -2293,7 +2132,7 @@ hr {
 
 .modal__description {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.65;
   }
@@ -2301,7 +2140,7 @@ hr {
 @media (min-width: 530px) {
 
 .modal {
-    font-size: 1.3rem
+    font-size: 2rem
 }
   }
 
@@ -2311,9 +2150,9 @@ hr {
 
 .modal__close {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 2rem;
+    top: 60px;
+    right: 60px;
+    font-size: 3.2rem;
     -webkit-transform: scaleX(1.2);
             transform: scaleX(1.2);
     -webkit-transform-origin: 100% 0;
@@ -2381,20 +2220,20 @@ hr {
 @media (min-width: 530px) {
 
 .screening__t-padding {
-      padding-top: 1rem
+      padding-top: 1.6rem
   }
   }
 
 @media (min-width: 1010px) {
 
 .screening__t-padding {
-      padding-top: 6rem
+      padding-top: 10rem
   }
   }
 
 .screening__header {
     font-weight: 300;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     color: #2f5572;
     width: 120%;
     margin: 0 0 22px;
@@ -2403,14 +2242,14 @@ hr {
 @media (min-width: 375px) {
 
 .screening__header {
-      font-size: 1.9rem
+      font-size: 3rem
   }
   }
 
 @media (min-width: 530px) {
 
 .screening__header {
-      font-size: 2.875rem
+      font-size: 4.6rem
   }
   }
 
@@ -2422,14 +2261,14 @@ hr {
   }
 
 p.screening__permission {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
   }
 
 .screening__list {
     padding-top: 0;
-    padding-left: 2rem;
+    padding-left: 3.2rem;
     color: &mainBlue;
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.65;
     font-weight: 300;
     letter-spacing: normal;
@@ -2438,14 +2277,14 @@ p.screening__permission {
 @media (min-width: 530px) {
 
 .screening__list {
-      font-size: 1.125rem;
-      padding-left: 4rem
+      font-size: 1.8rem;
+      padding-left: 6.4rem
   }
   }
 
 .screening__form-title {
     color: #d59541;
-    font-size: 1.8rem;
+    font-size: 2.88rem;
   }
 
 .screening__form-section {
@@ -2470,9 +2309,9 @@ p.screening__permission {
   }
 
 .screening__form--input {
-    margin-bottom: 2rem;
-    margin-top: 0.4rem;
-    padding: 0.4rem 0.6rem;
+    margin-bottom: 3.2rem;
+    margin-top: 0.7rem;
+    padding: 0.7rem 1rem;
     width: 100%;
     border: 1px solid #aaaaaa;
     background-color: #f7f7f7;
@@ -2482,7 +2321,7 @@ p.screening__permission {
 
 .screening__form--input {
       min-width: 100%;
-      padding: 0.4rem 0.6rem
+      padding: 0.7rem 1rem
   }
   }
 
@@ -2537,7 +2376,7 @@ form {
 @media (min-width: 1010px) {
 
 form {
-    padding: 0 4rem 0 0
+    padding: 0 6.4rem 0 0
 }
   }
 
@@ -2550,7 +2389,7 @@ textarea {
 input[type="submit"] {
   background-color: #d59541;
   color: white;
-  padding: 1rem;
+  padding: 1.6rem;
   width: 100%;
 }
 
@@ -2560,7 +2399,7 @@ input[type="submit"]:hover {
 }
 
 option {
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
 }
 
 @media (min-width: 530px) {
@@ -2612,7 +2451,7 @@ option {
 @media (min-width: 530px) {
 
 .about-cindy-section__h2 {
-      margin: 0 0 3rem 4.2rem;
+      margin: 0 0 4.8rem 7.72rem;
       width: 100%
   }
   }
@@ -2620,52 +2459,25 @@ option {
 @media (max-width: 850px) and (orientation: landscape) {
 
 .about-cindy-section__h2 {
-      margin: 0 0 3rem 0
+      margin: 0 0 4.8rem 0
   }
   }
 
 @media (min-width: 1010px) {
 
 .about-cindy-section__h2 {
-      margin: 0 0 2.5rem 0;
+      margin: 0 0 4rem 0;
       width: 100%
   }
   }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 .blockquote {
   font-family: "Open Sans", sans-serif;
   width: 88%;
-  font-size: 1.1rem;
-  font-weight: 200;
-  line-height: 1.8;
   background-color: #2f5572;
   color: white;
-  padding: 1.5rem 3rem;
-  margin: 2.4rem auto;
+  padding: 2.4rem 4.8rem;
+  margin: 3.8rem auto;
 }
 
 @media (min-width: 530px) {
@@ -2675,7 +2487,7 @@ option {
     position: absolute;
     top: 118px;
     right: 60%;
-    padding: 1.75rem 3.5rem;
+    padding: 2.8rem 5.6rem;
     display: inline-block
 }
   }
@@ -2687,7 +2499,7 @@ option {
     position: relative;
     top: 20px;
     left: 0;
-    padding: 1.75rem 3.5rem;
+    padding: 2.8rem 5.6rem;
     display: inline-block
 }
   }
@@ -2698,7 +2510,7 @@ option {
     width: 52%;
     font-size: 1.1rem;
     line-height: 1.5;
-    padding: 0.6rem 2rem;
+    padding: 1rem 3.2rem;
     top: 120px
 }
   }
@@ -2710,6 +2522,12 @@ option {
     position: relative;
     top: 0;
     right: 0;
-    padding: 1.5rem 3rem
+    padding: 2.4rem 4.8rem
 }
+  }
+
+.blockquote__paragraph {
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.8;
   }

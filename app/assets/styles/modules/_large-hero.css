@@ -110,86 +110,86 @@
   &__title {
     font-weight: 300;
     color: $mainBlue;
-    font-size: 1.5rem;
-    margin: 0 0 1rem 0;
+    font-size: 2.4rem;
+    margin: 0 0 1.6rem 0;
     max-width: 50%;
 
     @mixin atSmall {
-      font-size: 2rem;
+      font-size: 3.2rem;
       max-width: 600px;
-      margin: 0 0 1.4rem 0;
+      margin: 0 0 2.25rem 0;
     }
 
     @mixin atLarge {
-      font-size: 2.8rem;
+      font-size: 4.4rem;
       max-width: 600px;
-      margin: 0 0 3rem 0;
+      margin: 0 0 4.8rem 0;
     }
   }
 
   &__subtitle {
     font-weight: 300;
     color: $mainBlue;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin: 0;
     margin-bottom: 20px;
     max-width: 50%;
-    padding: 0.1rem 0;
+    padding: 0.2rem 0;
     border-top: 1px solid $mainBlue;
     border-bottom: 1px solid $mainBlue;
 
     @mixin atXSmall {
-      font-size: 1.05rem;
-      padding: 1.1rem 0;
+      font-size: 1.6rem;
+      padding: 1.7rem 0;
     }
 
     @mixin atSmall {
-      font-size: 1.4rem;
+      font-size: 3.5rem;
       max-width: 600px;
-      margin-bottom: 1rem;
-      padding: 1rem 0;
+      margin-bottom: 2.6rem;
+      padding: 2.6rem 0;
     }
 
     @mixin atLarge {
-      font-size: 2.2rem;
+      font-size: 3.5rem;
       max-width: 600px;
-      margin-bottom: 2rem;
-      padding: 1rem 0;
+      margin-bottom: 3.2rem;
+      padding: 1.6rem 0;
     }
 
     @mixin atTabLand {
-      font-size: 1.5rem;
+      font-size: 2.4rem;
     }
 
     @mixin atSmallLand {
-      font-size: 1.4rem;
+      font-size: 2.2rem;
     }
   }
 
   &__description {
     color: $mainBlue;
 
-    -webkit-margin-before: 0.4rem;
-    -webkit-margin-after: 1em;
-    padding: 0.5rem 0;
-    font-size: 1rem;
+    -webkit-margin-before: 0.7rem;
+    -webkit-margin-after: 1.6em;
+    padding: 0.8rem 0;
+    font-size: 1.6rem;
     font-weight: 100;
     max-width: 50%;
 
     @mixin atXSmall {
-      font-size: 1.1rem;
-      padding: 0.5rem 0.2rem;
+      font-size: 1.75rem;
+      padding: 0.8rem 0.32rem;
     }
 
     @mixin atSmall {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
       max-width: 600px;
       margin-left: 0;
       margin-right: 0;
     }
 
     @mixin atLarge {
-      font-size: 1.5rem;
+      font-size: 2.4rem;
       max-width: 600px;
       margin-left: 0;
       margin-right: 0;
@@ -204,7 +204,7 @@
     display: block;
     width: 100vw;
     border-bottom: 5px solid $mainBlue;
-    padding: 3.2rem 0 3.8rem 0;
+    padding: 5.125rem 0 6.8rem 0;
   }
 
   &__p-button {
@@ -212,8 +212,8 @@
     text-align: center;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
-    margin-top: 2rem;
-    margin-bottom: 3.4rem;
+    margin-top: 3.2rem;
+    margin-bottom: 5.45rem;
   }
 
   &__p-button a {
@@ -227,7 +227,6 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    /* margin-bottom: 1.4rem; */
 
     @mixin atTabLand {
       margin: 4px 0 0 auto;

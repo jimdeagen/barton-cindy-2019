@@ -27,10 +27,10 @@
     list-style: none;
     padding-right: 0px;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.4rem;
 
     @mixin atMedium {
-      font-size: 1rem;
+      font-size: 1.4rem;
       float: left;
       display: block;
       padding-right: 20px;
@@ -51,11 +51,15 @@
     font-weight: 300;
     display: block;
     padding: 8px 12px;
-    font-size: 0.9rem;
+    font-size: 1.6rem;
     margin-top: 10px;
     margin-bottom: 12px;
 
-    @mixin atSmall {
+    &.is-current-link {
+      color: #fabb69;
+    }
+
+    /* @mixin atSmall {
       font-size: 1rem;
       margin: 0;
       padding: 12px;
@@ -67,11 +71,7 @@
       margin-top: 0;
       margin-bottom: 0;
       background-color: transparent;
-
-      &.is-current-link {
-        color: #fabb69;
-      }
-    }
+    } */
 
     @mixin atTabLand {
       font-size: 1rem;

@@ -26,13 +26,13 @@
 
   &__description {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.65;
   }
 
   @mixin atSmall {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   &__description--last {
@@ -41,9 +41,9 @@
 
   &__close {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 2rem;
+    top: 60px;
+    right: 60px;
+    font-size: 3.2rem;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
     color: $mainBlue;
