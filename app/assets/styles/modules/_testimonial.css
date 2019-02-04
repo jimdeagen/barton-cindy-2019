@@ -4,7 +4,7 @@
   margin-bottom: 98px;
 
   @mixin atSmall {
-    padding: 0 6.4rem 1px 6.4rem;
+    padding: 0 2.4rem 1px 2.4rem;
     margin-bottom: 130px;
   }
 
@@ -13,14 +13,25 @@
     margin-bottom: 0;
   }
 
+  @mixin atLarge {
+    padding: 0 2.9rem 1px 2.9rem;
+    margin-bottom: 0;
+  }
+
+  @mixin atXLarge {
+    padding: 0 0 1px 0;
+    margin-bottom: 0;
+  }
+
   @mixin atTabLand {
     padding: 0 6.4rem 1px 6.4rem;
-    height: 400px;
+    height: auto;
     margin-bottom: 130px;
   }
 
   @mixin atSmallLand {
-    height: 320px;
+    height: auto;
+    padding: 0 0.4rem 1px 0.4rem;
   }
 
   &__photo {
@@ -73,6 +84,12 @@
 
     @mixin atTabLand {
       font-size: 1.6rem;
+    }
+  }
+
+  &.reveal-item {
+    @mixin atSmallLand {
+      margin-top: 100px;
     }
   }
 }

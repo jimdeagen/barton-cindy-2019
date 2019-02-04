@@ -1,0 +1,20 @@
+.about-barton-section {
+  &--img {
+    margin-bottom: 30px;
+  }
+
+  & p:first-of-type {
+    @mixin 1200plus {
+      margin-bottom: 100px;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-gap: 90px;
+      -moz-column-gap: 90px;
+      column-gap: 90px;
+      -webkit-column-rule: 1px solid rgba(0, 0, 0, 0.15);
+      -moz-column-rule: 1px solid rgba(0, 0, 0, 015);
+      column-rule: 1px solid rgba(0, 0, 0, 0.15);
+    }
+  }
+}

@@ -1,4 +1,5 @@
 .wrapper {
+  display: relative;
   overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
@@ -6,8 +7,14 @@
   margin-left: auto;
   margin-right: auto;
 
-  @mixin atTabLand {
-    max-width: 95%;
+  &__wide {
+    display: relative;
+    overflow: hidden;
+    max-width: 1420px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &--medium {
@@ -22,7 +29,7 @@
     padding-left: 0;
     padding-right: 0;
 
-    @mixin atMedium {
+    @mixin 800plus {
       padding-left: 18px;
       padding-right: 18px;
     }
@@ -32,21 +39,16 @@
     padding-left: 0;
     padding-right: 0;
 
-    @mixin atLarge {
+    @mixin 1200plus {
       padding-left: 18px;
       padding-right: 18px;
     }
   }
 
-  .wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   &--b-margin {
     margin-bottom: 1.6rem;
 
-    @mixin atSmall {
+    @mixin 530plus {
       margin-bottom: 6.2rem;
     }
   }
@@ -54,7 +56,7 @@
   &--b-padding {
     padding-bottom: 1.6rem;
 
-    @mixin atSmall {
+    @mixin 530plus {
       padding-bottom: 6.2rem;
     }
   }

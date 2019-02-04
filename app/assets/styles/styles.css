@@ -1,7 +1,9 @@
 @import "normalize.css";
+
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
+
 @import "modules/_large-hero";
 @import "modules/_btn";
 @import "modules/_wrapper";
@@ -21,3 +23,8 @@
 @import "modules/_screening";
 @import "modules/_about-cindy";
 @import "modules/_blockquote";
+@import "modules/_about-barton";
+@import "modules/_copyright";
+@import "modules/_paypal";
+@import "modules/_text-group.css";
+@import "modules/_image-and-text.css";

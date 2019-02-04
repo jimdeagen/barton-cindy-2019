@@ -1,0 +1,17 @@
+.paypal {
+  max-width: 50px;
+  max-height: 50px;
+
+  &__img {
+    display: block;
+    transform: scale(1);
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  &__form {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 0;
+  }
+}

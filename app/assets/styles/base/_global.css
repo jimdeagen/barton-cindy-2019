@@ -8,7 +8,15 @@ body {
 }
 
 p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin: 0 0 2.8rem 0;
+}
+
+@mixin 1200plus {
   font-size: 1.8rem;
+  line-height: 1.8;
+  margin: 0 0 2.8rem 0;
 }
 
 img {
@@ -26,8 +34,21 @@ strong {
 
 a {
   color: $mainOrange;
+  text-decoration: none;
 }
 
 hr {
   margin: 4.8rem 0;
+}
+
+picture {
+  display: block;
+  width: 100%;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
 }

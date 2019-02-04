@@ -9,7 +9,7 @@
     height: 72px;
     position: relative;
 
-    @mixin atSmall {
+    @mixin 530plus {
       width: 72px;
       margin: 0 5px;
     }
@@ -22,9 +22,5 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-  }
-
-  #paypal {
-    transform: translate(0, -74%);
   }
 }

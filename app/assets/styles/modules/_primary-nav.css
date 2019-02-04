@@ -6,6 +6,10 @@
   }
   @mixin atMedium {
     padding-top: 0;
+
+    @mixin atXLarge {
+      padding-top: 0;
+    }
   }
 
   &--pull-right {
@@ -57,24 +61,31 @@
 
     &.is-current-link {
       color: #fabb69;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
     }
 
-    /* @mixin atSmall {
-      font-size: 1rem;
-      margin: 0;
-      padding: 12px;
+    @mixin atXSmall {
+      padding: 3px 8px;
     }
 
-    @mixin atMedium {
-      font-size: 1rem;
-      padding: 12px;
-      margin-top: 0;
-      margin-bottom: 0;
-      background-color: transparent;
-    } */
+    @mixin atLarge {
+      font-size: 1.8rem;
+    }
+
+    @mixin atXLarge {
+      padding: 1px 8px;
+    }
+
+    @mixin atMax1200 {
+      padding: 2px 8px;
+    }
+
+    @mixin atMax450 {
+      padding: 4.2px 8px;
+    }
 
     @mixin atTabLand {
-      font-size: 1rem;
+      font-size: 1.6rem;
       padding: 12px;
       margin-top: 0;
       margin-bottom: 0;
@@ -82,6 +93,15 @@
       &.is-current-link {
         color: #fabb69;
       }
+    }
+
+    @mixin atXSmall {
+      padding: 6px 8px;
+    }
+
+    @mixin atIpadProTargetPort {
+      padding: 0 12px;
+      margin-top: -6px;
     }
   }
 }

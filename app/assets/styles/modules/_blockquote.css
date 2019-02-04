@@ -1,48 +1,9 @@
-.blockquote {
-  font-family: "Open Sans", sans-serif;
-  width: 88%;
-  background-color: $mainBlue;
+.blockquote__paragraph {
   color: white;
-  padding: 2.4rem 4.8rem;
-  margin: 3.8rem auto;
+  background-color: $mainBlue;
+  padding: 4.5rem 9.5rem;
 
-  @mixin atSmall {
-    width: 40%;
-    position: absolute;
-    top: 118px;
-    right: 60%;
-    padding: 2.8rem 5.6rem;
-    display: inline-block;
-  }
-
-  @mixin atMedLand {
-    width: 100%;
-    position: relative;
-    top: 20px;
-    left: 0;
-    padding: 2.8rem 5.6rem;
-    display: inline-block;
-  }
-
-  @mixin atSmallLand {
-    width: 52%;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    padding: 1rem 3.2rem;
-    top: 120px;
-  }
-
-  @mixin atLarge {
-    width: 100%;
-    position: relative;
-    top: 0;
-    right: 0;
-    padding: 2.4rem 4.8rem;
-  }
-
-  &__paragraph {
-    font-size: 1.6rem;
-    font-weight: 200;
-    line-height: 1.8;
+  @mixin 530plus {
+    padding: 4.5rem 2.5rem;
   }
 }

@@ -2,14 +2,31 @@
   font-size: 3.2rem;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 2rem;
   text-align: center;
+
+  @mixin atXLarge {
+    font-size: 3.2rem;
+    margin-bottom: 8rem;
+  }
 
   &__icon {
     display: inline;
-    width: 60px;
+    width: 6rem;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: -0.8rem;
+  }
+
+  &__extra-b-margin {
+    margin-bottom: 11rem;
+
+    @mixin 800plus {
+      margin-bottom: 6rem;
+    }
+
+    @mixin 1200plus {
+      margin-bottom: 8rem;
+    }
   }
 }

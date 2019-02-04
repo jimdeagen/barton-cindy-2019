@@ -6,13 +6,8 @@
   display: inline-block;
   font-size: 1.6rem;
 
-  @mixin atSmall {
+  @mixin 400plus {
     padding: 1.5rem 2rem;
-  }
-
-  @mixin atTabLand {
-    padding-top: 14px;
-    padding-bottom: 14px;
   }
 
   &--orange {
@@ -22,16 +17,5 @@
   &--large {
     padding: 1.7rem 3.4rem;
 
-    @mixin atXSmall {
-      font-size: 1rem;
-      padding: 0.6rem 1.9rem;
-    }
-
-    @mixin atSmall {
-      font-size: 2rem;
-    }
-    @mixin atSmallLand {
-      font-size: 1.7rem;
-    }
-  }
+  
 }

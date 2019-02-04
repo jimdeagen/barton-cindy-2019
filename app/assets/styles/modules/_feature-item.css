@@ -12,68 +12,65 @@
   margin-left: auto;
   padding-left: 0;
 
-  @mixin atMedium {
-    width: 100%;
-  }
-
   &__header-group {
     width: 100%;
     text-align: center;
   }
 
   &__icon {
-    display: inline;
+    display: block;
     position: relative;
-    top: 0;
+    top: 6px;
     left: 0;
     margin: 0 auto;
     margin-top: -1rem;
     width: 50px;
+
+    @mixin 1200plus {
+      display: inline;
+      top: 0;
+    }
   }
 
   &__title {
-    display: inline;
+    display: inline-block;
     font-size: 2.55rem;
     font-weight: 300;
-    padding-left: 6.44rem;
+    padding-left: 2rem;
     margin-top: 1rem;
     margin-bottom: 0;
     text-align: left;
 
-    @mixin atSmall {
-      text-align: left;
-      font-size: 3rem;
-      padding-left: 1.6rem;
-      margin-bottom: 0;
-    }
-
-    @mixin atMedium {
-      min-width: 200px;
-      max-width: 240px;
+    @mixin 1200plus {
+      position: relative;
+      top: -1rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
       margin-top: 0;
-    }
-
-    @mixin atMedLand {
-      font-size: 2rem;
-      min-width: 200px;
     }
   }
 
   &__list {
-    padding-top: 30px;
+    padding-top: 10px;
+    width: 94%;
+    margin-left: auto;
+    margin-right: 40px;
+
+    @mixin 1200plus {
+      padding-top: 30px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__list li {
     color: white;
     font-size: 1.6rem;
     line-height: 1.65;
     font-weight: 200;
     letter-spacing: 0.16rem;
-
-    @mixin atSmall {
-      font-size: 1.8rem;
-    }
-
-    @mixin atMedLand {
-      padding-top: 0;
-    }
+    margin-bottom: 0.5rem;
   }
 
   &__permission {
@@ -84,7 +81,7 @@
     margin: auto;
     line-height: 2.2rem;
 
-    @mixin atSmall {
+    @mixin 530plus {
       max-width: 800px;
     }
   }

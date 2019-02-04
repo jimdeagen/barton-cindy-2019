@@ -1,5 +1,5 @@
 .site-header {
-  padding: 7px 0;
+  padding: 0 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -11,14 +11,15 @@
     border-bottom: 3px solid $mainBlue;
   }
 
-  @mixin atSmall {
+  @mixin 530plus {
     padding: 0 0 0 0;
     position: fixed;
   }
 
-  @mixin atMedium {
+  @mixin 800plus {
     position: fixed;
     padding: 0;
+    max-height: auto;
     /* background-color: rgba(47, 85, 114, 0.3); */
 
     &--dark {
@@ -26,56 +27,87 @@
     }
   }
 
-  @mixin atTabLand {
-    padding-top: 0px;
-  }
-
-  @mixin atXLarge {
+  @mixin 1200plus {
     background-color: rgba(47, 85, 114, 0.45);
+    &--dark {
+      background-color: rgba(23, 51, 72, 0.85);
+    }
   }
 
   &__btn-container {
+    margin-top: 20px;
+
     @mixin atSmall {
       float: right;
     }
+
+    @mixin atXSmall {
+      margin-top: 20px;
+    }
+
     @mixin atMedium {
       float: right;
+    }
+
+    @mixin atMax1200 {
+      margin-top: 0;
+    }
+
+    @mixin atXLarge {
+      margin-top: 2px;
+    }
+
+    @mixin atTabLand {
+      margin-top: 0;
     }
   }
 
   &__logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
+    position: relative;
+    float: left;
+    /* width: 100vw; */
     transform: translateX(0) scale(1.4 0.9);
     transition: transform 0.3s ease-out;
     transform-origin: 0 0;
-    background-color: $mainBlue;
+    background-color: $logo;
     padding: 12px 36px 8px 16px;
 
-    @mixin atSmall {
+    /* @mixin atSmall {
+      width: 100vw;
+      opacity: 0.85;
+      background-color: $mainBlue;
+      transform-origin: 0 0;
+    } */
+
+    @mixin atMax800 {
       width: 100vw;
       opacity: 0.85;
       background-color: $mainBlue;
       transform-origin: 0 0;
     }
 
+    @mixin atMax450 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
     @mixin atMedium {
-      width: 40rem;
+      /* width: 40rem; */
       opacity: 1;
-      left: auto;
-      transform: translateX(0);
+      left: 0;
+      transform: scale(1.5);
 
       padding: 18px 36px 23px 36px;
 
       .site-header--dark & {
-        transform: scale(0.57);
+        /* transform: scale(0.65); */
+        transform: scale(1);
       }
     }
 
     @mixin atXLarge {
-      padding: 18px 36px 23px 36px;
+      padding: 18px 36px 15px 36px;
     }
 
     @mixin atTabLand {
@@ -87,10 +119,6 @@
         transform: scale(1);
       }
     }
-
-    /* @mixin at1025to1200 {
-      transform: scale(0.57);
-    } */
 
     &--icon {
       width: 40px;
@@ -104,22 +132,22 @@
 
   &__logo__text {
     position: relative;
-    top: -10px;
+    top: 0;
     font-family: "Play", "Open Sans", sans-serif;
     font-weight: 300;
     /* text-indent: -9999px; */
     display: inline-block;
-    font-size: 2.24rem;
+    font-size: 2.25rem;
     max-width: 320px;
     text-align: center;
-    height: 0;
+    height: auto;
     color: white;
 
     @mixin atSmall {
       position: relative;
-      top: -6px;
+      top: 0;
       max-width: 300px;
-      font-size: 3.2rem;
+      font-size: 2.25rem;
     }
 
     @mixin atTabLand {
@@ -203,7 +231,33 @@
     text-align: center;
 
     @mixin atSmall {
+      width: 100vw;
       padding-top: 0;
+      margin-left: -60px;
+      margin-bottom: -5px;
+    }
+
+    @mixin atMax1200 {
+      padding-top: 58px;
+      margin-left: 0px;
+    }
+
+    @mixin atMax800 {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @mixin atMax380 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @mixin at750to799 {
+    }
+
+    @mixin atLarge {
+      width: 100%;
     }
 
     @mixin atXLarge {
@@ -211,16 +265,21 @@
       z-index: 1;
       padding-top: 0;
       transform: scale(1);
-    }
-
-    @mixin atMax1200 {
-      padding-top: 50px;
+      width: 100%;
     }
 
     @mixin atTabLand {
       opacity: 0;
       /* background-color: $mainBlue; */
       transform: scale(1.3);
+    }
+
+    @mixin atSmallLand {
+      width: 100vw;
+    }
+
+    @mixin atMedLand {
+      margin-left: 20px;
     }
 
     &--is-visible {
@@ -230,13 +289,23 @@
     }
   }
 
-  & .wrapper {
+  &__wrapper {
+    overflow: visible;
     padding-left: 0;
     padding-right: 0;
-  }
 
-  &__wrapper {
+    @mixin atSmall {
+    }
+
+    @mixin atMax800 {
+      overflow: visible;
+    }
+
     @mixin atTabLand {
+      max-width: 100%;
+    }
+
+    @mixin at750to799 {
       max-width: 100%;
     }
   }

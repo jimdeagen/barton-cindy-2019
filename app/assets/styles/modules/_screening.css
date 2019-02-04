@@ -70,8 +70,9 @@
     }
 
     @mixin atLarge {
-      width: 70%;
-      margin-right: 0px;
+      width: 100%;
+      margin-right: 0;
+      padding-right: 20px;
     }
   }
 
@@ -97,9 +98,13 @@
 
     @mixin atSmall {
       display: inline-block;
-      width: 50%;
+      width: 60%;
       height: auto;
       padding: 0 2rem 0 0;
+    }
+
+    @mixin atXLarge {
+      width: 52%;
     }
   }
 
@@ -112,23 +117,32 @@
 
     @mixin atSmall {
       display: inline-block;
-      width: 45%;
+      width: 38%;
       height: auto;
       margin-top: 86px;
+    }
+
+    @mixin atXLarge {
+      width: 45%;
     }
   }
 }
 
 form {
   padding: 0 0;
+  font-size: 1.4rem;
 
   @mixin atSmall {
     padding: 0 0 0 0;
-    width: 140%;
+    width: 100%;
   }
 
   @mixin atLarge {
     padding: 0 6.4rem 0 0;
+  }
+
+  @mixin atXLarge {
+    width: 105%;
   }
 }
 
@@ -143,6 +157,7 @@ input[type="submit"] {
   color: white;
   padding: 1.6rem;
   width: 100%;
+  font-size: 1.8rem;
 }
 
 input[type="submit"]:hover {
@@ -152,4 +167,5 @@ input[type="submit"]:hover {
 
 option {
   padding: 0.5rem 0;
+  color: #555;
 }

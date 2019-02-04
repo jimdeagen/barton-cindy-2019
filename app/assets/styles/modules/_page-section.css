@@ -5,22 +5,6 @@
     padding: 7rem 0;
   }
 
-  &--no-b-padding-until-medium {
-    padding-bottom: 0;
-
-    @mixin atMedium {
-      padding-bottom: 7-rem;
-    }
-  }
-
-  &--no-b-padding-until-large {
-    padding-bottom: 0;
-
-    @mixin atLarge {
-      padding-bottom: 7rem;
-    }
-  }
-
   &--blue {
     background-color: $mainBlue;
     color: white;
@@ -29,7 +13,7 @@
   &--testimonials {
     background-color: #e0e6ef;
 
-    @mixin atLarge {
+    @mixin 1200plus {
       background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
       background-size: cover;
     }
