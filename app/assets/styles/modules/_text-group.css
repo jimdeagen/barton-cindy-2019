@@ -1,4 +1,4 @@
-.text--group {
+.text-group {
   column-count: 1;
 
   @mixin 1800plus {
@@ -17,5 +17,11 @@
 
   &__p {
     margin-block-start: 0;
+  }
+
+  &-wrapper {
+    border: 1px solid red;
+    width: 100%;
+    display: block;
   }
 }

@@ -4,9 +4,16 @@
 
   &__img {
     display: block;
-    transform: scale(1);
-    max-width: 50px;
+    transform: scale(0.7);
+    max-width: 100%;
     max-height: 50px;
+
+    @mixin 800plus {
+      display: block;
+      transform: scale(1);
+      max-width: 50px;
+      max-height: 50px;
+    }
   }
 
   &__form {

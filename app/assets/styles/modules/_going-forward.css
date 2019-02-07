@@ -1,0 +1,9 @@
+.going-forward {
+  border-top: 1px solid $mainBlue;
+  padding: 8rem 0;
+  background-color: $liteMediumGray;
+
+  /* @mixin 800plus {
+    background-color: transparent;
+  } */
+}

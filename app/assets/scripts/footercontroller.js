@@ -7,6 +7,6 @@ myApp.directive("myGreatFooter", function() {
     template:
       "<p>&#169; 2015-" +
       currentYear +
-      ' reading and spelling success</p><p>This site built by <a href="http://www.jimdeagen.com" target="_blank">Jim Deagen</a></p></hr>'
+      ' reading and spelling success</p><p>This site built by <a href="http://www.jimdeagen.com" target="_blank" title="Web Development and Web Craft">Jim Deagen</a></p></hr>'
   };
 });

@@ -1,0 +1,85 @@
+.badges {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+
+  @mixin 800plus {
+    padding: 2rem 6rem;
+  }
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background-color: $mainBlue;
+  min-width: 100%;
+  max-width: 100%;
+  border: 5px solid $liteMediumGray;
+  border-radius: 5rem;
+  padding: 0 2rem;
+
+  @mixin 800plus {
+    flex-direction: row;
+    min-width: 30%;
+    max-width: 30%;
+  }
+
+  &__p {
+    color: $liteGray;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-block-end: 3rem;
+    margin-block-start: 3rem;
+    line-height: 1.2;
+    margin: 0 0 0 0;
+    align-self: center;
+  }
+
+  &__image {
+    transform: scale(0.8);
+    background-color: $liteGray;
+    border: 5px solid $liteMediumGray;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+
+  &:hover {
+    background-color: #666;
+  }
+
+  &__section-p {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    margin: 0;
+
+    @mixin 800plus {
+      font-size: 1.5rem;
+      padding-left: 8rem;
+      padding-right: 4rem;
+      padding-top: 0;
+    }
+
+    & a {
+      font-weight: 600;
+    }
+  }
+
+  &--wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: $liteGray;
+    padding: 2rem;
+    border: 2px solid $liteMediumGray;
+
+    @mixin 800plus {
+      flex-direction: row;
+    }
+  }
+}

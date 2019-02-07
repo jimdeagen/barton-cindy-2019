@@ -14,8 +14,11 @@
     background-color: $mainOrange;
   }
 
+  &--blue {
+    background-color: $buttonBlue;
+  }
+
   &--large {
     padding: 1.7rem 3.4rem;
-
-  
+  }
 }

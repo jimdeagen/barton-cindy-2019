@@ -17,7 +17,7 @@
     margin-right: auto;
   }
 
-  &--medium {
+  /* &--medium {
     max-width: 976px;
   }
 
@@ -33,9 +33,9 @@
       padding-left: 18px;
       padding-right: 18px;
     }
-  }
+  } */
 
-  &--no-padding-until-large {
+  /* &--no-padding-until-large {
     padding-left: 0;
     padding-right: 0;
 
@@ -43,21 +43,21 @@
       padding-left: 18px;
       padding-right: 18px;
     }
-  }
+  } */
 
-  &--b-margin {
+  /* &--b-margin {
     margin-bottom: 1.6rem;
 
     @mixin 530plus {
       margin-bottom: 6.2rem;
     }
-  }
+  } */
 
-  &--b-padding {
+  /* &--b-padding {
     padding-bottom: 1.6rem;
 
     @mixin 530plus {
       padding-bottom: 6.2rem;
     }
-  }
+  } */
 }

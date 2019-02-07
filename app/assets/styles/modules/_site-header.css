@@ -20,11 +20,6 @@
     position: fixed;
     padding: 0;
     max-height: auto;
-    /* background-color: rgba(47, 85, 114, 0.3); */
-
-    &--dark {
-      /* background-color: rgba(23, 51, 72, 0.85); */
-    }
   }
 
   @mixin 1200plus {
@@ -36,30 +31,6 @@
 
   &__btn-container {
     margin-top: 20px;
-
-    @mixin atSmall {
-      float: right;
-    }
-
-    @mixin atXSmall {
-      margin-top: 20px;
-    }
-
-    @mixin atMedium {
-      float: right;
-    }
-
-    @mixin atMax1200 {
-      margin-top: 0;
-    }
-
-    @mixin atXLarge {
-      margin-top: 2px;
-    }
-
-    @mixin atTabLand {
-      margin-top: 0;
-    }
   }
 
   &__logo {
@@ -72,48 +43,12 @@
     background-color: $logo;
     padding: 12px 36px 8px 16px;
 
-    /* @mixin atSmall {
-      width: 100vw;
-      opacity: 0.85;
-      background-color: $mainBlue;
-      transform-origin: 0 0;
-    } */
-
-    @mixin atMax800 {
-      width: 100vw;
-      opacity: 0.85;
-      background-color: $mainBlue;
-      transform-origin: 0 0;
-    }
-
-    @mixin atMax450 {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    @mixin atMedium {
-      /* width: 40rem; */
+    @mixin 800plus {
       opacity: 1;
       left: 0;
       transform: scale(1.5);
 
       padding: 18px 36px 23px 36px;
-
-      .site-header--dark & {
-        /* transform: scale(0.65); */
-        transform: scale(1);
-      }
-    }
-
-    @mixin atXLarge {
-      padding: 18px 36px 15px 36px;
-    }
-
-    @mixin atTabLand {
-      width: 100vw;
-      opacity: 0.85;
-      padding: 14px 36px 8px 36px;
 
       .site-header--dark & {
         transform: scale(1);
@@ -123,10 +58,6 @@
     &--icon {
       width: 40px;
       margin-right: 1.6rem;
-
-      @mixin atTabLand {
-        width: 30px;
-      }
     }
   }
 
@@ -135,24 +66,12 @@
     top: 0;
     font-family: "Play", "Open Sans", sans-serif;
     font-weight: 300;
-    /* text-indent: -9999px; */
     display: inline-block;
     font-size: 2.25rem;
     max-width: 320px;
     text-align: center;
     height: auto;
     color: white;
-
-    @mixin atSmall {
-      position: relative;
-      top: 0;
-      max-width: 300px;
-      font-size: 2.25rem;
-    }
-
-    @mixin atTabLand {
-      font-size: 2.2rem;
-    }
   }
 
   &__menu-icon {
@@ -197,12 +116,8 @@
       transition: transform 0.3s ease-out;
     }
 
-    @mixin atXLarge {
+    @mixin 1200plus {
       display: none;
-    }
-
-    @mixin atTabLand {
-      display: inline;
     }
   }
 
@@ -230,56 +145,12 @@
     padding-top: 55px;
     text-align: center;
 
-    @mixin atSmall {
-      width: 100vw;
-      padding-top: 0;
-      margin-left: -60px;
-      margin-bottom: -5px;
-    }
-
-    @mixin atMax1200 {
-      padding-top: 58px;
-      margin-left: 0px;
-    }
-
-    @mixin atMax800 {
-      width: 100%;
-      margin-left: 0;
-    }
-
-    @mixin atMax380 {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    @mixin at750to799 {
-    }
-
-    @mixin atLarge {
-      width: 100%;
-    }
-
-    @mixin atXLarge {
+    @mixin 1200plus {
       opacity: 1;
       z-index: 1;
       padding-top: 0;
       transform: scale(1);
       width: 100%;
-    }
-
-    @mixin atTabLand {
-      opacity: 0;
-      /* background-color: $mainBlue; */
-      transform: scale(1.3);
-    }
-
-    @mixin atSmallLand {
-      width: 100vw;
-    }
-
-    @mixin atMedLand {
-      margin-left: 20px;
     }
 
     &--is-visible {
@@ -293,31 +164,17 @@
     overflow: visible;
     padding-left: 0;
     padding-right: 0;
-
-    @mixin atSmall {
-    }
-
-    @mixin atMax800 {
-      overflow: visible;
-    }
-
-    @mixin atTabLand {
-      max-width: 100%;
-    }
-
-    @mixin at750to799 {
-      max-width: 100%;
-    }
   }
 
   & ul {
     display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
 
-    @mixin atMax420 {
-      flex-direction: column;
-      align-items: center;
+    @mixin 800plus {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: stretch;
     }
   }
 

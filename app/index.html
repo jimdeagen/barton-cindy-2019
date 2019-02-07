@@ -58,6 +58,7 @@
                 <a href="#about-cindy" id="about-cindy-link">About Cindy</a>
               </li>
             </ul>
+            
           </nav>
         </div>
       </div>
@@ -124,8 +125,8 @@
     </div>
 
     <div class="large-hero__sub-section">
-      <p class="large-hero__p-button btn--animate">
-        <a href="#screening" class="btn btn--orange btn--large btn--animate"
+      <p class="large-hero__p-button">
+        <a href="#screening" class="btn btn--orange btn--large"
           >Schedule a Free Barton Screening</a
         >
       </p>
@@ -220,8 +221,8 @@
               </li>
             </ul>
             <p>Barton tutoring may be the solution.</p>
-            <hr />
-            <p>
+            <!-- <hr /> -->
+            <p class="about-barton-section--cta-p">
               I am a certified Barton trainer serving Granite Bay / Roseville /
               Folsom. Please <a href="#" class="open-modal">contact me</a> if
               you think I may be able to help your loved one.
@@ -741,46 +742,61 @@
       </div>
     </div>
 
-    <div class="wrapper image-and-text">
-      <!-- <picture>
-        <source
-          srcset="
-            assets/images/CindyWithArt_v400x500.jpg 404w,
-            assets/images/CindyWithArt_v400x500.jpg 808w
-          "
-          media="(min-width: 1020px)"
-        />
-        <source
-          srcset="
-            assets/images/CindyWithArt_v400x500.jpg 382w,
-            assets/images/CindyWithArt_v400x500.jpg 764w
-          "
-          media="(min-width: 800px)"
-        />
-        <img
-          class="about-cindy-section__image"
-          srcset="assets/images/CindyWithArt_v400x500.jpg 500w"
-          alt="Cindy Deagen"
-        />
-      </picture> -->
-
-      <div>
-        <h2>
-          Getting the most of your training &hellip;
-        </h2>
-        <div class="text--group">
-          <p class="text--group__p">
-            Forbrain
+      <div class="going-forward">
+        <div class="wrapper">
+          <h2 class="headline">
+            Getting the most of your training &hellip;
+          </h2>
+          <p>
+            Beyond the offerings of the Barton system, students may find some of
+            these resources can accelerate their progress.
           </p>
-          <p class="text--group__p">
-            Sans Forgetica
-          </p>
-          <p class="text--group__p">
-            online (remote) option
-          </p>
+          <div class="badges">
+            <div class="badge--wrap">
+              <div class="badge">
+                <img
+                  src="assets/images/icons/icon_development-skill.png"
+                  class="badge__image"
+                  alt=""
+                />
+                <p class="badge__p">
+                  Forbrain&trade;
+                </p>
+              </div>
+              <p class="badge__section-p">Many of my students have accelerated their progress with these headphones. They are designed to isolate audio feedback to the user via bone conductivity. This is well worth exploring and more info can be found at <a href="http://forbrain.com" target="_blank">forbrain.com</a>. Come back here and use this link to get <a href="https://www.forbrain.com/order-now/order-form?utm_id=3A4502544" target="_blank">10&percnt; off</a>.</p> 
+            </div>
+    
+            <div class="badge--wrap">
+              <div class="badge">
+                <img
+                  src="assets/images/icons/icon_sans-forgetica.png"
+                  class="badge__image"
+                  alt=""
+                />
+                <p class="badge__p">
+                  Sans Forgetica
+                </p>
+              </div>
+              <p class="badge__section-p">This font is engineered specifically to improve memory retention of written material. More info can be found at <a href="https://sansforgetica.rmit/" target="_blank">sansforgetica.rmit</a>. Also, here is an interesting Washington Post <a href="https://www.washingtonpost.com/business/2018/10/05/introducing-sans-forgetica-font-designed-boost-your-memory/" target="_blank">article about Sans Forgetica</a>.</p> 
+            </div>
+    
+            <div class="badge--wrap">
+              <div class="badge">
+                <img
+                  src="assets/images/icons/icon_technical-support.png"
+                  class="badge__image"
+                  alt=""
+                />
+                <p class="badge__p">
+                  online (remote) option
+                </p>
+              </div>
+              <p class="badge__section-p">We can set up remote sessions if needed. This is how I now work with several of my students with great success. Please contact me to discuss using this online option.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    
 
     <?php
         $thisYear = date('Y');
@@ -789,49 +805,58 @@
     ?>
 
     <footer class="site-footer">
-      <div my-great-footer class="copyright" ng-app="myApp">
-        <!-- &copy;2015 - <strong>Light Theme</strong> -->
-      </div>
-
-      <div class="wrapper site-footer__wrapper">
-        <div>
-          <a href="#" class="btn btn--orange open-modal open-modal-footer"
-            >contact Cindy</a
+      
+      <div class="wrapper">
+        <div class="paypal" class="social-icons__icon site-footer--paypal" title="paypal">
+          <form
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+            target="_blank"
+            class="paypal__form"
           >
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="GFDKH6H5QNVWN" />
+            <input
+              id="paypal-center"
+              type="image"
+              class="icon paypal__img"
+              src="assets/images/icons/icon_paypal-white.png"
+              border="0"
+              name="submit"
+              alt="PayPal - The safer, easier way to pay online!"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
         </div>
-
-        <!-- <p class="site-footer__text">&copy;
-          <?php echo $copyright; ?> Barton with Cindy. All rights reserved.
-        </p> -->
+  
+        <div class="wrapper site-footer__wrapper site-footer--contact-button">
+          <div>
+            <a
+              href="#"
+              class="btn btn--orange open-modal open-modal-footer"
+              title="Let's Do This!"
+              >contact Cindy</a
+            >
+          </div>
+  
+          <!-- <p class="site-footer__text">&copy;
+            <?php echo $copyright; ?> Barton with Cindy. All rights reserved.
+          </p> -->
+        </div>
+  
+        <div my-great-footer class="copyright site-footer--copyright" ng-app="myApp">
+          <!-- &copy;2015 - <strong>Light Theme</strong> -->
+        </div>
       </div>
+      
 
-      <div class="paypal" class="social-icons__icon" title="paypal">
-        <form
-          action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"
-          target="_blank"
-          class="paypal__form"
-        >
-          <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="GFDKH6H5QNVWN" />
-          <input
-            id="paypal-center"
-            type="image"
-            class="icon paypal__img"
-            src="assets/images/icons/icon_paypal-white.png"
-            border="0"
-            name="submit"
-            alt="PayPal - The safer, easier way to pay online!"
-          />
-          <img
-            alt=""
-            border="0"
-            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-            width="1"
-            height="1"
-          />
-        </form>
-      </div>
+      
     </footer>
 
     <div class="modal">
