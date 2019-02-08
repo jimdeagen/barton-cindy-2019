@@ -5,3 +5,11 @@
 .site-footer {
   border: 2px solid red;
 }
+
+.site-header {
+  border: 1px solid green;
+}
+
+.site-header__wrapper {
+  border: 1px solid blue;
+}

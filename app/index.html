@@ -23,8 +23,8 @@
 
   <body>
     <header class="site-header">
-      <div class="wrapper site-header__wrapper">
-        <a href="#">
+      <div class="wrapper__wide site-header__wrapper">
+        <a href="#" class="site-header__link">
           <div class="site-header__logo">
             <div class="site-header__logo__text">
               Barton with Cindy
@@ -37,10 +37,10 @@
         </div>
 
         <div class="site-header__menu-content">
-          <div class="site-header__btn-container">
-            <a href="#" class="btn open-modal btn--orange">contact Cindy</a>
-          </div>
-          <nav class="primary-nav primary-nav--pull-right">
+          <!-- <div class="site-header__btn-container"> -->
+            <!-- <a href="#" class="btn open-modal btn--orange">contact Cindy</a> -->
+          <!-- </div> -->
+          <nav class="primary-nav">
             <ul>
               <li>
                 <a href="#about-barton" id="about-barton-link">About Barton</a>
@@ -57,6 +57,7 @@
               <li>
                 <a href="#about-cindy" id="about-cindy-link">About Cindy</a>
               </li>
+              <li><a href="#" class="btn open-modal btn--orange">contact Cindy</a></li>
             </ul>
             
           </nav>
@@ -137,6 +138,12 @@
       />
     </div>
 
+    <div
+      id="about-barton2"
+      class="page-section about-barton-section"
+      data-matching-link="#about-barton-link2"
+    ></div>
+
     <div class="wrapper lone-quote__section">
       <h2
         class="headline headline--centered headline--light headline--b-margin-small headline--top-margin"
@@ -150,6 +157,8 @@
       </h3>
       <p class="headline--quote-attribution">- Groucho Marx</p>
     </div>
+
+    
 
     <div
       id="about-barton"
@@ -805,55 +814,51 @@
     ?>
 
     <footer class="site-footer">
-      
       <div class="wrapper">
-        <div class="paypal" class="social-icons__icon site-footer--paypal" title="paypal">
-          <form
-            action="https://www.paypal.com/cgi-bin/webscr"
-            method="post"
-            target="_blank"
-            class="paypal__form"
-          >
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="GFDKH6H5QNVWN" />
-            <input
-              id="paypal-center"
-              type="image"
-              class="icon paypal__img"
-              src="assets/images/icons/icon_paypal-white.png"
-              border="0"
-              name="submit"
-              alt="PayPal - The safer, easier way to pay online!"
-            />
-            <img
-              alt=""
-              border="0"
-              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-              width="1"
-              height="1"
-            />
-          </form>
-        </div>
-  
-        <div class="wrapper site-footer__wrapper site-footer--contact-button">
-          <div>
-            <a
-              href="#"
-              class="btn btn--orange open-modal open-modal-footer"
-              title="Let's Do This!"
-              >contact Cindy</a
+        <div class="site-footer__wrapper">
+          <div class="paypal social-icons__icon site-footer--paypal" title="paypal">
+            <form
+              action="https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+              target="_blank"
+              class="paypal__form"
             >
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="GFDKH6H5QNVWN" />
+              <input
+                id="paypal-center"
+                type="image"
+                class="icon paypal__img"
+                src="assets/images/icons/icon_paypal-white.png"
+                border="0"
+                name="submit"
+                alt="PayPal - The safer, easier way to pay online!"
+              />
+              <img
+                alt=""
+                border="0"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                width="1"
+                height="1"
+              />
+            </form>
           </div>
-  
-          <!-- <p class="site-footer__text">&copy;
-            <?php echo $copyright; ?> Barton with Cindy. All rights reserved.
-          </p> -->
-        </div>
-  
-        <div my-great-footer class="copyright site-footer--copyright" ng-app="myApp">
-          <!-- &copy;2015 - <strong>Light Theme</strong> -->
+    
+          <div class="site-footer--contact-button">
+              <a
+                href="#"
+                class="btn btn--orange open-modal open-modal-footer"
+                title="Let's Do This!"
+                >contact Cindy</a
+              >
+          </div>
+    
+          <div my-great-footer class="copyright site-footer--copyright" ng-app="myApp">
+            <!-- &copy;2015 - <strong>Light Theme</strong> -->
+          </div>
         </div>
       </div>
+      
       
 
       

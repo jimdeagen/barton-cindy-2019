@@ -1,6 +1,6 @@
 .copyright {
   line-height: 1rem;
-  color: lightblue;
+  color: rgba(lightblue, 0.8);
 
   & p {
     font-size: 1.2rem;

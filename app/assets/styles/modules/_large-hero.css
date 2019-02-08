@@ -8,8 +8,8 @@
   &__image {
     display: block;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &__wrapper {

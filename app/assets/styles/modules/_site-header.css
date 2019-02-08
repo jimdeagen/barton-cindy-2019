@@ -34,21 +34,21 @@
   }
 
   &__logo {
+    display: block;
     position: relative;
-    float: left;
     /* width: 100vw; */
     transform: translateX(0) scale(1.4 0.9);
-    transition: transform 0.3s ease-out;
-    transform-origin: 0 0;
+    transition: transform 0.4s ease-out;
+    transform-origin: -1.7rem -1.3rem;
     background-color: $logo;
     padding: 12px 36px 8px 16px;
 
     @mixin 800plus {
       opacity: 1;
       left: 0;
-      transform: scale(1.5);
+      transform: scale(2);
 
-      padding: 18px 36px 23px 36px;
+      padding: 8px 36px 9px 36px;
 
       .site-header--dark & {
         transform: scale(1);
@@ -67,11 +67,12 @@
     font-family: "Play", "Open Sans", sans-serif;
     font-weight: 300;
     display: inline-block;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     max-width: 320px;
     text-align: center;
     height: auto;
     color: white;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.8);
   }
 
   &__menu-icon {
@@ -137,6 +138,7 @@
   }
 
   &__menu-content {
+    display: inline-block;
     opacity: 0;
     transform: scale(1.3);
     transition: all 0.3s ease-out;
@@ -144,8 +146,11 @@
     z-index: -10;
     padding-top: 55px;
     text-align: center;
+    width: 100vw;
 
     @mixin 1200plus {
+      grid-column: 3/4;
+      grid-row: 1;
       opacity: 1;
       z-index: 1;
       padding-top: 0;
@@ -164,11 +169,19 @@
     overflow: visible;
     padding-left: 0;
     padding-right: 0;
+
+    @mixin 800plus {
+      display: grid;
+      grid-template-columns: 200px 200px 1fr;
+      grid-template-rows: 1fr;
+      justify-items: center;
+    }
   }
 
   & ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     @mixin 800plus {

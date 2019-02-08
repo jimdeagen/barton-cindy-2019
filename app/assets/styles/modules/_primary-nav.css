@@ -1,25 +1,7 @@
 .primary-nav {
-  padding-top: 10px;
-
-  @mixin atSmall {
-    padding-top: 0;
-  }
-  @mixin atMedium {
-    padding-top: 0;
-
-    @mixin atXLarge {
-      padding-top: 0;
-    }
-  }
-
-  &--pull-right {
-    @mixin atMedium {
-      float: right;
-    }
-    @mixin atTabLand {
-      float: none;
-    }
-  }
+  display: block;
+  width: 100%;
+  padding-top: 0;
 
   ul {
     margin: 0;
@@ -31,21 +13,25 @@
     list-style: none;
     padding-right: 0px;
     display: inline-block;
+    padding-bottom: 2rem;
     font-size: 1.4rem;
 
-    @mixin atMedium {
+    @mixin 800plus {
       font-size: 1.4rem;
       float: left;
       display: block;
       padding-right: 20px;
+      padding-bottom: 0;
     }
   }
 
   li:last-child {
     padding-right: 0;
+    padding-bottom: 8rem;
 
-    @mixin atMedium {
+    @mixin 800plus {
       padding-right: 20px;
+      padding-bottom: 0;
     }
   }
 
@@ -63,45 +49,34 @@
       color: #fabb69;
       text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
     }
+  }
 
-    @mixin atXSmall {
-      padding: 3px 8px;
-    }
+  a:hover {
+    color: slategray;
+    animation: link-anim 2s infinite;
+  }
 
-    @mixin atLarge {
-      font-size: 1.8rem;
-    }
-
-    @mixin atXLarge {
-      padding: 1px 8px;
-    }
-
-    @mixin atMax1200 {
-      padding: 2px 8px;
-    }
-
-    @mixin atMax450 {
-      padding: 4.2px 8px;
-    }
-
-    @mixin atTabLand {
+  @-webkit-keyframes link-anim {
+    0% {
       font-size: 1.6rem;
-      padding: 12px;
-      margin-top: 0;
-      margin-bottom: 0;
-
-      &.is-current-link {
-        color: #fabb69;
-      }
     }
-
-    @mixin atXSmall {
-      padding: 6px 8px;
+    60% {
+      font-size: 3.2rem;
     }
+    100% {
+      font-size: 1.6rem;
+    }
+  }
 
-    @mixin atIpadProTargetPort {
-      padding: 0 12px;
-      margin-top: -6px;
+  @keyframes link-anim {
+    0% {
+      font-size: 1.6rem;
+    }
+    60% {
+      font-size: 3.2rem;
+    }
+    100% {
+      font-size: 1.6rem;
     }
   }
 }
