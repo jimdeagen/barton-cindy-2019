@@ -3,35 +3,19 @@
   padding: 0 18px 1px 18px;
   margin-bottom: 98px;
 
-  @mixin atSmall {
+  @mixin 530plus {
     padding: 0 2.4rem 1px 2.4rem;
     margin-bottom: 130px;
   }
 
-  @mixin atLarge {
+  @mixin 800plus {
     padding: 0 2.9rem 1px 2.9rem;
     margin-bottom: 0;
   }
 
-  @mixin atLarge {
-    padding: 0 2.9rem 1px 2.9rem;
-    margin-bottom: 0;
-  }
-
-  @mixin atXLarge {
+  @mixin 1200plus {
     padding: 0 0 1px 0;
     margin-bottom: 0;
-  }
-
-  @mixin atTabLand {
-    padding: 0 6.4rem 1px 6.4rem;
-    height: auto;
-    margin-bottom: 130px;
-  }
-
-  @mixin atSmallLand {
-    height: auto;
-    padding: 0 0.4rem 1px 0.4rem;
   }
 
   &__photo {
@@ -65,7 +49,7 @@
   &--last {
     margin-bottom: 40px;
 
-    @mixin atSmall {
+    @mixin 530plus {
       margin-bottom: 0;
     }
   }
@@ -73,23 +57,28 @@
   & p {
     padding: 0 1.6rem;
 
-    @mixin atSmall {
+    @mixin 530plus {
       padding: 0 1.6rem 3.2rem 1.6rem;
       font-size: 1.8rem;
     }
 
-    @mixin atLarge {
+    @mixin 800plus {
       padding: 0;
-    }
-
-    @mixin atTabLand {
-      font-size: 1.6rem;
     }
   }
 
   &.reveal-item {
-    @mixin atSmallLand {
+    @mixin 530plus {
       margin-top: 100px;
+    }
+  }
+
+  &--dyk {
+    background-color: $mainBlue;
+    color: $liteGray;
+
+    & h3 {
+      color: $liteMediumGray;
     }
   }
 }

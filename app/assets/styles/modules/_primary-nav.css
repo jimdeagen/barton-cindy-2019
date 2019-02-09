@@ -50,33 +50,4 @@
       text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
     }
   }
-
-  a:hover {
-    color: slategray;
-    animation: link-anim 2s infinite;
-  }
-
-  @-webkit-keyframes link-anim {
-    0% {
-      font-size: 1.6rem;
-    }
-    60% {
-      font-size: 3.2rem;
-    }
-    100% {
-      font-size: 1.6rem;
-    }
-  }
-
-  @keyframes link-anim {
-    0% {
-      font-size: 1.6rem;
-    }
-    60% {
-      font-size: 3.2rem;
-    }
-    100% {
-      font-size: 1.6rem;
-    }
-  }
 }

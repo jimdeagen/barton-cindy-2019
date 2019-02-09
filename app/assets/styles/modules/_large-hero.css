@@ -28,9 +28,9 @@
 
     @mixin 400plus {
       padding: 3rem 3rem;
-      top: 10%;
-      left: 40px;
-      width: 45%;
+      top: 16%;
+      left: 10px;
+      width: 55%;
     }
 
     @mixin 530plus {
@@ -132,16 +132,19 @@
 
     &-local {
       color: $mainBlue;
-      margin-top: 3rem;
-      font-size: 1.2rem;
+      text-align: center;
+      margin: 1rem auto;
+      font-size: 1.5rem;
       /* background-color: rgba(122, 128, 144, 0.7); */
       background-color: rgba(196, 189, 180, 0.3);
+      background-color: rgba(255, 255, 255, 0.5);
       padding: 0.6rem 3rem;
       border-radius: 4px;
-      width: 100%;
+      width: 90%;
       /* text-shadow: 1px 1px 1px Rgba(0, 0, 0, 0.5); */
       @mixin 1200plus {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        width: 70%;
       }
     }
   }

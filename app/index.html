@@ -57,7 +57,7 @@
               <li>
                 <a href="#about-cindy" id="about-cindy-link">About Cindy</a>
               </li>
-              <li><a href="#" class="btn open-modal btn--orange">contact Cindy</a></li>
+              <li><a href="#" class="btn open-modal btn--orange btn-hover">contact Cindy</a></li>
             </ul>
             
           </nav>
@@ -117,17 +117,17 @@
           <p class="large-hero__description">
             Does your student struggle with reading or spelling?
           </p>
-          <p class="large-hero__description large-hero__description-local">
-            Serving Granite Bay / Roseville / Folsom<br />
-            area in California.<br />Ask about remote online options!
-          </p>
+          
         </div>
+        <p class="large-hero__description large-hero__description-local">
+          Serving Granite Bay / Roseville / Folsom area in California. Ask about remote online options!
+        </p>
       </div>
     </div>
 
     <div class="large-hero__sub-section">
       <p class="large-hero__p-button">
-        <a href="#screening" class="btn btn--orange btn--large"
+        <a href="#screening" class="btn btn--orange btn-hover btn--large"
           >Schedule a Free Barton Screening</a
         >
       </p>
@@ -137,12 +137,6 @@
         alt="barton certified"
       />
     </div>
-
-    <div
-      id="about-barton2"
-      class="page-section about-barton-section"
-      data-matching-link="#about-barton-link2"
-    ></div>
 
     <div class="wrapper lone-quote__section">
       <h2
@@ -408,6 +402,9 @@
             alt="icon - quote bubble"
           />
           <h2 class="headline">Real <strong>Achievers</strong></h2>
+          <p>
+            Your son or daughter faces challenges that many others have overcome. This experience is shared with many high achievers. Here are a few:
+          </p>
         </div>
 
         <div class="flexbox">
@@ -471,6 +468,42 @@
             </p>
           </div>
 
+          <div class="testimonial">
+            <div class="testimonial__photo">
+              <img
+                sizes="160px"
+                srcset="
+                  assets/images/leno_160x160.jpg 160w,
+                  assets/images/leno_320x320.jpg 320w
+                "
+                alt="Jay Leno"
+              />
+            </div>
+            <h3 class="testimonial__title">Jay Leno</h3>
+            <h4 class="testimonial__subtitle">Comedian</h4>
+            <p>
+              &ldquo;I discovered that being a little bit different actually sets you aside in show business; it makes you special.<br>You always try to turn your negative into a positve.&rdquo;
+            </p>
+          </div>
+
+          <div class="testimonial testimonial--dyk">
+            <div class="testimonial__photo">
+              <img
+                sizes="160px"
+                srcset="
+                  assets/images/magic-johnson_160x160.jpg 160w,
+                  assets/images/magic-johnson_320x320.jpg 320w
+                "
+                alt="Earvin 'Magic' Johnson"
+              />
+            </div>
+            <h3 class="testimonial__title">Did You Know?</h3>
+            <h4 class="testimonial__subtitle">NBA Hall of Fame</h4>
+            <p>
+              Three of the six "Shark Tank" Sharks &mdash; Daymond John, Barbara Corcoran, and Kevin O'Leary &mdash; are dyslexic.
+            </p>
+          </div>
+
           <div class="testimonial testimonial--last">
             <div class="testimonial__photo">
               <img
@@ -509,132 +542,128 @@
           />
           <h2 class="headline">Barton Screening</h2>
         </div>
-
-        <div>
-          <p class="">A Barton student must:</p>
-          <ul class="screening__list">
-            <li>be at least 5 years old and in kindergarten.</li>
-            <li>speak and comprehend spoken English.</li>
-            <li>have an IQ of 70 or higher.</li>
-            <li>
-              struggle with spelling when writing stories, and cannot easily
-              sound out unknown words when reading.
-            </li>
-            <li>pass our 10-minute student screening.</li>
-          </ul>
-          <p class="screening__permission">
-            (This list reprinted with prior permission from Susan Barton)
-          </p>
-        </div>
-
-        <div class="screening__form-section">
-          <div class="screening__form-section--form">
-            <h2 class="screening__form-title">Schedule Your Screening</h2>
-            <!--  <p class="formParagraph">Please provide your contact information. I will get in touch soon to schedule your screening! <br><br>If you have a preferred method of contact or preferred contact hours, please mention in the "message" area.<br><br><em>We will not sell or share your contact information.</em></p> -->
-            <p class="">
-              The Barton Reading and Spelling System&reg; screening will
-              determine if the student has sufficient auditory and phonemic
-              awareness skills necessary to begin Barton tutoring.
+        <div class="screening--wrap">
+          <div class="screening--reqs">
+            <p class="screening--list-header">A Barton student must:</p>
+            <ul class="screening__list">
+              <li>be at least 5 years old and in kindergarten.</li>
+              <li>speak and comprehend spoken English.</li>
+              <li>have an IQ of 70 or higher.</li>
+              <li>
+                struggle with spelling when writing stories, and cannot easily
+                sound out unknown words when reading.
+              </li>
+              <li>pass our 10-minute student screening.</li>
+            </ul>
+            <p class="screening__permission">
+              (This list reprinted with prior permission from Susan Barton)
             </p>
-            <!-- <ul class="contact-list list-indent">
-                            <li></li>
-                        </ul> -->
-            <form
-              name="contactform"
-              action="assets/scripts/mailform.php"
-              method="post"
-              id="form"
-            >
-              <input type="hidden" name="redirect" value="thankyou.php" />
-              <label>name</label>
-              <br />
-              <input
-                class="screening__form--input"
-                type="text"
-                name="name"
-                id="name"
-              />
-              <br />
-              <!-- <label>address</label>
-                      <br>
-                      <input class="screening__form--input" type="text" name="address" id="address" placeholder="street address">
-                      <br> -->
-              <label>city</label>
-              <br />
-              <input
-                class="screening__form--input"
-                type="text"
-                name="city"
-                id="city"
-              />
-              <br />
-              <label>phone</label>
-              <br />
-              <input
-                class="screening__form--input"
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Include area code"
-              />
-              <br />
-              <label>email</label>
-              <br />
-              <input
-                class="screening__form--input"
-                type="email"
-                name="email"
-                id="email"
-                required
-              />
-              <br />
-              <div class="">
-                <!-- <label>child's first name</label>
-                        <br>
-                        <input class="screening__form--input" type="text" name="childname" id="childname">
-                        <br> -->
-                <label>child's age (5 - 18/adult)</label>
-                <br />
-                <select class="screening__form--input" name="age" size="3">
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                  <option value="13">13</option>
-                  <option value="14">14</option>
-                  <option value="15">15</option>
-                  <option value="16">16</option>
-                  <option value="17">17</option>
-                  <option value="adult">18 / adult</option>
-                </select>
-
-                <!-- <label>child's grade-level (K - 12)</label>&nbsp;&nbsp;
-                        <span id="slider-value-grade">select</span>
-                        <br>
-                        <input type="range" name="grade" id="grade" min="0" max="12" value="4" onchange="show_value_grade(this.value);">
-                        <br> -->
-              </div>
-              <label
-                >Briefly tell me of your child's challenges with reading or
-                spelling.</label
-              >
-              <br />
-              <textarea
-                class="screening__form--input"
-                name="message"
-                placeholder="Place message or comments here"
-                id="message"
-              ></textarea>
-              <br />
-
-              <input type="submit" id="submit" value="submit request" />
-            </form>
           </div>
-          <div class="screening__form-section--image">
+  
+          <div class="screening__form-section">
+            <div class="screening__form-section--form">
+              <h2 class="screening__form-title">Schedule Your Screening</h2>
+              <p class="">
+                The Barton Reading and Spelling System&reg; screening will
+                determine if the student has sufficient auditory and phonemic
+                awareness skills necessary to begin Barton tutoring.
+              </p>
+              <form
+                name="contactform"
+                action="assets/scripts/mailform.php"
+                method="post"
+                id="form"
+                class="screening__form--inputs"
+              >
+              
+                <input type="hidden" name="redirect" value="thankyou.php" />
+                <div class="input-name">
+                  <label>name</label>
+                  <br>
+                  <input
+                    class="screening__form--input"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                
+                <div class="input-city">
+                  <label>city</label>
+                  <br>
+                  <input
+                    class="screening__form--input"
+                    type="text"
+                    name="city"
+                    id="city"
+                  />
+                </div>
+                
+                <div class="input-phone">
+                  <label>phone</label>
+                  <br>
+                <input
+                  class="screening__form--input"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Include area code"
+                />
+                </div>
+
+                <div class="input-email">
+                  <label>email</label>
+                  <br>
+                  <input
+                    class="screening__form--input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="input-age">
+                  <label>child's age<br>(5 - 18/adult)</label>
+                  <br>
+                  <select class="screening__form--input" name="age" size="3">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="adult">18 / adult</option>
+                  </select>
+                </div>
+
+                <div class="input-message input-submit">
+                  <label
+                  >Briefly tell me of your child's challenges with reading or
+                  spelling.</label
+                >
+                <br>
+                <textarea
+                  class="screening__form--input"
+                  name="message"
+                  placeholder="Place message or comments here"
+                  id="message"
+                ></textarea>
+                </div>
+                
+  
+                <input type="submit" id="submit" class="form-submit" value="submit request" />
+              </form>
+            </div>
+            
+          </div>
+          <div class="screening__image">
             <picture>
               <source
                 srcset="assets/images/kidsAtTable_550.jpg, assets/images/kidsAtTable_550.jpg"
@@ -645,13 +674,16 @@
                 media="(min-width: 800px)"
               />
               <img
-                class="row--image"
+                class=""
                 srcset="assets/images/kidsAtTable_550.jpg 500w"
                 alt="kids sitting around table"
               />
             </picture>
           </div>
         </div>
+
+
+        
       </div>
     </div>
 
@@ -847,7 +879,7 @@
           <div class="site-footer--contact-button">
               <a
                 href="#"
-                class="btn btn--orange open-modal open-modal-footer"
+                class="btn btn--orange btn-hover open-modal open-modal-footer"
                 title="Let's Do This!"
                 >contact Cindy</a
               >

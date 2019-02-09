@@ -1,9 +1,5 @@
-.going-forward {
-  border: 4px solid purple;
-}
-
-.site-footer {
-  border: 2px solid red;
+.large-hero__text-content {
+  border: 1px solid purple;
 }
 
 .site-header {
@@ -12,4 +8,32 @@
 
 .site-header__wrapper {
   border: 1px solid blue;
+}
+
+.screening--wrap {
+  background-color: #dde;
+}
+
+.screening--reqs {
+  border: 1px solid red;
+}
+
+.screening__form-section {
+  border: 1px solid green;
+}
+
+.screening__image {
+  border: 1px solid purple;
+}
+
+.screening__form--inputs {
+  border: 1px solid cyan;
+}
+
+.going-forward {
+  border: 4px solid purple;
+}
+
+.site-footer {
+  border: 2px solid red;
 }
