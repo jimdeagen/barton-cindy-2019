@@ -43,16 +43,6 @@
 
   &__form--inputs {
     padding-left: 3rem;
-    @mixin 800plus {
-      /* display: grid; */
-      grid-template-columns: 25% 25% 50%;
-      grid-template-rows: 80px 80px 80px 80px;
-      grid-template:
-        "name" . "email"
-        "city" . "phone"
-        "age" . "message"
-        "submit" "submit" "submit";
-    }
   }
 
   &__t-padding {

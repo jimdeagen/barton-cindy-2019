@@ -10,6 +10,21 @@
     color: white;
   }
 
+  &--tan {
+    background-color: $mainTan;
+    /* color: white; */
+  }
+
+  &--lite-tan {
+    background-color: $liteTan;
+    /* color: white; */
+  }
+
+  &--outline {
+    border-top: 4px solid $mainBlue;
+    border-bottom: 4px solid $mainBlue;
+  }
+
   &--testimonials {
     background-color: #e0e6ef;
 

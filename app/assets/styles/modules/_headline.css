@@ -24,6 +24,12 @@
     text-align: center;
   }
 
+  &--push-up {
+    position: relative;
+    top: -1rem;
+    padding-left: 1rem;
+  }
+
   &__sub {
     font-size: 3rem;
 
@@ -51,12 +57,14 @@
     display: block;
     font-size: 1.6rem;
     font-weight: 200;
-    text-align: right;
+    text-align: center;
     padding-right: 2rem;
     padding-bottom: 5rem;
     color: $mainBlue;
-    margin-top: 1rem;
+    /* margin-top: 1rem;
     border-bottom: 1px solid $mainBlue;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
   }
 
   &--top-margin {

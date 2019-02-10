@@ -1,0 +1,6 @@
+.picture {
+  display: inline-block;
+
+  &--cover {
+  }
+}

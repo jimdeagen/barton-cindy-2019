@@ -3,7 +3,7 @@
   border-bottom: 5px solid $mainBlue;
   margin-top: 0;
   height: auto;
-  background-color: #c4bdb4;
+  background-color: $mainTan;
 
   &__image {
     display: block;
@@ -152,8 +152,11 @@
   &__sub-section {
     display: block;
     width: 100vw;
+    background-color: rgba($liteTan, 0.75);
     border-bottom: 5px solid $mainBlue;
     padding: 5.125rem 0 6.8rem 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   &__p-button {

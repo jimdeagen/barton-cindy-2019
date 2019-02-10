@@ -10,6 +10,19 @@
     margin-bottom: 8rem;
   }
 
+  & p {
+    margin-top: 1rem;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @mixin 800plus {
+      max-width: 60%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   &__icon {
     display: inline;
     width: 6rem;

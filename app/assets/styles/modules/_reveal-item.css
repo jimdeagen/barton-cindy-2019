@@ -20,7 +20,7 @@
   }
 
   @mixin 1200plus {
-    margin-top: 100px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     min-width: 30%;
