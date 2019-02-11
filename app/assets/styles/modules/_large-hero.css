@@ -1,9 +1,10 @@
 .large-hero {
   position: relative;
-  border-bottom: 5px solid $mainBlue;
+  /* border-bottom: 5px solid $mainBlue; */
+  border-bottom: 0px solid $mainBlue;
   margin-top: 0;
   height: auto;
-  background-color: $mainTan;
+  background: radial-gradient(circle, white, $mainTan);
 
   &__image {
     display: block;
@@ -153,6 +154,8 @@
     display: block;
     width: 100vw;
     background-color: rgba($liteTan, 0.75);
+
+    background: radial-gradient(circle, white, $mainTan);
     border-bottom: 5px solid $mainBlue;
     padding: 5.125rem 0 6.8rem 0;
     border-bottom-left-radius: 0;

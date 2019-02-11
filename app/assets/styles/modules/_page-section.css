@@ -20,6 +20,18 @@
     /* color: white; */
   }
 
+  &--gradient-tan {
+    background: radial-gradient(circle, white, $mainTan);
+    /* color: white; */
+  }
+
+  &--gradient-tan-mix {
+    background: radial-gradient(circle, $liteGray, $liteMediumGray);
+    @mixin 800plus {
+      background: radial-gradient(circle, $liteGray, $liteMediumGray);
+    }
+  }
+
   &--outline {
     border-top: 4px solid $mainBlue;
     border-bottom: 4px solid $mainBlue;

@@ -1,7 +1,7 @@
 .headline {
   display: inline;
   font-weight: 300;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: $mainBlue;
   width: 96%;
   margin: 0 0 60px;
@@ -31,7 +31,7 @@
   }
 
   &__sub {
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     @mixin 800plus {
       font-size: 3.8rem;

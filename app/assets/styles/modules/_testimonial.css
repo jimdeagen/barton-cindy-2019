@@ -2,6 +2,13 @@
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0 18px 1px 18px;
   margin-bottom: 98px;
+  min-width: 100%;
+  max-width: 100%;
+
+  @mixin 1200plus {
+    min-width: 30%;
+    max-width: 30%;
+  }
 
   @mixin 530plus {
     padding: 0 2.4rem 1px 2.4rem;
