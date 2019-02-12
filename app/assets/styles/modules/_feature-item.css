@@ -17,6 +17,25 @@
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
   min-width: 100%;
   max-width: 100%;
+  transform: scale(1);
+  transition: all 0.3s ease-out !important;
+
+  @mixin 800plus {
+    &:hover {
+      animation: rotate 0.5 forward;
+      transform: rotate(1deg);
+      animation-direction: alternate;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(1deg) scale(1);
+    }
+    100% {
+      transform: rotate(0deg) scale(1.2);
+    }
+  }
 
   @mixin 1200plus {
     min-width: 45%;
@@ -33,7 +52,7 @@
     width: 100%;
     text-align: center;
     border: 1px solid $mainTan;
-    outline: 1px dashed $mainTan;
+    /* outline: 1px dashed $mainTan; */
     outline-offset: -4px;
     /* border-left: 1px solid transparent; */
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
@@ -81,14 +100,16 @@
   }
 
   &__list {
-    padding-top: 10px;
+    position: relative;
+    top: -3rem;
+    padding-top: 3rem;
     width: 94%;
     margin-left: auto;
     margin-right: 40px;
     list-style: square outside none;
+    border-top: 1px dashed rgba(0, 0, 0, 0.17);
 
     @mixin 1200plus {
-      padding-top: 0;
       padding-right: 4rem;
       width: 100%;
       margin-left: auto;
