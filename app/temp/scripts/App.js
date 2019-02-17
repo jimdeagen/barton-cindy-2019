@@ -11227,8 +11227,8 @@ var _Modal2 = _interopRequireDefault(_Modal);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
-new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "85%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "65%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "65%");
 var stickyHeader = new _StickyHeader2.default();
 var modal = new _Modal2.default();
 

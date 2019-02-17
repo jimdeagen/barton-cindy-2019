@@ -51,6 +51,8 @@
   }
 
   &__section-p {
+    display: block;
+    width: 100%;
     font-size: 1.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -80,6 +82,30 @@
 
     @mixin 800plus {
       flex-direction: row;
+    }
+
+    &--slidein {
+      color: $baseGray;
+      padding: 2rem 4rem;
+      width: 94%;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      margin-top: -3.1rem;
+      background: radial-gradient(white, white, $liteGray, $liteGray, #ececec);
+      border-top: 0 solid transparent;
+      border-right: 1px solid $liteGray;
+      border-bottom: 1px solid $liteGray;
+      border-left: 1px solid $liteGray;
+
+      & li {
+        margin-bottom: 2rem;
+
+        @mixin 800plus {
+          width: 80%;
+          margin: 2rem auto;
+        }
+      }
     }
   }
 }

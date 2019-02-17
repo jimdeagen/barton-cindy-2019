@@ -29,7 +29,13 @@
   &--gradient-tan-mix {
     background: radial-gradient(circle, $liteGray, $liteMediumGray);
     @mixin 800plus {
-      background: radial-gradient(circle, $liteGray, $liteMediumGray);
+      background: radial-gradient(
+        circle,
+        white,
+        white,
+        $liteGray,
+        $liteMediumGray
+      );
     }
   }
 

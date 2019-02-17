@@ -548,6 +548,7 @@ picture {
     width: 56%;
     text-align: center;
     height: auto;
+    border-radius: 0.8rem;
   }
 
 @media (min-width: 400px) {
@@ -631,12 +632,15 @@ picture {
 .large-hero__subtitle {
     font-weight: 300;
     color: #2f5572;
+    color: white;
     font-size: 1.4rem;
     margin: 0 0 20px 0;
     max-width: 100%;
     padding: 1rem 0;
     border-top: 1px solid #2f5572;
     border-bottom: 1px solid #2f5572;
+    background: #2f5572;
+    border-radius: 6px;
   }
 
 @media (min-width: 530px) {
@@ -898,7 +902,13 @@ picture {
 @media (min-width: 800px) {
 
 .page-section--gradient-tan-mix {
-      background: radial-gradient(circle, #fafafa, #dadada)
+      background: radial-gradient(
+        circle,
+        white,
+        white,
+        #fafafa,
+        #dadada
+      )
   }
   }
 
@@ -1133,8 +1143,8 @@ picture {
   max-width: 100%;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 0.3s ease-out !important;
-  transition: all 0.3s ease-out !important;
+  -webkit-transition: all 0.4s ease-out !important;
+  transition: all 0.4s ease-out !important;
 
   @-webkit-keyframes rotate {
     0% {
@@ -2305,7 +2315,7 @@ option {
 @media (min-width: 800px) {
 
 .about-cindy-section {
-    padding-bottom: 0
+    padding-bottom: 6rem
 }
 
     .about-cindy-section--grid {
@@ -2642,6 +2652,8 @@ option {
   }
 
 .badge__section-p {
+    display: block;
+    width: 100%;
     font-size: 1.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2688,6 +2700,33 @@ option {
           -ms-flex-direction: row;
               flex-direction: row
   }
+  }
+
+.badge--wrap--slidein {
+      color: #393939;
+      padding: 2rem 4rem;
+      width: 94%;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      margin-top: -3.1rem;
+      background: radial-gradient(white, white, #fafafa, #fafafa, #ececec);
+      border-top: 0 solid transparent;
+      border-right: 1px solid #fafafa;
+      border-bottom: 1px solid #fafafa;
+      border-left: 1px solid #fafafa;
+    }
+
+.badge--wrap--slidein li {
+        margin-bottom: 2rem;
+      }
+
+@media (min-width: 800px) {
+
+.badge--wrap--slidein li {
+          width: 80%;
+          margin: 2rem auto
+      }
   }
 
 .going-forward {

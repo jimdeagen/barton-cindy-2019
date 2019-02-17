@@ -26,6 +26,7 @@
     width: 56%;
     text-align: center;
     height: auto;
+    border-radius: 0.8rem;
 
     @mixin 400plus {
       padding: 3rem 3rem;
@@ -87,12 +88,15 @@
   &__subtitle {
     font-weight: 300;
     color: $mainBlue;
+    color: white;
     font-size: 1.4rem;
     margin: 0 0 20px 0;
     max-width: 100%;
     padding: 1rem 0;
     border-top: 1px solid $mainBlue;
     border-bottom: 1px solid $mainBlue;
+    background: $mainBlue;
+    border-radius: 6px;
 
     @mixin 530plus {
       font-size: 1.8rem;

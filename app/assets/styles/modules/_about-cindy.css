@@ -10,7 +10,7 @@
   }
 
   @mixin 800plus {
-    padding-bottom: 0;
+    padding-bottom: 6rem;
 
     &--grid {
       display: grid;
