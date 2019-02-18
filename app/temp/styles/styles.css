@@ -637,8 +637,6 @@ picture {
     margin: 0 0 20px 0;
     max-width: 100%;
     padding: 1rem 0;
-    border-top: 1px solid #2f5572;
-    border-bottom: 1px solid #2f5572;
     background: #2f5572;
     border-radius: 6px;
   }
@@ -664,6 +662,7 @@ picture {
     padding: 0.8rem 0;
     font-size: 1.2rem;
     font-weight: 100;
+    line-height: 1.8rem;
     max-width: 100%;
     margin: 0;
   }
@@ -680,7 +679,8 @@ picture {
 .large-hero__description {
       font-size: 1.7rem;
       width: 80%;
-      margin: 0 auto
+      margin: 0 auto;
+      line-height: 3.5rem
   }
   }
 
