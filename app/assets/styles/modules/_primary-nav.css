@@ -47,7 +47,7 @@
 
     &.is-current-link {
       color: #fabb69;
-      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
+      text-shadow: 1px 1px 0 rgba($mainBlue, 0.65);
     }
   }
 }
