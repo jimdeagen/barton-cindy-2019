@@ -2710,15 +2710,17 @@ option {
       margin-left: auto;
       position: relative;
       margin-top: -3.1rem;
-      background: radial-gradient(white, white, #fafafa, #fafafa, #ececec);
+      /* background: radial-gradient(white, white, $liteGray, $liteGray, #ececec); */
       border-top: 0 solid transparent;
-      border-right: 1px solid #fafafa;
-      border-bottom: 1px solid #fafafa;
-      border-left: 1px solid #fafafa;
+      border-right: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      border-left: 1px solid #dadada;
+      border-radius: 0 0 8px 8px;
     }
 
 .badge--wrap--slidein li {
         margin-bottom: 2rem;
+        line-height: 2.4rem;
       }
 
 @media (min-width: 800px) {
