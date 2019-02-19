@@ -1258,11 +1258,12 @@ picture {
   }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
 
 .feature-item__icon {
       display: inline;
-      width: 50px
+      width: 44px;
+      top: 0
   }
   }
 
@@ -1329,7 +1330,7 @@ picture {
     }
 
 .feature-item__list li {
-    width: 70%;
+    width: 85%;
     margin: 1.5rem auto;
     color: #262626;
     font-size: 1.6rem;
@@ -2819,6 +2820,7 @@ option {
 
 .badge--wrap--slidein li a:hover {
             background-color: #fafafa;
+            color: #d59541;
           }
 
 @media (min-width: 800px) {

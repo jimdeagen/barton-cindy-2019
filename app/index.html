@@ -243,7 +243,7 @@
                       Folsom.<br>Please <a href="#" class="open-modal">contact me</a> if
                       you think I may be able to help your loved one.
                   </p>
-                  <img src="assets/images/CindyWithArt_100-i.jpg" alt="Cindy" title="Cindy" class="about-barton-section--local-market--image">
+                  <img src="assets/images/CindyWithArt_100.jpg" alt="Cindy" title="Cindy" class="about-barton-section--local-market--image">
                 </div>
               </div>
           </div>
@@ -588,13 +588,13 @@
               
               <form
                 name="contactform"
-                action="assets/scripts/mailform.php"
+                action="./mailform.php"
                 method="post"
                 id="form"
                 class="screening__form--inputs"
               >
               
-                <input type="hidden" name="redirect" value="thankyou.php" />
+                <input type="hidden" name="redirect" value="thankyou.html" />
                 <div class="input-name">
                   <label>name</label>
                   <br>
@@ -944,7 +944,7 @@
       
     </footer>
 
-    <div class="modal">
+    <div class="modal" id="contactme__modal">
       <div class="modal__inner">
         <h2
           class="section-title section-title--tan section-title--less-margin"
@@ -958,6 +958,35 @@
         <div class="wrapper wrapper--narrow">
           <p class="modal__description">
             <a href="mailto:bartonwithcindy@gmail.com?subject=We want to be better readers">Email me</a> or text me
+            at 925-487-4483
+          </p>
+
+          <p class="modal__description modal__description--last">
+            Please contact me with any questions to discuss or to schedule a screening.<br>The Barton screenings are
+            necessary to ensure your child is a good fit for the Barton Reading
+            and Spelling Program.
+          </p>
+        </div>
+      </div>
+
+      <div class="modal__close">X</div>
+    </div>
+
+    <div class="modal" id="thankyou__modal">
+      <div class="modal__inner">
+        <h2
+          class="section-title section-title--tan section-title--less-margin"
+        >
+          <img
+            class="section-title__icon modal__icon"
+            src="assets/images/icons/icon_quote-bubbles.png"
+          />Thank
+          <strong>You</strong>
+        </h2>
+        <div class="wrapper wrapper--narrow">
+            <p class="modal__description">Reply will come soon!</p>
+          <p class="modal__description">
+            <a href="mailto:bartonwithcindy@gmail.com?subject=We want to be better readers">Feel free to email me</a> or text me
             at 925-487-4483
           </p>
 

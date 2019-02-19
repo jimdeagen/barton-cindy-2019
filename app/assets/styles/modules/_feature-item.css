@@ -89,9 +89,10 @@
       margin: 0 0 0 3rem;
     }
 
-    @mixin 1200plus {
+    @mixin 800plus {
       display: inline;
-      width: 50px;
+      width: 44px;
+      top: 0;
     }
   }
 
@@ -151,7 +152,7 @@
   }
 
   &__list li {
-    width: 70%;
+    width: 85%;
     margin: 1.5rem auto;
     color: $deepGray;
     font-size: 1.6rem;

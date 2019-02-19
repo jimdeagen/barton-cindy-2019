@@ -122,6 +122,7 @@
 
           &:hover {
             background-color: $liteGray;
+            color: $mainOrange;
           }
 
           @mixin 800plus {
