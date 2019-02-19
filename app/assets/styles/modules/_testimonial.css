@@ -12,7 +12,7 @@
 
   @mixin 530plus {
     padding: 0 2.4rem 1px 2.4rem;
-    margin-bottom: 130px;
+    margin-bottom: 70px;
   }
 
   @mixin 800plus {

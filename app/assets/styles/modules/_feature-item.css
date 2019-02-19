@@ -1,5 +1,8 @@
 .flex-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-item {
@@ -7,6 +10,7 @@
   position: relative;
   top: 4rem;
   width: 100%;
+  flex-basis: 100%;
   margin: 0 auto;
   margin-bottom: 9rem;
   padding-left: 0;
@@ -15,12 +19,19 @@
   border: 1px solid rgba($mainTan, 0.5);
   background-color: khaki;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
-  min-width: 100%;
-  max-width: 100%;
+  // min-width: 100%;
+  // max-width: 100%;
   transform: scale(1);
   transition: all 0.4s ease-out !important;
 
+  @mixin 530plus {
+    background-color: pink;
+    flex-basis: 100%;
+  }
+
   @mixin 800plus {
+    background-color: #c2dfff;
+    width: 100%;
     &:hover {
       animation: rotate 0.5 forward;
       transform: rotate(1deg);
@@ -68,10 +79,15 @@
   &__icon {
     display: block;
     position: relative;
-    margin: 0 6rem 0 3rem;
+    top: 0.5rem;
+    margin: 0 0 0 1rem;
     margin-top: 0;
     width: 50px;
     z-index: 2;
+
+    @mixin 530plus {
+      margin: 0 0 0 3rem;
+    }
 
     @mixin 1200plus {
       display: inline;
@@ -91,6 +107,12 @@
     margin-bottom: 0;
     text-align: left;
 
+    @mixin 530plus {
+    }
+
+    @mixin 800plus {
+    }
+
     @mixin 1200plus {
       top: 0.4rem;
       padding-left: 1rem;
@@ -103,10 +125,11 @@
     position: relative;
     top: -3rem;
     padding-top: 3rem;
-    width: 94%;
+    width: 100%;
     margin-left: auto;
     margin-right: 40px;
-    list-style: square outside none;
+    list-style: none;
+    list-style-type: none;
     border-top: 1px dashed rgba(0, 0, 0, 0.17);
 
     @mixin 1200plus {
@@ -115,21 +138,34 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    & li::before {
+      content: "\2192";
+      color: rgba($mainBlue, 0.3);
+      font-weight: bold;
+      font-size: 2rem;
+      display: inline-block;
+      width: 3rem;
+      margin-left: -5rem;
+    }
   }
 
   &__list li {
+    width: 70%;
+    margin: 1.5rem auto;
     color: $deepGray;
     font-size: 1.6rem;
     line-height: 1.65;
     font-weight: 200;
     letter-spacing: 0.16rem;
-    margin-bottom: 1.5rem;
+    // margin-bottom: 1.5rem;
     padding-left: 2rem;
     padding-bottom: 1.2rem;
-    margin-left: 2rem;
+    // margin-left: 2rem;
     border-bottom: 1px solid rgba(#778899, 0.15);
 
     & ul li {
+      list-style-type: none;
       border-bottom: 1px solid transparent;
     }
   }

@@ -120,6 +120,13 @@
       font-size: 1.5rem;
     }
 
+    @mixin 530plus {
+      max-width: 80%;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      margin: 0 auto;
+    }
+
     @mixin 800plus {
       font-size: 1.7rem;
       width: 80%;
@@ -146,7 +153,12 @@
       padding: 0.6rem 3rem;
       border-radius: 4px;
       width: 90%;
-      /* text-shadow: 1px 1px 1px Rgba(0, 0, 0, 0.5); */
+
+      @mixin 530plus {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+
       @mixin 1200plus {
         font-size: 1.8rem;
         width: 70%;

@@ -1,7 +1,7 @@
 .blockquote__paragraph {
   color: white;
   background-color: $mainBlue;
-  padding: 4.5rem 9.5rem;
+  padding: 4.5rem 5.5rem 5.5rem 5.5rem;
 
   @mixin 530plus {
     padding: 3.5rem 4.5rem 3.8rem 7rem;

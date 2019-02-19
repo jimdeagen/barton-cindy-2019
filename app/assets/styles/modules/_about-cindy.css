@@ -4,6 +4,13 @@
     display: grid;
   }
 
+  &--grid {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   &__image {
     justify-self: center;
     padding-bottom: 2rem;
@@ -53,22 +60,6 @@
       }
     }
   }
-
-  /* &__h2 {
-    @mixin 530plus {
-      margin: 0 0 4.8rem 7.72rem;
-      width: 100%;
-    }
-
-    @mixin 800plus {
-      margin: 0 0 4.8rem 0;
-    }
-
-    @mixin 1060plus {
-      margin: 0 0 4rem 0;
-      width: 100%;
-    }
-  } */
 }
 
 #about-cindy {

@@ -9,6 +9,10 @@
   width: 90%;
   background-color: #ffffff;
 
+  @mixin 530plus {
+    padding-bottom: 10rem;
+  }
+
   @mixin 800plus {
     border-bottom: 5rem solid $mainBlue;
     border-bottom-left-radius: 40%;
@@ -25,4 +29,8 @@
   background: url(../../../images/atf_background2.png), black;
   background-position-y: 200px;
   padding-bottom: 1px;
+
+  @mixin 530plus {
+    padding-bottom: 10rem;
+  }
 }
