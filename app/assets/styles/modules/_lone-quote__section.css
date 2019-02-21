@@ -15,18 +15,23 @@
 
   @mixin 800plus {
     border-bottom: 5rem solid $mainBlue;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
     margin-bottom: 6rem;
     padding-top: 15rem;
     width: 40%;
 
     box-shadow: 0 6px 2px rgba(0, 0, 0, 0.5);
   }
+
+  @mixin 800plusland {
+    padding-top: 2rem;
+    width: 70%;
+  }
 }
 
 .lone-quote {
-  background: url(../../../images/atf_background2.jpg), black;
+  background: url(../../assets/images/atf_background2.jpg), black;
   background-position-y: 200px;
   padding-bottom: 1px;
 

@@ -12,10 +12,10 @@
     border-left: 0 solid $liteMediumGray;
     padding: 1rem 2rem;
     margin-top: 6rem;
-    width: 72%;
+    width: 100%;
 
     @mixin 530plus {
-      width: 80%;
+      width: 100%;
     }
 
     @mixin 800plus {
@@ -27,6 +27,14 @@
       border-left: 0 solid $liteMediumGray;
       padding: 1rem 2rem;
       margin-top: 6rem;
+    }
+
+    @mixin 800plus {
+      width: 100%;
+    }
+
+    @mixin 1200plus {
+      text-align: right;
     }
   }
 
@@ -40,6 +48,13 @@
 
     @mixin 800plus {
       grid-template-columns: minmax(300px, 35%) 1fr;
+      grid-template-rows: auto auto 1fr;
+      grid-column-gap: 4rem;
+      grid-row-gap: 4rem;
+    }
+
+    @mixin 800plusland {
+      grid-template-columns: minmax(100px, 35%) 1fr;
       grid-template-rows: auto auto 1fr;
       grid-column-gap: 4rem;
       grid-row-gap: 4rem;
@@ -71,11 +86,34 @@
   }
 
   &--local-market {
-    display: block;
-    grid-template-columns: 65% 1fr 1fr;
+    /* background-color: pink; */
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1rem;
+
+    @mixin 400plus {
+      grid-template-columns: 2fr 1fr;
+      grid-column-gap: 0;
+      grid-row-gap: 0.5rem;
+    }
+
+    @mixin 530plus {
+      grid-template-columns: 4fr 1fr;
+      grid-column-gap: 4rem;
+      grid-row-gap: 4rem;
+    }
 
     @mixin 800plus {
-      grid-template-columns: auto 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @mixin 800plusland {
+      grid-template-columns: 4fr 1fr;
+    }
+
+    @mixin 1200plus {
+      grid-template-columns: 2fr 1fr;
     }
 
     &--image {
@@ -84,14 +122,26 @@
       border: 2px solid $liteMediumGray;
       border-radius: 8px;
       position: relative;
-      transform: translate(0, -10%);
+      transform: translate(0, 0%);
+
+      @mixin 400plus {
+        transform: translate(0, 65%);
+      }
 
       @mixin 530plus {
-        transform: translate(0, 10%);
+        transform: translate(0, 50%);
       }
 
       @mixin 800plus {
         transform: translate(0, 10%);
+      }
+
+      @mixin 800plusland {
+        transform: translate(0, 30%);
+      }
+
+      @mixin 1200plus {
+        transform: translate(-200%, 30%);
       }
     }
   }

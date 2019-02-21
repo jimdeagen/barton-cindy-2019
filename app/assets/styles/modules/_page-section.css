@@ -40,8 +40,8 @@
   }
 
   &--outline {
-    border-top: 4px solid $mainBlue;
-    border-bottom: 4px solid $mainBlue;
+    border-top: 1px solid $mainBlue;
+    border-bottom: 1px solid $mainBlue;
   }
 
   &--testimonials {

@@ -6,4 +6,8 @@
   @mixin 530plus {
     padding: 3.5rem 4.5rem 3.8rem 7rem;
   }
+
+  @mixin 800plusland {
+    padding: 5rem 4rem 8rem 4rem;
+  }
 }

@@ -19,12 +19,7 @@
     <link rel="stylesheet" href="temp/styles/styles.css" />
     <!-- endbuild -->
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
-    <style>
-      .lone-quote {
-        background: url(assets/images/atf_background2.png), black;
-      }
     
-    </style>
    
   </head>
 
@@ -77,43 +72,53 @@
 
     <div class="large-hero">
       <div class="wrapper__wide">
-          <picture>
-              <source
-                media="(max-width: 340px) and (orientation: portrait)"
-                srcset="assets/images/girlBackpack_400x400-i.jpg"
-              />
-    
-              <source
-                media="(min-width: 440px) and (orientation: portrait)"
-                srcset="assets/images/girlBackpack_600x600-i.jpg"
-              />
+        <picture>
+          <source
+            media="(max-width: 440px)"
+            srcset="assets/images/girlBackpack_440x440.jpg"
+          />
 
-              <!-- <source
-                media="(min-width: 530px)"
-                srcset="assets/images/girlBackpack_1036x758-i.jpg"
-              />
-    
-              <source
-                media="(min-width: 820px)"
-                srcset="assets/images/girlBackpack_1036x758-i.jpg"
-              /> -->
-    
-              <source
-                media="(min-width: 1200px)"
-                srcset="assets/images/girlBackpack_1400x760-i.jpg"
-              />
-    
-              <source
-                media="(min-width: 1600px)"
-                srcset="assets/images/girlBackpack_1400x760.jpg"
-              />
-    
-              <img
-                class="large-hero__image"
-                src="assets/images/girlBackpack_1400x760-i.jpg"
-                alt="school age girl with book back pack"
-              />
-            </picture>
+          <!-- <source
+            media="(min-width: 341px)"
+            srcset="assets/images/girlBackpack_600x600.jpg"
+          /> -->
+
+          <source
+            media="(min-width: 440px) and (max-width: 519px)"
+            srcset="assets/images/girlBackpack_800x509-i.jpg"
+          />
+
+          <source
+            media="(min-width: 520px) and (max-width: 819px)"
+            srcset="assets/images/girlBackpack_800x509.jpg"
+          />
+
+          <!-- <source
+            media="(min-width: 820px) and (max-width: 1199px)"
+            srcset="assets/images/girlBackpack_1100x700.jpg"
+          /> -->
+
+          <!-- <source
+            media="(min-width: 820px) and (max-width: 1200px) and (orientation: landscape)"
+            srcset="assets/images/girlBackpack_1100x700.jpg"
+          /> -->
+
+          <source
+            media="(min-width: 1200px) and (max-width: 1599px) and (orientation: landscape)"
+            srcset="assets/images/girlBackpack_1400x760.jpg"
+          />
+
+          <source
+            media="(min-width: 1600px) and (orientation: landscape)"
+            srcset="assets/images/girlBackpack_1400x760.jpg"
+          />
+
+          <img
+            class="large-hero__image"
+            src="assets/images/girlBackpack_1400x760.jpg"
+            alt="school age girl with book back pack"
+          />
+        </picture>
         <div class="large-hero__text-content">
           <h1 class="large-hero__title">
             Welcome to Reading and Spelling Success!
@@ -236,17 +241,19 @@
                 </ul>
                 <p>Barton tutoring may be the solution.</p>
                 <!-- <hr /> -->
-                <div class="about-barton-section--local-market">
-
-                  <p class="about-barton-section--cta-p">
-                      I am a certified Barton trainer serving Granite Bay / Roseville /
-                      Folsom.<br>Please <a href="#" class="open-modal">contact me</a> if
-                      you think I may be able to help your loved one.
-                  </p>
-                  <img src="assets/images/CindyWithArt_100.jpg" alt="Cindy" title="Cindy" class="about-barton-section--local-market--image">
-                </div>
+                
               </div>
+              
           </div>
+          <div class="about-barton-section--local-market">
+
+              <p class="about-barton-section--cta-p">
+                  I am a certified Barton trainer serving Granite Bay / Roseville /
+                  Folsom.<br>Please <a href="#" class="open-modal">contact me</a> if
+                  you think I may be able to help your loved one.
+              </p>
+              <img src="assets/images/CindyWithArt_100.jpg" alt="Cindy" title="Cindy" class="about-barton-section--local-market--image">
+            </div>
           
           
         </div>
@@ -683,17 +690,18 @@
           </div>
           <div class="screening__image">
             <picture class="picture">
-              <source
-                srcset="assets/images/kidsAtTable_1100x559-i.jpg"
-                media="(min-width: 1020px)"
+                <source
+                srcset="assets/images/kidsAtTable_550.jpg"
+                media="(min-width: 800px) and (max-width: 1099px)"
               />
               <source
-                srcset="assets/images/kidsAtTable_550-i.jpg"
-                media="(min-width: 800px)"
+                srcset="assets/images/kidsAtTable_1100x559.jpg"
+                media="(min-width: 1100px)"
               />
+              
               <img
                 class=""
-                srcset="assets/images/kidsAtTable_550-i.jpg 500w"
+                srcset="assets/images/kidsAtTable_550.jpg 500w"
                 alt="kids sitting around table"
               />
             </picture>
@@ -725,21 +733,21 @@
             <picture>
               <source
                 srcset="
-                  assets/images/CindyWithArt_400-i.jpg 404w,
-                  assets/images/CindyWithArt_400-i.jpg 808w
+                  assets/images/CindyWithArt_400.jpg 404w,
+                  assets/images/CindyWithArt_400.jpg 808w
                 "
                 media="(min-width: 1020px)"
               />
               <source
                 srcset="
-                  assets/images/CindyWithArt_400-i.jpg 382w,
-                  assets/images/CindyWithArt_400-i.jpg 764w
+                  assets/images/CindyWithArt_400.jpg 382w,
+                  assets/images/CindyWithArt_400.jpg 764w
                 "
                 media="(min-width: 800px)"
               />
               <img
                 class="about-cindy-section__image"
-                srcset="assets/images/CindyWithArt_400-i.jpg 500w"
+                srcset="assets/images/CindyWithArt_400.jpg 500w"
                 alt="Cindy Deagen"
               />
             </picture>
@@ -805,8 +813,8 @@
     </div>
 
       <div id="forward"
-      class="page-section forward"
-      data-matching-link="#forward-link" class="going-forward">
+      class="page-section going-forward"
+      data-matching-link="#forward-link">
         <div class="wrapper">
           <h2 class="headline">
             Getting the most of your training &hellip;

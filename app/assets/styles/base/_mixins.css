@@ -10,50 +10,14 @@
   }
 }
 
-@define-mixin atXXSmall {
-  @media (min-width: 320px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atXSmall {
-  @media (min-width: 375px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atSmall {
-  @media (min-width: 530px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin 530plus {
-  @media (min-width: 530px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atSmallPlus {
-  @media (min-width: 630px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMedium {
-  @media (min-width: 800px) {
-    @mixin-content;
-  }
-}
-
 @define-mixin 800plus {
   @media (min-width: 800px) {
     @mixin-content;
   }
 }
 
-@define-mixin atLarge {
-  @media (min-width: 1010px) {
+@define-mixin 800plusland {
+  @media (min-width: 800px) and (orientation: landscape) {
     @mixin-content;
   }
 }
@@ -64,14 +28,14 @@
   }
 }
 
-@define-mixin atXLarge {
+@define-mixin 1200plus {
   @media (min-width: 1200px) {
     @mixin-content;
   }
 }
 
-@define-mixin 1200plus {
-  @media (min-width: 1200px) {
+@define-mixin 1500plus {
+  @media (min-width: 1500px) {
     @mixin-content;
   }
 }
@@ -87,131 +51,12 @@
     @mixin-content;
   }
 }
-@define-mixin 1500plus {
-  @media (min-width: 1500px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMax1200 {
-  @media (max-width: 1200px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMax800 {
-  @media (max-width: 800px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMax450 {
-  @media (max-width: 450px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMax380 {
-  @media (max-width: 380px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMax330 {
-  @media (max-width: 330px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin at1025to1200 {
-  @media (min-width: 1025px) and (max-width: 1200px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin at750to799 {
-  @media (min-width: 750px) and (max-width: 799px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atTabLand {
-  @media (max-width: 1050px) and (orientation: landscape) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMedLand {
-  @media (max-width: 850px) and (orientation: landscape) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atSmallLand {
-  @media (max-width: 750px) and (orientation: landscape) {
-    @mixin-content;
-  }
-}
-
-@define-mixin at730to749Land {
-  @media (min-width: 730px) and (max-width: 749px) and (orientation: landscape) {
-    @mixin-content;
-  }
-}
-
-@define-mixin at650to729Land {
-  @media (min-width: 650px) and (max-width: 729px) and (orientation: landscape) {
-    @mixin-content;
-  }
-}
-
-@define-mixin at600to649Land {
-  @media (min-width: 600px) and (max-width: 649px) and (orientation: landscape) {
-    @mixin-content;
-  }
-}
-
-@define-mixin at550to599Land {
-  @media (min-width: 550px) and (max-width: 599px) and (orientation: landscape) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atXSmallLand {
-  @media (max-width: 600px) and (orientation: landscape) {
-    @mixin-content;
-  }
-}
 
 @define-mixin clearfix {
   &::after {
     content: "";
     clear: both;
     display: table;
-  }
-}
-
-@define-mixin atMax420 {
-  @media (max-width: 420px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMax340 {
-  @media (max-width: 340px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMax425 {
-  @media (max-width: 425px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMax670Land {
-  @media (max-width: 670px) and (orientation: landscape) {
-    @mixin-content;
   }
 }
 

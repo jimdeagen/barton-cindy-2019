@@ -7,6 +7,11 @@
   @mixin 800plus {
     padding: 2rem 6rem;
   }
+
+  @mixin 800plusland {
+    padding: 0 0;
+    justify-content: space-between;
+  }
 }
 
 .badge {
@@ -27,6 +32,22 @@
     max-width: 30%;
   }
 
+  @mixin 800plusland {
+    min-width: 42%;
+    max-width: 42%;
+    height: auto;
+    padding: 0 0;
+    justify-content: flex-start;
+  }
+
+  @mixin 1200plus {
+    min-width: 30%;
+    max-width: 30%;
+    height: auto;
+    padding: 0 0;
+    justify-content: flex-start;
+  }
+
   &__p {
     color: $liteGray;
     font-size: 1.8rem;
@@ -44,6 +65,10 @@
     border: 5px solid $liteMediumGray;
     border-radius: 50%;
     padding: 1rem;
+
+    @mixin 800plusland {
+      transform: scale(0.5);
+    }
   }
 
   &:hover {
@@ -66,6 +91,11 @@
       padding-top: 0;
     }
 
+    @mixin 1200plus {
+      padding-left: 14rem;
+      padding-right: 10rem;
+    }
+
     & a {
       font-weight: 600;
     }
@@ -86,6 +116,7 @@
 
     &--slidein {
       color: $baseGray;
+      background-color: white;
       padding: 2rem 4rem;
       width: 94%;
       margin-right: auto;
@@ -100,13 +131,17 @@
       border-radius: 0 0 8px 8px;
       list-style-type: none;
 
+      @mixin 1200plus {
+        width: 85%;
+      }
+
       & li {
         margin-bottom: 2rem;
         padding-bottom: 3rem;
         line-height: 2.4rem;
 
         @mixin 800plus {
-          width: 80%;
+          width: 60%;
           margin: 2rem auto;
         }
 

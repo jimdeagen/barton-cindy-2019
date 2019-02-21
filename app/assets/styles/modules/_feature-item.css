@@ -19,8 +19,8 @@
   border: 1px solid rgba($mainTan, 0.5);
   background-color: khaki;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
-  // min-width: 100%;
-  // max-width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   transform: scale(1);
   transition: all 0.4s ease-out !important;
 
@@ -37,6 +37,11 @@
       transform: rotate(1deg);
       animation-direction: alternate;
     }
+  }
+
+  @mixin 800plusland {
+    min-width: 75%;
+    max-width: 75%;
   }
 
   @keyframes rotate {
