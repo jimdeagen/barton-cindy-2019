@@ -11822,7 +11822,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -11836,48 +11836,48 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Modal = function () {
-	function Modal() {
-		_classCallCheck(this, Modal);
+  function Modal() {
+    _classCallCheck(this, Modal);
 
-		this.openModalButton = (0, _jquery2.default)(".open-modal");
-		this.modal = (0, _jquery2.default)(".modal");
-		this.closeModalButton = (0, _jquery2.default)(".modal__close");
-		this.events();
-	}
+    this.openModalButton = (0, _jquery2.default)(".open-modal");
+    this.modal = (0, _jquery2.default)(".modal");
+    this.closeModalButton = (0, _jquery2.default)(".modal__close");
+    this.events();
+  }
 
-	_createClass(Modal, [{
-		key: "events",
-		value: function events() {
-			// clicking the open modal button
-			this.openModalButton.click(this.openModal.bind(this));
+  _createClass(Modal, [{
+    key: "events",
+    value: function events() {
+      // clicking the open modal button
+      this.openModalButton.click(this.openModal.bind(this));
 
-			// clicking the x close modal button
-			this.closeModalButton.click(this.closeModal.bind(this));
+      // clicking the x close modal button
+      this.closeModalButton.click(this.closeModal.bind(this));
 
-			// pushes any key
-			(0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
-		}
-	}, {
-		key: "keyPressHandler",
-		value: function keyPressHandler(e) {
-			if (e.keyCode == 27) {
-				this.closeModal();
-			}
-		}
-	}, {
-		key: "openModal",
-		value: function openModal() {
-			this.modal.addClass("modal--is-visible");
-			return false;
-		}
-	}, {
-		key: "closeModal",
-		value: function closeModal() {
-			this.modal.removeClass("modal--is-visible");
-		}
-	}]);
+      // pushes any key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: "keyPressHandler",
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
+    }
+  }, {
+    key: "openModal",
+    value: function openModal() {
+      this.modal.addClass("modal--is-visible");
+      return false;
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      this.modal.removeClass("modal--is-visible");
+    }
+  }]);
 
-	return Modal;
+  return Modal;
 }();
 
 exports.default = Modal;

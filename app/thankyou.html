@@ -3,10 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Play|Open+Sans:200,300,600"
+      rel="stylesheet"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Thank You</title>
+    <!-- build:css /assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css" />
+    <!-- endbuild -->
+    <style>
+      html {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    Thank you!
+    <div class="thankyou" id="thankyou">
+      <div class="modal__inner">
+        <h2 class="section-title section-title--tan section-title--less-margin">
+          <img
+            class="section-title__icon modal__icon"
+            src="assets/images/icons/icon_quote-bubbles.png"
+          />Thank
+          <strong>You</strong>
+        </h2>
+        <div class="wrapper wrapper--narrow">
+          <p class="modal__description">Reply will come soon!</p>
+          <p class="modal__description">
+            <a
+              href="mailto:bartonwithcindy@gmail.com?subject=We want to be better readers"
+              >Feel free to email me</a
+            >
+            or text me at 925-487-4483
+          </p>
+
+          <p class="modal__description modal__description--last">
+            Please contact me with any questions to discuss or to schedule a
+            screening.<br />The Barton screenings are necessary to ensure your
+            child is a good fit for the Barton Reading and Spelling Program.
+          </p>
+        </div>
+      </div>
+
+      <div class="modal__close"><a href="index.html#forward">X</a></div>
+    </div>
   </body>
 </html>

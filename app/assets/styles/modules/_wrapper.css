@@ -15,10 +15,6 @@
     max-width: 1236px;
   }
 
-  @mixin 800plusland {
-    max-width: 75%;
-  }
-
   &__wide {
     display: relative;
     overflow: hidden;

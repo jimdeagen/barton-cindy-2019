@@ -1,7 +1,7 @@
 .going-forward {
   border-top: 1px solid $mainBlue;
   padding: 8rem 0;
-  background-color: $liteMediumGray;
+  background-color: white;
   background: url(../../assets/images/book-side_1800.jpg), white;
   background-repeat: no-repeat;
 

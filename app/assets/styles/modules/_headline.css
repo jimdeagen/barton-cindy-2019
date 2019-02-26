@@ -4,7 +4,7 @@
   font-size: 2.8rem;
   color: $mainBlue;
   width: 96%;
-  margin: 0 0 60px;
+  margin: 0 0 4rem;
 
   &__white {
     color: white;
@@ -65,10 +65,17 @@
     border-bottom: 1px solid $mainBlue;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%; */
+    @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+      padding-bottom: 1rem;
+    }
   }
 
   &--tmargin-large {
     margin-top: 20rem;
+  }
+
+  &--tmargin-medium {
+    margin-top: 7rem;
   }
 
   &--top-margin {
@@ -77,7 +84,7 @@
 
   &__list {
     padding-top: 0;
-    padding-left: 3rem;
+    padding-left: 5rem;
     color: &mainBlue;
     font-size: 1.5rem;
     line-height: 1.65;
@@ -85,8 +92,16 @@
     letter-spacing: normal;
 
     @mixin 1200plus {
+      padding-left: 10rem;
       font-size: 1.6rem;
       line-height: 1.65;
+    }
+
+    & li:last-child {
+      color: lightslategray;
+      list-style-type: none;
+      font-style: italic;
+      font-size: 1.4rem;
     }
   }
 

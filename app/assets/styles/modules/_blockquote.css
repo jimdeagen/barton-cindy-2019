@@ -1,13 +1,23 @@
-.blockquote__paragraph {
-  color: white;
-  background-color: $mainBlue;
-  padding: 4.5rem 5.5rem 5.5rem 5.5rem;
+.blockquote {
+  &__paragraph {
+    color: white;
+    background-color: $mainBlue;
+    padding: 4.5rem 5.5rem 5.5rem 5.5rem;
 
-  @mixin 530plus {
-    padding: 3.5rem 4.5rem 3.8rem 7rem;
-  }
+    @mixin 530plus {
+      padding: 3.5rem 4.5rem 3.8rem 7rem;
+    }
 
-  @mixin 800plusland {
-    padding: 5rem 4rem 8rem 4rem;
+    @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+      padding: 2.5rem 4rem 3.5rem 4.2rem;
+    }
+
+    @mixin 800plusland {
+      padding: 5rem 4rem 8rem 4rem;
+    }
+
+    &--right-align {
+      text-align: right;
+    }
   }
 }

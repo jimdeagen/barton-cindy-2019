@@ -1,27 +1,47 @@
 .lone-quote__section {
-  border-right: 1.4rem solid $mainBlue;
-  border-left: 1.4rem solid $mainBlue;
-  border-top: 0px solid transparent;
-  border-bottom: 3rem solid $mainBlue;
+  margin-top: 0;
+  border-right: 0 solid transparent;
+  border-left: 3rem solid $mainBlue;
+  border-top: 1.2rem solid $mainBlue;
+  border-bottom: 1rem solid $mainBlue;
+  border-top-left-radius: 30%;
   border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 30%;
-  margin-bottom: 2rem;
+  margin-bottom: 12rem;
   width: 90%;
-  background-color: #ffffff;
 
   @mixin 530plus {
-    padding-bottom: 10rem;
+    background-color: white;
+    margin-top: 0;
+    border-right: 0.4rem solid transparent;
+    border-left: 3rem solid $mainBlue;
+    border-top: 3px solid $mainBlue;
+    border-bottom: 1.4rem solid $mainBlue;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 90%;
+    padding-bottom: 0;
+  }
+
+  @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+    border-right: 0.4rem solid transparent;
+    border-left: 5rem solid $mainBlue;
+    border-top: 1.4rem solid $mainBlue;
+    border-bottom: 1.4rem solid $mainBlue;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 90%;
+    padding-bottom: 0;
   }
 
   @mixin 800plus {
-    border-bottom: 5rem solid $mainBlue;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    margin-bottom: 6rem;
+    border-right: 0.4rem solid transparent;
+    border-left: 4.3rem solid $mainBlue;
+    border-top: 1.4rem solid $mainBlue;
+    border-bottom: 1.4rem solid $mainBlue;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
     padding-top: 15rem;
     width: 40%;
-
-    box-shadow: 0 6px 2px rgba(0, 0, 0, 0.5);
   }
 
   @mixin 800plusland {
@@ -31,11 +51,58 @@
 }
 
 .lone-quote {
-  background: url(../../assets/images/atf_background2.jpg), black;
-  background-position-y: 200px;
   padding-bottom: 1px;
+  display: grid;
 
   @mixin 530plus {
     padding-bottom: 10rem;
+  }
+}
+
+.lone-quote__section-2 {
+  margin-top: 4rem;
+  justify-self: end;
+  align-self: end;
+  transform: translateX(15vw);
+  border-right: 0.3rem solid transparent;
+  border-left: 1rem solid $mainTan;
+  border-top: 1.1rem solid $mainTan;
+  border-bottom: 1.1rem solid $mainTan;
+  border-top-left-radius: 17%;
+  border-bottom-left-radius: 17%;
+  margin-bottom: 0;
+  width: 60%;
+  height: 80px;
+  overflow: none;
+
+  @mixin 530plus {
+    display: block;
+    background-color: white;
+
+    transform: translateX(3vw);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 90%;
+    padding-bottom: 0;
+  }
+
+  @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+    display: block;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 90%;
+    padding-bottom: 0;
+  }
+
+  @mixin 800plus {
+    display: block;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    padding-top: 0rem;
+    width: 40%;
+  }
+
+  @mixin 800plusland {
+    width: 40%;
   }
 }

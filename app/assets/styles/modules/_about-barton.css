@@ -1,147 +1,179 @@
 .about-barton-section {
-  &--img {
-    margin-bottom: 30px;
+  &--grid {
+    display: block;
+
+    @mixin 800plus {
+      display: grid;
+      grid-template-columns: 30% 40% 30%;
+      grid-template-rows: 500px 500px 270px;
+      grid-row-gap: 6rem;
+      grid-column-gap: 0rem;
+    }
   }
 
-  &--cta-p {
-    display: inline-block;
-    /* background-color: #ededed; */
-    border-top: 1px solid $liteMediumGray;
-    border-right: 0 solid $liteMediumGray;
-    border-bottom: 1px solid $liteMediumGray;
-    border-left: 0 solid $liteMediumGray;
-    padding: 1rem 2rem;
-    margin-top: 6rem;
-    width: 100%;
-
-    @mixin 530plus {
-      width: 100%;
-    }
-
+  &--image {
     @mixin 800plus {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      justify-self: end;
+    }
+  }
+
+  &--intro {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    align-self: center;
+    background: linear-gradient(white, #f4f2f1);
+
+    &--p {
+      padding: 4rem 3rem 2rem 3rem;
+
+      @mixin 1200plus {
+        padding: 4rem 10rem 2rem 8rem;
+      }
+    }
+  }
+
+  &--list {
+    background: linear-gradient(#f4f2f1, white);
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    padding: 4rem 0 2rem 0;
+    display: grid;
+
+    & li:last-of-type {
       width: 80%;
-      background-color: transparent;
-      border-top: 1px solid $liteMediumGray;
-      border-right: 0 solid $liteMediumGray;
-      border-bottom: 1px solid $liteMediumGray;
-      border-left: 0 solid $liteMediumGray;
-      padding: 1rem 2rem;
-      margin-top: 6rem;
     }
 
     @mixin 800plus {
-      width: 100%;
     }
 
     @mixin 1200plus {
-      text-align: right;
+      padding: 4rem 0 2rem 0;
+    }
+
+    &--header {
+      padding: 0 4rem 0 3rem;
+
+      @mixin 800plus {
+        padding: 0 4rem 0 5rem;
+      }
+    }
+
+    &--conclusion {
+      background-color: rgba(240, 240, 240, 0.3);
+      border-top: 1px solid #ddd;
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid transparent;
+      margin: 0;
+      font-size: 2rem;
+      text-align: center;
+      letter-spacing: 0.2rem;
+      line-height: 2.6rem;
+      padding: 0 4rem 3.3rem 4rem;
+
+      @mixin 800plus {
+        width: 100%;
+      }
     }
   }
 
-  &--grid {
-    display: grid;
-    justify-items: start;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+  &--blockquote {
+    padding-top: 7rem;
+    padding-left: 5rem;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
 
-    @mixin 800plus {
-      grid-template-columns: minmax(300px, 35%) 1fr;
-      grid-template-rows: auto auto 1fr;
-      grid-column-gap: 4rem;
-      grid-row-gap: 4rem;
+    @mixin 530plus {
+      padding-top: 12rem;
     }
 
-    @mixin 800plusland {
-      grid-template-columns: minmax(100px, 35%) 1fr;
-      grid-template-rows: auto auto 1fr;
-      grid-column-gap: 4rem;
-      grid-row-gap: 4rem;
-    }
-  }
-
-  @mixin 800plus {
-    &--image {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      transform: translateY(-5rem);
+    @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+      padding-top: 7rem;
     }
 
-    &--intro {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-    }
-
-    &--list {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 4;
+    & span {
+      font-size: 1.2rem;
     }
   }
 
   &--local-market {
-    /* background-color: pink; */
+    margin-top: 0;
+    display: grid;
+    padding-top: 6rem;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
     display: grid;
     justify-items: center;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 1rem;
-
-    @mixin 400plus {
-      grid-template-columns: 2fr 1fr;
-      grid-column-gap: 0;
-      grid-row-gap: 0.5rem;
-    }
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 240px;
+    grid-column-gap: 0;
 
     @mixin 530plus {
-      grid-template-columns: 4fr 1fr;
-      grid-column-gap: 4rem;
-      grid-row-gap: 4rem;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 200px;
     }
 
     @mixin 800plus {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 90% 10%;
+      grid-template-rows: 120px;
     }
 
-    @mixin 800plusland {
-      grid-template-columns: 4fr 1fr;
-    }
-
-    @mixin 1200plus {
-      grid-template-columns: 2fr 1fr;
-    }
-
-    &--image {
-      display: inline;
-      width: 100px;
-      border: 2px solid $liteMediumGray;
-      border-radius: 8px;
-      position: relative;
-      transform: translate(0, 0%);
-
-      @mixin 400plus {
-        transform: translate(0, 65%);
-      }
+    &--p {
+      display: inline-block;
+      text-align: right;
+      /* background-color: #ededed; */
+      border-top: 1px solid $liteMediumGray;
+      border-right: 0 solid $liteMediumGray;
+      border-bottom: 1px solid $liteMediumGray;
+      border-left: 0 solid $liteMediumGray;
+      padding: 2rem 2rem;
+      margin-top: 0;
+      grid-columns: 1 / 3;
+      justify-self: start;
+      align-self: start;
 
       @mixin 530plus {
-        transform: translate(0, 50%);
+        grid-columns: 1 / 2;
+        justify-self: end;
+        align-self: end;
+      }
+
+      @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+        justify-self: start;
+        align-self: start;
       }
 
       @mixin 800plus {
-        transform: translate(0, 10%);
-      }
-
-      @mixin 800plusland {
-        transform: translate(0, 30%);
+        justify-self: right;
+        align-self: center;
       }
 
       @mixin 1200plus {
-        transform: translate(-200%, 30%);
+        text-align: right;
+      }
+    }
+
+    &--image {
+      border: 1px solid teal;
+      grid-columns: 2 / 3;
+      justify-self: start;
+      align-self: start;
+
+      @mixin 530plus {
+        align-self: end;
+        grid-columns: 2 / 3;
+      }
+
+      @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+        justify-self: start;
+        align-self: start;
+      }
+
+      @mixin 800plus {
+        justify-self: left;
+        align-self: end;
       }
     }
   }

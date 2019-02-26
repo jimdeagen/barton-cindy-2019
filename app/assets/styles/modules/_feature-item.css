@@ -34,7 +34,7 @@
     width: 100%;
     &:hover {
       animation: rotate 0.5 forward;
-      transform: rotate(1deg);
+      transform: rotate(-1deg);
       animation-direction: alternate;
     }
   }
@@ -46,7 +46,22 @@
 
   @keyframes rotate {
     0% {
-      transform: rotate(1deg) scale(1);
+      transform: rotate(-1deg) scale(1);
+    }
+    40% {
+      transform: rotate(0.8deg) scale(1);
+    }
+    65% {
+      transform: rotate(-0.6deg) scale(1);
+    }
+    75% {
+      transform: rotate(0.4deg) scale(1);
+    }
+    82% {
+      transform: rotate(-0.2deg) scale(1);
+    }
+    91% {
+      transform: rotate(0.1deg) scale(1);
     }
     100% {
       transform: rotate(0deg) scale(1.2);

@@ -43,10 +43,7 @@
 
   &__form--inputs {
     padding-left: 3rem;
-  }
-
-  &__t-padding {
-    padding-top: 20px;
+    padding-right: 3rem;
   }
 
   &__header {
@@ -80,9 +77,12 @@
     margin-bottom: 2rem;
     margin-top: 0.7rem;
     padding: 0.7rem 1rem;
-    width: 90%;
+    width: 100%;
     border: 1px solid #aaaaaa;
     background-color: #f7f7f7;
+
+    @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+    }
   }
 
   &__form-section--form {
@@ -112,6 +112,10 @@ input[type="submit"] {
   padding: 1.6rem;
   width: 100%;
   font-size: 1.8rem;
+
+  @mixin 400plus {
+    width: 100%;
+  }
 }
 
 input[type="submit"]:hover {
@@ -143,7 +147,7 @@ option {
 }
 .input-age {
   grid-area: age;
-  width: 20%;
+  width: 50%;
 }
 .input-message {
   grid-area: message;
@@ -151,4 +155,10 @@ option {
 
 .input-submit {
   grid-area: submit;
+  width: 100%;
+}
+
+option {
+  border-bottom: 1px solid $liteMediumGray;
+  padding: 1rem;
 }
