@@ -2753,11 +2753,18 @@ option {
   }
 
 .about-barton-section--list-wrap {
-      padding-left: 8rem;
+      padding-left: 0.2rem;
     }
 
+@media (min-width: 530px) {
+
+.about-barton-section--list-wrap {
+        padding-left: 8rem
+    }
+  }
+
 .about-barton-section--list--conclusion {
-      background-color: rgba(240, 240, 240, 0.3);
+      background-color: rgba(213,149,65, 0.15);
       border-top: 1px solid #ddd;
       border-right: 1px solid transparent;
       border-bottom: 1px solid #ddd;
@@ -3296,9 +3303,9 @@ option {
 .lone-quote__section {
   margin-top: 0;
   border-right: 0 solid transparent;
-  border-left: 3rem solid #2f5572;
-  border-top: 1.2rem solid #2f5572;
-  border-bottom: 1rem solid #2f5572;
+  border-left: 3rem solid #dadada;
+  border-top: 1.2rem solid #dadada;
+  border-bottom: 1rem solid #dadada;
   border-top-left-radius: 30%;
   border-bottom-left-radius: 30%;
   border-top-right-radius: 12px;
@@ -3313,9 +3320,9 @@ option {
     background-color: white;
     margin-top: 0;
     border-right: 0.4rem solid transparent;
-    border-left: 3rem solid #2f5572;
-    border-top: 3px solid #2f5572;
-    border-bottom: 1.4rem solid #2f5572;
+    border-left: 3rem solid #dadada;
+    border-top: 3px solid #dadada;
+    border-bottom: 1.4rem solid #dadada;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
     width: 90%;
@@ -3327,9 +3334,9 @@ option {
 
 .lone-quote__section {
     border-right: 0.4rem solid transparent;
-    border-left: 5rem solid #2f5572;
-    border-top: 1.4rem solid #2f5572;
-    border-bottom: 1.4rem solid #2f5572;
+    border-left: 5rem solid #dadada;
+    border-top: 1.4rem solid #dadada;
+    border-bottom: 1.4rem solid #dadada;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
     width: 90%;
@@ -3341,9 +3348,9 @@ option {
 
 .lone-quote__section {
     border-right: 0.4rem solid transparent;
-    border-left: 4.3rem solid #2f5572;
-    border-top: 1.4rem solid #2f5572;
-    border-bottom: 1.4rem solid #2f5572;
+    border-left: 4.3rem solid #dadada;
+    border-top: 1.4rem solid #dadada;
+    border-bottom: 1.4rem solid #dadada;
     border-top-left-radius: 15%;
     border-bottom-left-radius: 15%;
     padding-top: 15rem;

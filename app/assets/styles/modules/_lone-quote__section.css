@@ -1,9 +1,9 @@
 .lone-quote__section {
   margin-top: 0;
   border-right: 0 solid transparent;
-  border-left: 3rem solid $mainBlue;
-  border-top: 1.2rem solid $mainBlue;
-  border-bottom: 1rem solid $mainBlue;
+  border-left: 3rem solid $liteMediumGray;
+  border-top: 1.2rem solid $liteMediumGray;
+  border-bottom: 1rem solid $liteMediumGray;
   border-top-left-radius: 30%;
   border-bottom-left-radius: 30%;
   border-top-right-radius: 12px;
@@ -15,9 +15,9 @@
     background-color: white;
     margin-top: 0;
     border-right: 0.4rem solid transparent;
-    border-left: 3rem solid $mainBlue;
-    border-top: 3px solid $mainBlue;
-    border-bottom: 1.4rem solid $mainBlue;
+    border-left: 3rem solid $liteMediumGray;
+    border-top: 3px solid $liteMediumGray;
+    border-bottom: 1.4rem solid $liteMediumGray;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
     width: 90%;
@@ -26,9 +26,9 @@
 
   @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
     border-right: 0.4rem solid transparent;
-    border-left: 5rem solid $mainBlue;
-    border-top: 1.4rem solid $mainBlue;
-    border-bottom: 1.4rem solid $mainBlue;
+    border-left: 5rem solid $liteMediumGray;
+    border-top: 1.4rem solid $liteMediumGray;
+    border-bottom: 1.4rem solid $liteMediumGray;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
     width: 90%;
@@ -37,9 +37,9 @@
 
   @mixin 800plus {
     border-right: 0.4rem solid transparent;
-    border-left: 4.3rem solid $mainBlue;
-    border-top: 1.4rem solid $mainBlue;
-    border-bottom: 1.4rem solid $mainBlue;
+    border-left: 4.3rem solid $liteMediumGray;
+    border-top: 1.4rem solid $liteMediumGray;
+    border-bottom: 1.4rem solid $liteMediumGray;
     border-top-left-radius: 15%;
     border-bottom-left-radius: 15%;
     padding-top: 15rem;
