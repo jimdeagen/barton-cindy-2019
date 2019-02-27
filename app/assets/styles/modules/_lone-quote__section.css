@@ -6,6 +6,8 @@
   border-bottom: 1rem solid $mainBlue;
   border-top-left-radius: 30%;
   border-bottom-left-radius: 30%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 14px;
   margin-bottom: 12rem;
   width: 90%;
 
@@ -53,21 +55,22 @@
 .lone-quote {
   padding-bottom: 1px;
   display: grid;
+  border-bottom: 1px solid $mainBlue;
 
   @mixin 530plus {
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
   }
 }
 
 .lone-quote__section-2 {
-  margin-top: 4rem;
+  margin-top: 0;
   justify-self: end;
   align-self: end;
   transform: translateX(15vw);
   border-right: 0.3rem solid transparent;
-  border-left: 1rem solid $mainTan;
-  border-top: 1.1rem solid $mainTan;
-  border-bottom: 1.1rem solid $mainTan;
+  border-left: 1rem solid rgb(226, 203, 199);
+  border-top: 1.1rem solid rgb(226, 203, 199);
+  border-bottom: 1.1rem solid rgb(226, 203, 199);
   border-top-left-radius: 17%;
   border-bottom-left-radius: 17%;
   margin-bottom: 0;
@@ -97,12 +100,53 @@
   @mixin 800plus {
     display: block;
     border-top-left-radius: 15%;
-    border-bottom-left-radius: 15%;
+    border-bottom-left-radius: 25%;
     padding-top: 0rem;
-    width: 40%;
+    width: 48%;
+  }
+}
+
+.lone-quote__section-3 {
+  margin-top: 18rem;
+  justify-self: end;
+  align-self: end;
+  transform: translateX(10vw);
+  border-right: 0.3rem solid transparent;
+  border-left: 1rem solid rgb(203, 224, 172);
+  border-top: 1.1rem solid rgb(203, 224, 172);
+  border-bottom: 1.1rem solid rgb(203, 224, 172);
+  border-top-left-radius: 17%;
+  border-bottom-left-radius: 17%;
+  margin-bottom: 0;
+  width: 60%;
+  height: 80px;
+  overflow: none;
+
+  @mixin 530plus {
+    display: block;
+    background-color: white;
+
+    transform: translateX(3vw);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 90%;
+    padding-bottom: 0;
   }
 
-  @mixin 800plusland {
-    width: 40%;
+  @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+    display: block;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 90%;
+    padding-bottom: 0;
+  }
+
+  @mixin 800plus {
+    display: block;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 22%;
+    padding-top: 0rem;
+    width: 50%;
+    transform: translateX(1vw);
   }
 }

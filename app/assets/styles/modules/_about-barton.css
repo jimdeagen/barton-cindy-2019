@@ -29,7 +29,7 @@
       padding: 4rem 3rem 2rem 3rem;
 
       @mixin 1200plus {
-        padding: 4rem 10rem 2rem 8rem;
+        padding: 8rem 10rem 8rem 12rem;
       }
     }
   }
@@ -60,6 +60,10 @@
       }
     }
 
+    &-wrap {
+      padding-left: 8rem;
+    }
+
     &--conclusion {
       background-color: rgba(240, 240, 240, 0.3);
       border-top: 1px solid #ddd;
@@ -76,6 +80,9 @@
       @mixin 800plus {
         width: 100%;
       }
+
+      @mixin 800plus and (orientation; landscape) and (max-width: 1199px) {
+      }
     }
   }
 
@@ -91,6 +98,10 @@
 
     @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
       padding-top: 7rem;
+    }
+
+    @mixin 800plus {
+      grid-row: 2 / 4;
     }
 
     & span {
@@ -116,14 +127,15 @@
     }
 
     @mixin 800plus {
-      grid-template-columns: 90% 10%;
+      grid-template-columns: 85% 10%;
       grid-template-rows: 120px;
     }
 
     &--p {
       display: inline-block;
       text-align: right;
-      /* background-color: #ededed; */
+
+      background-color: rgba($liteGray, 0.8);
       border-top: 1px solid $liteMediumGray;
       border-right: 0 solid $liteMediumGray;
       border-bottom: 1px solid $liteMediumGray;
@@ -156,7 +168,6 @@
     }
 
     &--image {
-      border: 1px solid teal;
       grid-columns: 2 / 3;
       justify-self: start;
       align-self: start;

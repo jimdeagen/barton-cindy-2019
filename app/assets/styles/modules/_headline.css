@@ -76,6 +76,10 @@
 
   &--tmargin-medium {
     margin-top: 7rem;
+
+    @mixin 530plus {
+      margin-top: 5rem;
+    }
   }
 
   &--top-margin {
