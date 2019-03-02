@@ -4,19 +4,17 @@
 
     @mixin 800plus {
       display: grid;
-      grid-template-columns: 30% 40% 30%;
+      grid-template-columns: 30% 30% 40%;
       grid-template-rows: 500px 500px 270px;
       grid-row-gap: 6rem;
       grid-column-gap: 0rem;
     }
   }
 
-  &--image {
-    @mixin 800plus {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      justify-self: end;
-    }
+  &--img--image {
+    display: block;
+    width: 400px;
+    margin: 4rem auto 2rem auto;
   }
 
   &--intro {
@@ -66,6 +64,10 @@
       @mixin 530plus {
         padding-left: 8rem;
       }
+
+      @mixin 530plus and (max-width: 1199px) {
+        padding-left: 0rem;
+      }
     }
 
     &--conclusion {
@@ -83,9 +85,6 @@
 
       @mixin 800plus {
         width: 100%;
-      }
-
-      @mixin 800plus and (orientation; landscape) and (max-width: 1199px) {
       }
     }
   }
@@ -135,6 +134,16 @@
       grid-template-rows: 120px;
     }
 
+    @mixin 530plus and (max-width: 1199px) {
+      grid-template-columns: 70% 30%;
+      grid-template-rows: 200px;
+    }
+
+    @mixin 1200plus {
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 120px;
+    }
+
     &--p {
       display: inline-block;
       text-align: right;
@@ -144,8 +153,8 @@
       border-right: 0 solid $liteMediumGray;
       border-bottom: 1px solid $liteMediumGray;
       border-left: 0 solid $liteMediumGray;
-      padding: 2rem 2rem;
-      margin-top: 0;
+      padding: 5rem 5rem;
+      margin: 0;
       grid-columns: 1 / 3;
       justify-self: start;
       align-self: start;
@@ -156,14 +165,19 @@
         align-self: end;
       }
 
-      @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+      /* @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
         justify-self: start;
         align-self: start;
-      }
+      } */
 
       @mixin 800plus {
         justify-self: right;
         align-self: center;
+      }
+
+      @mixin 530plus and (max-width: 1199px) {
+        padding: 4rem 5rem 4rem 10rem;
+        max-width: 500px;
       }
 
       @mixin 1200plus {
@@ -177,19 +191,31 @@
       align-self: start;
 
       @mixin 530plus {
-        align-self: end;
+        justify-self: start;
+        align-self: center;
         grid-columns: 2 / 3;
       }
 
-      @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+      @mixin 800plus {
+        justify-self: start;
+        align-self: end;
+      }
+
+      @mixin 530plus and (max-width: 1199px) {
+        justify-self: center;
+        align-self: start;
+        outline: 1px solid rgba($liteGray, 0.3);
+        outline-offset: 7px;
+      }
+
+      @mixin 1200plus {
         justify-self: start;
         align-self: start;
       }
-
-      @mixin 800plus {
-        justify-self: left;
-        align-self: end;
-      }
     }
+  }
+
+  & picture {
+    display: grid;
   }
 }

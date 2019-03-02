@@ -2,29 +2,18 @@
   opacity: 0;
   transition: all 1.5s ease-out;
   transform: scale(1.15);
+  margin-left: auto;
+  margin-right: auto;
+
+  @mixin 530plus {
+  }
+
+  @mixin 1200plus {
+  }
 
   &--is-visible {
     opacity: 1;
     transform: scale(1);
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    /* min-width: 100%;
-    max-width: 100%; */
-  }
-
-  @mixin 530plus {
-    margin-top: 100px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  @mixin 1200plus {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    /* min-width: 30%;
-    max-width: 32%; */
   }
 
   &--is-visible p {

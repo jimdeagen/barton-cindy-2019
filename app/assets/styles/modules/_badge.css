@@ -18,13 +18,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-items: start;
   background-color: $mainBlue;
   min-width: 100%;
   max-width: 100%;
   border: 5px solid $liteMediumGray;
   border-radius: 5rem;
   padding: 0 2rem;
+
+  @mixin 530plus {
+    min-width: 72%;
+    max-width: 72%;
+    justify-content: space-around;
+  }
 
   @mixin 800plus {
     flex-direction: row;

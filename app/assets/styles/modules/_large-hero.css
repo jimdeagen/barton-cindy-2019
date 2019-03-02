@@ -2,9 +2,13 @@
   position: relative;
   /* border-bottom: 5px solid $mainBlue; */
   border-bottom: 0px solid $mainBlue;
-  margin-top: 0;
+  padding-top: 0;
   height: auto;
   background: linear-gradient(90deg, $liteTan, white, $liteTan);
+
+  @mixin 1200plus {
+    padding-top: 16rem;
+  }
 
   &__image {
     display: block;
@@ -53,6 +57,13 @@
     @mixin 530plus and (orientation: landscape) and (max-width: 820px) {
       padding: 3rem 3rem;
       top: 15%;
+      left: 15px;
+      width: 55%;
+    }
+
+    @mixin 530plus and (orientation: landscape) and (max-width: 1199px) {
+      padding: 3rem 3rem;
+      top: 24%;
       left: 15px;
       width: 55%;
     }

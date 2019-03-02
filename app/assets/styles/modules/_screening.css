@@ -41,6 +41,14 @@
     }
   }
 
+  &__img--image {
+    @media (min-width: 700px) and (max-width: 1199px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   &__form--inputs {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -72,7 +80,7 @@
       margin-bottom: 1.8rem;
     }
 
-    @mixin 800plus {
+    @mixin 1200plus {
       padding-right: 20rem;
     }
   }

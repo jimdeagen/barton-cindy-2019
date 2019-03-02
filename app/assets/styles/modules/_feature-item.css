@@ -1,37 +1,38 @@
-.flex-container {
+.feature-item--flexbox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @mixin 530plus and (orientation: landscape) and (max-width: 1199px) {
+    justify-content: space-evenly;
+  }
 }
 
 .feature-item {
   display: block;
-  position: relative;
   top: 4rem;
   width: 100%;
-  flex-basis: 100%;
-  margin: 0 auto;
+
   margin-bottom: 9rem;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   border: 1px solid rgba($mainTan, 0.5);
   background-color: khaki;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
-  min-width: 100%;
   max-width: 100%;
   transform: scale(1);
   transition: all 0.4s ease-out !important;
+  margin-top: 10px;
+
+  max-width: 93%;
 
   @mixin 530plus {
     background-color: pink;
-    flex-basis: 100%;
   }
 
   @mixin 800plus {
-    background-color: #c2dfff;
-    width: 100%;
+    background-color: rgb(193, 223, 255);
+    /* width: 100%; */
     &:hover {
       animation: rotate 0.5 forward;
       transform: rotate(-1deg);
@@ -40,8 +41,11 @@
   }
 
   @mixin 800plusland {
-    min-width: 75%;
     max-width: 75%;
+  }
+
+  @mixin 1200plus {
+    max-width: 47%;
   }
 
   @keyframes rotate {
@@ -68,18 +72,13 @@
     }
   }
 
-  @mixin 1200plus {
-    min-width: 45%;
-    max-width: 45%;
-  }
-
   &__header-group {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: flex-start;
     position: relative;
-    top: -3.9rem;
+    top: 0;
     width: 100%;
     text-align: center;
     border: 1px solid $mainTan;
@@ -144,7 +143,7 @@
 
   &__list {
     position: relative;
-    top: -3rem;
+    /* top: -3rem; */
     padding-top: 3rem;
     width: 100%;
     margin-left: auto;
