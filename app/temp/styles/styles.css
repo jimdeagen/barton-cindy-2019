@@ -2276,7 +2276,8 @@ picture {
   }
   }
 
-.modal {
+.modal,
+.modal-2 {
   position: fixed;
   z-index: 5;
   background-color: rgba(255, 255, 255, 0.9);
@@ -2292,14 +2293,14 @@ picture {
   transition: all 0.3s ease-out;
 }
 
-.modal--is-visible {
+.modal--is-visible, .modal-2--is-visible {
     opacity: 1;
     visibility: visible;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 
-.modal__inner {
+.modal__inner, .modal-2__inner {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -2307,7 +2308,7 @@ picture {
             transform: translateY(-50%);
   }
 
-.modal__description {
+.modal__description, .modal-2__description {
     text-align: center;
     font-size: 1.9rem;
     font-weight: 300;
@@ -2316,18 +2317,19 @@ picture {
 
 @media (min-width: 530px) {
 
-.modal {
+.modal,
+.modal-2 {
     font-size: 2rem
 }
   }
 
-.modal__description--last {
+.modal__description--last, .modal-2__description--last {
     margin-bottom: 80px;
     width: 70%;
     margin: 3rem auto;
   }
 
-.modal__close {
+.modal__close, .modal-2__close {
     position: absolute;
     top: 60px;
     right: 60px;
@@ -2340,11 +2342,11 @@ picture {
     cursor: pointer;
   }
 
-.modal__close:hover {
+.modal__close:hover, .modal-2__close:hover {
       color: #d59541;
     }
 
-.modal__icon {
+.modal__icon, .modal-2__icon {
     position: relative;
     top: 10px;
     right: 10px;
