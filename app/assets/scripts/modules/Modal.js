@@ -4,6 +4,7 @@ class Modal {
   constructor() {
     this.openModalButton = $(".open-modal");
     this.modal = $(".modal");
+    this.modal2 = $(".modal-2");
     this.closeModalButton = $(".modal__close");
     this.events();
   }
@@ -11,6 +12,9 @@ class Modal {
   events() {
     // clicking the open modal button
     this.openModalButton.click(this.openModal.bind(this));
+
+    // clicking the open modal button
+    this.openModalButton.click(this.openModal2.bind(this));
 
     // clicking the x close modal button
     this.closeModalButton.click(this.closeModal.bind(this));
@@ -26,6 +30,11 @@ class Modal {
   }
 
   openModal() {
+    this.modal.addClass("modal--is-visible");
+    return false;
+  }
+
+  openModal2() {
     this.modal.addClass("modal--is-visible");
     return false;
   }

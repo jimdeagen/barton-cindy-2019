@@ -35,7 +35,10 @@
     }
 
     @mixin 1200plus {
+      width: 70%;
       text-align: center;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 

@@ -11841,6 +11841,7 @@ var Modal = function () {
 
     this.openModalButton = (0, _jquery2.default)(".open-modal");
     this.modal = (0, _jquery2.default)(".modal");
+    this.modal2 = (0, _jquery2.default)(".modal-2");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
     this.events();
   }
@@ -11850,6 +11851,9 @@ var Modal = function () {
     value: function events() {
       // clicking the open modal button
       this.openModalButton.click(this.openModal.bind(this));
+
+      // clicking the open modal button
+      this.openModalButton.click(this.openModal2.bind(this));
 
       // clicking the x close modal button
       this.closeModalButton.click(this.closeModal.bind(this));
@@ -11867,6 +11871,12 @@ var Modal = function () {
   }, {
     key: "openModal",
     value: function openModal() {
+      this.modal.addClass("modal--is-visible");
+      return false;
+    }
+  }, {
+    key: "openModal2",
+    value: function openModal2() {
       this.modal.addClass("modal--is-visible");
       return false;
     }
