@@ -151,8 +151,8 @@
         padding-bottom: 3rem;
         line-height: 2.4rem;
 
-        @mixin 530plus @mixin 800plus {
-          width: 60%;
+        @mixin 530plus {
+          width: 80%;
           margin: 2rem auto;
         }
 

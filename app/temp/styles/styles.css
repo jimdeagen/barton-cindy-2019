@@ -3508,7 +3508,7 @@ option {
 @media (min-width: 530px) {
 
 .badge--wrap--slidein li {
-          width: 60%;
+          width: 80%;
           margin: 2rem auto
       }
   }
