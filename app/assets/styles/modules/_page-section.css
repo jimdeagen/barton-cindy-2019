@@ -44,11 +44,11 @@
     border-bottom: 1px solid $mainBlue;
   }
 
-  &--testimonials {
+  &--achievers {
     background-color: #e0e6ef;
 
     @mixin 1200plus {
-      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+      background: url("/assets/images/achievers-bg.jpg") top center no-repeat;
       background-size: cover;
     }
   }

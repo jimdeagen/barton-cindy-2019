@@ -981,14 +981,14 @@ picture {
     border-bottom: 1px solid #2f5572;
   }
 
-.page-section--testimonials {
+.page-section--achievers {
     background-color: #e0e6ef;
   }
 
 @media (min-width: 1200px) {
 
-.page-section--testimonials {
-      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+.page-section--achievers {
+      background: url("/assets/images/achievers-bg.jpg") top center no-repeat;
       background-size: cover
   }
   }
@@ -1561,7 +1561,7 @@ picture {
   }
   }
 
-.testimonial {
+.achiever {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0 18px 1px 18px;
   margin-bottom: 98px;
@@ -1576,7 +1576,7 @@ picture {
 
 @media (min-width: 530px) {
 
-.testimonial {
+.achiever {
     padding: 0 2.4rem 1px 2.4rem;
     margin-bottom: 70px
 }
@@ -1584,7 +1584,7 @@ picture {
 
 @media (min-width: 800px) {
 
-.testimonial {
+.achiever {
     padding: 0 2.9rem 1px 2.9rem;
     margin-bottom: 0
 }
@@ -1592,7 +1592,7 @@ picture {
 
 @media (min-width: 530px) {
 
-.testimonial {
+.achiever {
     min-width: 65%;
     max-width: 65%
 }
@@ -1600,7 +1600,7 @@ picture {
 
 @media (min-width: 530px) {
 
-.testimonial {
+.achiever {
     margin-top: 100px;
     margin-left: 0;
     margin-right: 0
@@ -1609,7 +1609,7 @@ picture {
 
 @media (min-width: 1200px) {
 
-.testimonial {
+.achiever {
     margin-top: 12rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -1618,7 +1618,7 @@ picture {
 }
   }
 
-.testimonial__photo {
+.achiever__photo {
     border-radius: 80px;
     overflow: hidden;
     width: 160px;
@@ -1631,7 +1631,7 @@ picture {
             box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.2);
   }
 
-.testimonial__title {
+.achiever__title {
     color: #2f5572;
     text-align: center;
     font-size: 2.4rem;
@@ -1639,7 +1639,7 @@ picture {
     margin: 0;
   }
 
-.testimonial__subtitle {
+.achiever__subtitle {
     color: #d59541;
     text-align: center;
     font-weight: 400;
@@ -1647,28 +1647,28 @@ picture {
     margin: 0.4rem 0 1.6rem 0;
   }
 
-.testimonial__subtitle--hide {
+.achiever__subtitle--hide {
       visibility: hidden;
     }
 
-.testimonial--last {
+.achiever--last {
     margin-bottom: 40px;
   }
 
 @media (min-width: 530px) {
 
-.testimonial--last {
+.achiever--last {
       margin-bottom: 0
   }
   }
 
-.testimonial p {
+.achiever p {
     padding: 0 1.6rem;
   }
 
 @media (min-width: 530px) {
 
-.testimonial p {
+.achiever p {
       padding: 0 1.6rem 3.2rem 1.6rem;
       font-size: 1.8rem
   }
@@ -1676,7 +1676,7 @@ picture {
 
 @media (min-width: 800px) {
 
-.testimonial p {
+.achiever p {
       padding: 0
   }
   }
@@ -1684,12 +1684,12 @@ picture {
 @media (min-width: 530px) {
   }
 
-.testimonial--dyk {
+.achiever--dyk {
     background-color: #2f5572;
     color: #fafafa;
   }
 
-.testimonial--dyk h3 {
+.achiever--dyk h3 {
       color: #dadada;
     }
 
@@ -2365,13 +2365,42 @@ picture {
   -webkit-transform: translate(-50%, 10%) scale(1.2);
           transform: translate(-50%, 10%) scale(1.2);
   border-radius: 5rem;
-
   -webkit-transition: all 0.3s ease-out;
-
   transition: all 0.3s ease-out;
-  width: 1200px;
-  height: 1000px;
+  width: 600px;
+  height: 600px;
+  -webkit-box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: 530px) {
+
+.modal-2 {
+    width: 600px;
+    height: 600px;
+    top: 10rem;
+    bottom: 0;
+    left: 50%;
+    right: 0
+}
+  }
+
+@media (min-width: 1200px) {
+
+.modal-2 {
+    width: 1200px;
+    height: 1000px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0
+}
+  }
+
+.modal-2--wrapper {
+    min-width: 500px;
+    max-width: 600px;
+  }
 
 .modal-2--is-not-visible {
     opacity: 0;
@@ -2384,16 +2413,48 @@ picture {
 .modal-2__inner {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
 
+@media (min-width: 530px) {
+
+.modal-2__inner {
+      -webkit-transform: translateY(0);
+              transform: translateY(0)
+  }
+  }
+
+@media (min-width: 800px) {
+
+.modal-2__inner {
+      top: 45%;
+      width: 100%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%)
+  }
+  }
+
+.modal-2__section-title {
+    margin-top: 8rem;
+  }
+
 .modal-2__description {
+    margin-top: 8rem;
     text-align: center;
     font-size: 1.9rem;
     font-weight: 300;
     line-height: 1.65;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+@media (min-width: 530px) {
+
+.modal-2__description {
+      width: 80%
+  }
   }
 
 @media (min-width: 530px) {
@@ -2416,15 +2477,35 @@ picture {
     right: 60px;
     font-size: 2.2rem;
     /* transform: scaleX(1.2); */
-    -webkit-transform-origin: 100% 0;
-            transform-origin: 100% 0;
-    color: white;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    color: blue;
     cursor: pointer;
     text-align: center;
     background-color: #d59541;
     line-height: 0rem;
     padding: 2rem;
     border-radius: 3rem;
+  }
+
+@media (min-width: 530px) {
+
+.modal-2__close {
+      top: 2rem;
+      right: 2rem;
+      -webkit-transform-origin: 100% 0;
+              transform-origin: 100% 0
+  }
+  }
+
+@media (min-width: 800px) {
+
+.modal-2__close {
+      -webkit-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+      top: 0;
+      right: 60px
+  }
   }
 
 .modal-2__close:hover {
