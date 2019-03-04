@@ -2359,21 +2359,26 @@ picture {
   background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 50%;
   right: 0;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  opacity: 1;
+  -webkit-transform: translate(-50%, 10%) scale(1.2);
+          transform: translate(-50%, 10%) scale(1.2);
+  border-radius: 5rem;
+
   -webkit-transition: all 0.3s ease-out;
+
   transition: all 0.3s ease-out;
+  width: 1200px;
+  height: 1000px;
 }
 
-.modal-2--is-visible {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+.modal-2--is-not-visible {
+    opacity: 0;
+    -webkit-transform: translateY(0) scale(0);
+            transform: translateY(0) scale(0);
+    -webkit-transform-origin: 0;
+            transform-origin: 0;
   }
 
 .modal-2__inner {
@@ -2406,19 +2411,33 @@ picture {
 
 .modal-2__close {
     position: absolute;
-    top: 60px;
+    display: grid;
+    top: 0;
     right: 60px;
-    font-size: 3.2rem;
-    -webkit-transform: scaleX(1.2);
-            transform: scaleX(1.2);
+    font-size: 2.2rem;
+    /* transform: scaleX(1.2); */
     -webkit-transform-origin: 100% 0;
             transform-origin: 100% 0;
-    color: #2f5572;
+    color: white;
     cursor: pointer;
+    text-align: center;
+    background-color: #d59541;
+    line-height: 0rem;
+    padding: 2rem;
+    border-radius: 3rem;
   }
 
 .modal-2__close:hover {
-      color: #d59541;
+      background-color: transparent;
+      border: 1px solid #d59541;
+    }
+
+.modal-2__close:hover a {
+        color: #d59541;
+      }
+
+.modal-2__close a {
+      color: white;
     }
 
 .modal-2__icon {
@@ -3767,7 +3786,3 @@ option {
 
 .picture--cover {
   }
-
-.thankyou {
-  background-color: pink;
-}

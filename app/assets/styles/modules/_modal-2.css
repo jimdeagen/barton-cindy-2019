@@ -4,17 +4,20 @@
   background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 50%;
   right: 0;
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.2);
-  transition: all 0.3s ease-out;
+  opacity: 1;
+  transform: translate(-50%, 10%) scale(1.2);
+  border-radius: 5rem;
 
-  &--is-visible {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
+  transition: all 0.3s ease-out;
+  width: 1200px;
+  height: 1000px;
+
+  &--is-not-visible {
+    opacity: 0;
+    transform: translateY(0) scale(0);
+    transform-origin: 0;
   }
 
   &__inner {
@@ -43,16 +46,31 @@
 
   &__close {
     position: absolute;
-    top: 60px;
+    display: grid;
+    top: 0;
     right: 60px;
-    font-size: 3.2rem;
-    transform: scaleX(1.2);
+    font-size: 2.2rem;
+    /* transform: scaleX(1.2); */
     transform-origin: 100% 0;
-    color: $mainBlue;
+    color: white;
     cursor: pointer;
+    text-align: center;
+    background-color: $mainOrange;
+    line-height: 0rem;
+    padding: 2rem;
+    border-radius: 3rem;
 
     &:hover {
-      color: $mainOrange;
+      background-color: transparent;
+      border: 1px solid $mainOrange;
+
+      & a {
+        color: $mainOrange;
+      }
+    }
+
+    & a {
+      color: white;
     }
   }
 

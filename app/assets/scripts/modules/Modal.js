@@ -6,6 +6,7 @@ class Modal {
     this.modal = $(".modal");
     this.modal2 = $(".modal-2");
     this.closeModalButton = $(".modal__close");
+    this.closeModal2Button = $(".modal-2__close");
     this.events();
   }
 
@@ -13,11 +14,11 @@ class Modal {
     // clicking the open modal button
     this.openModalButton.click(this.openModal.bind(this));
 
-    // clicking the open modal button
-    this.openModalButton.click(this.openModal2.bind(this));
-
     // clicking the x close modal button
     this.closeModalButton.click(this.closeModal.bind(this));
+
+    // clicking the x close modal button
+    this.closeModal2Button.click(this.closeModal2.bind(this));
 
     // pushes any key
     $(document).keyup(this.keyPressHandler.bind(this));
@@ -34,13 +35,12 @@ class Modal {
     return false;
   }
 
-  openModal2() {
-    this.modal.addClass("modal--is-visible");
-    return false;
-  }
-
   closeModal() {
     this.modal.removeClass("modal--is-visible");
+  }
+
+  closeModal2() {
+    this.modal2.addClass("modal-2--is-not-visible");
   }
 }
 

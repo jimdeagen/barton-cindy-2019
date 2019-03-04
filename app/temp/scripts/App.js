@@ -11843,6 +11843,7 @@ var Modal = function () {
     this.modal = (0, _jquery2.default)(".modal");
     this.modal2 = (0, _jquery2.default)(".modal-2");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
+    this.closeModal2Button = (0, _jquery2.default)(".modal-2__close");
     this.events();
   }
 
@@ -11852,11 +11853,11 @@ var Modal = function () {
       // clicking the open modal button
       this.openModalButton.click(this.openModal.bind(this));
 
-      // clicking the open modal button
-      this.openModalButton.click(this.openModal2.bind(this));
-
       // clicking the x close modal button
       this.closeModalButton.click(this.closeModal.bind(this));
+
+      // clicking the x close modal button
+      this.closeModal2Button.click(this.closeModal2.bind(this));
 
       // pushes any key
       (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
@@ -11875,15 +11876,14 @@ var Modal = function () {
       return false;
     }
   }, {
-    key: "openModal2",
-    value: function openModal2() {
-      this.modal.addClass("modal--is-visible");
-      return false;
-    }
-  }, {
     key: "closeModal",
     value: function closeModal() {
       this.modal.removeClass("modal--is-visible");
+    }
+  }, {
+    key: "closeModal2",
+    value: function closeModal2() {
+      this.modal2.addClass("modal-2--is-not-visible");
     }
   }]);
 
