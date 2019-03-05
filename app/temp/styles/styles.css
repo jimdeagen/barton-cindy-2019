@@ -2367,7 +2367,7 @@ picture {
   border-radius: 5rem;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  width: 600px;
+  width: 320px;
   height: 600px;
   -webkit-box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
@@ -2389,8 +2389,8 @@ picture {
 
 .modal-2 {
     width: 1200px;
-    height: 1000px;
-    top: 0;
+    height: 900px;
+    top: 8rem;
     bottom: 0;
     left: 50%;
     right: 0
@@ -2398,8 +2398,16 @@ picture {
   }
 
 .modal-2--wrapper {
-    min-width: 500px;
-    max-width: 600px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+@media (min-width: 530px) {
+
+.modal-2--wrapper {
+      min-width: 500px;
+      max-width: 600px
+  }
   }
 
 .modal-2--is-not-visible {
@@ -2414,15 +2422,17 @@ picture {
     position: absolute;
     width: 100%;
     top: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
 @media (min-width: 530px) {
 
 .modal-2__inner {
       -webkit-transform: translateY(0);
-              transform: translateY(0)
+              transform: translateY(0);
+      min-width: 280px;
+      max-width: 280px
   }
   }
 
@@ -2437,13 +2447,20 @@ picture {
   }
 
 .modal-2__section-title {
-    margin-top: 8rem;
+    margin-top: 4rem;
+  }
+
+@media (min-width: 530px) {
+
+.modal-2__section-title {
+      margin-top: 8rem
+  }
   }
 
 .modal-2__description {
-    margin-top: 8rem;
+    margin-top: 4rem;
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.65;
     margin-left: auto;
@@ -2453,7 +2470,8 @@ picture {
 @media (min-width: 530px) {
 
 .modal-2__description {
-      width: 80%
+      width: 80%;
+      margin-top: 8rem
   }
   }
 
