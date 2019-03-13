@@ -10,51 +10,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Thank You</title>
 
-    <link rel="stylesheet" href="assets/styles/styles**.css" />
+    <!-- <link rel="stylesheet" href="assets/styles/styles.css" /> -->
     <style>
       html {
         font-family: "Open Sans", sans-serif;
+        font-size: 62.5%;
       }
 
-      .modal-2 {
-        position: fixed;
-        z-index: 5;
-        background-color: rgba(255, 255, 255, 0.9);
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(1.2);
-        transition: all 0.3s ease-out;
+      a {
+        text-decoration: none;
       }
 
-      .modal-2--is-visible {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
-      }
-
-      .modal-2__inner {
+      /* &__inner {
         position: absolute;
         width: 100%;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 0;
+        transform: translateY(0);
+
+        @mixin 530plus {
+          transform: translateY(0);
+          min-width: 280px;
+          max-width: 280px;
+        }
+
+        @mixin 800plus {
+          top: 20%;
+          width: 100%;
+          transform: translateY(0);
+        }
+      } */
+
+      .modal-2__inner {
+        margin-top: 10rem;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .modal-2__section-title {
+        font-size: 4.4rem;
+        margin-top: 4rem;
+        color: #2f5572;
+        text-align: center;
+
+        /* @mixin 530plus {
+                margin-top: 8rem;
+              } */
       }
 
       .modal-2__description {
+        margin-top: 4rem;
         text-align: center;
-        font-size: 1.9rem;
+        font-size: 2rem;
         font-weight: 300;
         line-height: 1.65;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 840px;
+
+        /* @mixin 530plus {
+                width: 80%;
+                margin-top: 8rem;
+              } */
       }
 
-      @media (min-width: 530px) {
-        .modal-2__description {
-          font-size: 2rem;
-        }
-      }
+      /* @mixin 530plus {
+              font-size: 2rem;
+            } */
 
       .modal-2__description--last {
         margin-bottom: 80px;
@@ -63,40 +85,72 @@
       }
 
       .modal-2__close {
-        position: absolute;
-        top: 60px;
-        right: 60px;
-        font-size: 3.2rem;
-        transform: scaleX(1.2);
-        transform-origin: 100% 0;
-        color: $mainBlue;
-        cursor: pointer;
-      }
-
-      .modal-2__close:hover {
-        color: #d59541;
-      }
-
-      .modal-2__icon {
         position: relative;
-        top: 10px;
-        right: 10px;
+        display: block;
+        top: 0;
+        right: 0;
+        font-size: 2.2rem;
+        /* transform: scaleX(1.2); */
+        transform-origin: 0 0;
+        cursor: pointer;
+        text-align: center;
+        background-color: #d59541;
+        line-height: 0rem;
+        padding: 2rem;
+        margin-bottom: 14rem;
+        border-radius: 3rem;
+        border: 1px solid transparent;
+
+        /* @mixin 530plus {
+                top: 2rem;
+                right: 2rem;
+                transform-origin: 100% 0;
+              } */
+
+        /* @mixin 800plus {
+                transform-origin: 100% 0;
+                top: 2rem;
+                right: 60px;
+              } */
       }
+      .modal-2__close:hover {
+        background-color: transparent;
+        border: 1px solid #cccccc;
+      }
+
+      .modal-2__close a {
+        color: white;
+        padding: 0 54rem;
+      }
+
+      .modal-2__close:hover a {
+        color: #777777;
+      }
+
+      /* .modal-2__icon {
+              position: relative;
+              top: 10px;
+              right: 10px;
+            } */
     </style>
   </head>
   <body>
     <div class="model-2" id="thankyou__modal">
-      <div class="modal__inner">
-        <h2 class="section-title section-title--tan section-title--less-margin">
+      <div class="modal-2__inner">
+        <div class="modal-2__close"><a href="index.html#forward">close</a></div>
+        <h2
+          class="modal-2__section-title modal-2__section-title--tan modal-2__section-title--less-margin"
+        >
           <img
-            class="section-title__icon modal__icon"
+            class="modal-2__section-title__icon modal__icon"
             src="assets/images/icons/icon_quote-bubbles.png"
           />Thank
           <strong>You</strong>
         </h2>
+
         <div class="wrapper wrapper--narrow">
-          <p class="modal__description">Reply will come soon!</p>
-          <p class="modal__description">
+          <p class="modal-2__description">Reply will come soon!</p>
+          <p class="modal-2__description">
             <a
               href="mailto:bartonwithcindy@gmail.com?subject=We want to be better readers"
               >Feel free to email me</a
@@ -104,7 +158,7 @@
             or text me at 925-487-4483
           </p>
 
-          <p class="modal__description modal__description--last">
+          <p class="modal-2__description modal-2__description--last">
             Questions are encouraged! Contact me to discuss your goals or to
             schedule a screening.<br />The Barton screenings are necessary to
             ensure your child is a good fit for the Barton Reading and Spelling
@@ -112,8 +166,6 @@
           </p>
         </div>
       </div>
-
-      <div class="modal__close"><a href="index.html#forward">X</a></div>
     </div>
   </body>
 </html>
