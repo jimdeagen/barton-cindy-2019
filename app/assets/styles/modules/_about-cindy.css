@@ -127,6 +127,64 @@
       grid-row-end: 3;
     }
   }
+
+  &--testimonials {
+    column-count: 1;
+    border-radius: 0.8rem;
+
+    @mixin 530plus and (max-width: 799px) {
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      padding: 6rem 5rem 6rem 5rem;
+      background-color: #f8f8f8;
+    }
+
+    @mixin 800plus {
+      display: flex;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      column-count: 1;
+    }
+
+    @mixin 530plus and (orientation: landscape) and (max-width: 1099px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+
+  &--testimonial {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 35%;
+      background-color: #e8e8e8;
+      margin-right: 6rem;
+      font-size: 3rem;
+      color: white;
+      /* padding: 2rem 4rem; */
+
+      & p {
+        width: 100%;
+        font-size: 2.8rem;
+        text-align: right;
+      }
+
+      & img {
+        max-height: 7rem;
+      }
+    }
+    &-copy {
+      width: 65%;
+      background-color: transparent;
+    }
+  }
 }
 
 #about-cindy {
