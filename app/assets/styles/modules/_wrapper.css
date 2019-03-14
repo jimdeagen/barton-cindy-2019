@@ -41,7 +41,7 @@
       margin-right: auto;
     }
 
-    @mixin 530plus and (max-width: 899px) {
+    @mixin 530plus and (max-width: 799px) {
       display: relative;
       overflow: hidden;
       max-width: 680px;
@@ -49,6 +49,10 @@
       padding-right: 0;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @mixin 800plus {
+      max-width: 900px;
     }
 
     @mixin 1200plus {

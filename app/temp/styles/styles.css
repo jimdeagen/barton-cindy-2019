@@ -463,7 +463,8 @@ body {
   color: #333;
 }
 
-p {
+p,
+q {
   font-size: 1.6rem;
   line-height: 1.8;
   margin: 0 0 2.8rem 0;
@@ -917,6 +918,13 @@ picture {
       padding-right: 0;
       margin-left: auto;
       margin-right: auto
+  }
+  }
+
+@media (min-width: 800px) {
+
+.wrapper__wider {
+      max-width: 900px
   }
   }
 
@@ -2872,7 +2880,8 @@ option {
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 3;
-      grid-row-end: 4
+      grid-row-end: 4;
+      margin-top: 3rem
   }
   }
 
@@ -2899,12 +2908,21 @@ option {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      width: 47%;
-      /* background-color: #e8e8e8; */
+      width: 100%;
+      background-color: #e8e8e8;
       margin-right: 0;
+      padding-right: 1rem;
       font-size: 3rem;
-      color: #2f5572;
+      color: #e8e8e8;
     }
+
+@media (min-width: 800px) {
+
+.about-cindy-section--testimonial-header {
+        width: 47%;
+        color: #2f5572
+    }
+  }
 
 /* padding: 2rem 4rem; */
 
@@ -2912,6 +2930,7 @@ option {
         width: 85%;
         font-size: 2.8rem;
         text-align: right;
+        color: #2f5572;
       }
 
 .about-cindy-section--testimonial-header img {
@@ -2923,7 +2942,7 @@ option {
       padding-top: 5rem;
       background-color: transparent;
       overflow: scroll;
-      /* background-color: green; */
+      border: 2px solid #e8e8e8;
     }
 
 #about-cindy {
@@ -3380,6 +3399,13 @@ option {
 @media (min-width: 800px) {
 
 .badges {
+    padding: 2rem 0rem
+}
+  }
+
+@media (min-width: 1200px) {
+
+.badges {
     padding: 2rem 6rem
 }
   }
@@ -3434,7 +3460,7 @@ option {
         -ms-flex-direction: row;
             flex-direction: row;
     min-width: 30%;
-    max-width: 30%
+    max-width: 40%
 }
   }
 
@@ -3477,6 +3503,10 @@ option {
     -ms-flex-item-align: center;
         align-self: center;
   }
+
+.badge__p span {
+      color: #bbd;
+    }
 
 .badge__image {
     -webkit-transform: scale(0.8);
@@ -3872,11 +3902,35 @@ option {
 
 .boxes {
   position: relative;
-  width: 700px;
-  height: 340px;
+  width: 300px;
+  height: 500px;
   margin: 0 auto;
-  /* border: 3px solid red; */
 }
+
+/* border: 3px solid red; */
+
+@media (min-width: 530px) {
+
+.boxes {
+    width: 400px
+}
+  }
+
+@media (min-width: 800px) {
+
+.boxes {
+    width: 700px;
+    height: 340px
+}
+  }
+
+@media (min-width: 800px) {
+
+.boxes {
+    width: 400px;
+    height: 460px
+}
+  }
 
 .box {
   width: 100%;
@@ -3886,10 +3940,17 @@ option {
   left: 0;
   opacity: 0;
 
-  padding: 0 0 0 4.5rem;
-  -webkit-transition: opacity 1.5s ease-in-out;
-  transition: opacity 1.5s ease-in-out;
+  padding: 0 0 0 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
+
+@media (min-width: 800px) {
+
+.box {
+    padding: 0 0 0 4.5rem
+}
+  }
 
 .box.transparent {
   background-color: transparent;

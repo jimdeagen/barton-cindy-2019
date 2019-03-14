@@ -5,6 +5,10 @@
   padding: 1rem 1rem;
 
   @mixin 800plus {
+    padding: 2rem 0rem;
+  }
+
+  @mixin 1200plus {
     padding: 2rem 6rem;
   }
 
@@ -35,7 +39,7 @@
   @mixin 800plus {
     flex-direction: row;
     min-width: 30%;
-    max-width: 30%;
+    max-width: 40%;
   }
 
   @mixin 800plusland {
@@ -63,6 +67,10 @@
     line-height: 1.2;
     margin: 0 0 0 0;
     align-self: center;
+
+    & span {
+      color: #bbd;
+    }
   }
 
   &__image {

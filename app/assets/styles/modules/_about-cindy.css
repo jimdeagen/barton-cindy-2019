@@ -153,6 +153,7 @@
       grid-column-end: 3;
       grid-row-start: 3;
       grid-row-end: 4;
+      margin-top: 3rem;
     }
   }
 
@@ -168,11 +169,17 @@
       flex-wrap: wrap;
       justify-content: flex-end;
       align-items: center;
-      width: 47%;
-      /* background-color: #e8e8e8; */
+      width: 100%;
+      background-color: #e8e8e8;
       margin-right: 0;
+      padding-right: 1rem;
       font-size: 3rem;
-      color: $mainBlue;
+      color: #e8e8e8;
+
+      @mixin 800plus {
+        width: 47%;
+        color: $mainBlue;
+      }
 
       /* padding: 2rem 4rem; */
 
@@ -180,6 +187,7 @@
         width: 85%;
         font-size: 2.8rem;
         text-align: right;
+        color: $mainBlue;
       }
 
       & img {
@@ -191,7 +199,7 @@
       padding-top: 5rem;
       background-color: transparent;
       overflow: scroll;
-      /* background-color: green; */
+      border: 2px solid #e8e8e8;
     }
   }
 }
