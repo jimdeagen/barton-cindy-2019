@@ -2835,8 +2835,7 @@ option {
   }
 
 .about-cindy-section--testimonials {
-    -webkit-column-count: 1;
-            column-count: 1;
+    width: 100%;
     border-radius: 0.8rem;
   }
 
@@ -2844,7 +2843,7 @@ option {
 
 .about-cindy-section--testimonials {
       border: 1px solid rgba(0, 0, 0, 0.25);
-      padding: 6rem 5rem 6rem 5rem;
+      /* padding: 6rem 5rem 6rem 5rem; */
       background-color: #f8f8f8
   }
   }
@@ -2855,6 +2854,9 @@ option {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 2;
@@ -2874,6 +2876,12 @@ option {
   }
   }
 
+.about-cindy-section--testimonial {
+    width: 100%;
+  }
+
+/* background-color: pink; */
+
 .about-cindy-section--testimonial:last-of-type {
       margin-bottom: 0;
     }
@@ -2882,22 +2890,26 @@ option {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      /* flex-direction: column; */
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      width: 35%;
-      background-color: #e8e8e8;
-      margin-right: 6rem;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 47%;
+      /* background-color: #e8e8e8; */
+      margin-right: 0;
       font-size: 3rem;
-      color: white;
+      color: #2f5572;
     }
 
 /* padding: 2rem 4rem; */
 
 .about-cindy-section--testimonial-header p {
-        width: 100%;
+        width: 85%;
         font-size: 2.8rem;
         text-align: right;
       }
@@ -2907,8 +2919,11 @@ option {
       }
 
 .about-cindy-section--testimonial-copy {
-      width: 65%;
+      width: 100%;
+      padding-top: 5rem;
       background-color: transparent;
+      overflow: scroll;
+      /* background-color: green; */
     }
 
 #about-cindy {
@@ -3847,4 +3862,82 @@ option {
 
 .thankyou {
   background-color: pink;
+}
+
+.wrap {
+  /* position: relative;
+  top: 0; */
+  /*transform: translateY(-50%);*/
+}
+
+.boxes {
+  position: relative;
+  width: 700px;
+  height: 340px;
+  margin: 0 auto;
+  /* border: 3px solid red; */
+}
+
+.box {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+  padding: 0 0 0 4.5rem;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.box.transparent {
+  background-color: transparent;
+}
+
+/*use of 'checked' state to turn on image opacity*/
+
+.red:checked ~ .boxes > .red,
+.blue:checked ~ .boxes > .blue,
+.green:checked ~ .boxes > .green {
+  opacity: 1;
+  border: 1px #efb31f;
+}
+
+.red:checked ~ .labels > .r-label,
+.blue:checked ~ .labels > .bl-label,
+.green:checked ~ .labels > .g-label {
+  background-color: #efb31f;
+}
+
+/*START for labels style*/
+
+.labels {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  z-index: 2;
+  /* position: relative;
+  bottom: 0;
+  left: 0; */
+  /* transform: translateX(-50%); */
+}
+
+.s-index {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  background-color: #2f5572;
+  text-align: right;
+  display: inline-block;
+  margin-right: 6px;
+  cursor: pointer;
+  /* border: 1px solid; */
+}
+
+.s-index:last-of-type {
+  margin-right: 0;
+}
+
+.rnav {
+  display: none;
 }
