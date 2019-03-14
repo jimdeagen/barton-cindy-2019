@@ -1,0 +1,89 @@
+.wrap {
+  /* position: relative;
+  top: 0; */
+  /*transform: translateY(-50%);*/
+}
+.boxes {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  /* border: 3px solid red; */
+
+  @mixin 530plus {
+    width: 400px;
+  }
+
+  @mixin 800plus {
+    width: 700px;
+    height: 340px;
+  }
+
+  @mixin 800plus and (orientation: landscape) and (max-width: 1099px) {
+    width: 400px;
+    height: 460px;
+  }
+}
+.box {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+  padding: 0 0 0 0;
+  transition: opacity 1s ease-in-out;
+
+  @mixin 800plus {
+    padding: 0 0 0 4.5rem;
+  }
+}
+.box.transparent {
+  background-color: transparent;
+}
+
+/*use of 'checked' state to turn on image opacity*/
+.red:checked ~ .boxes > .red,
+.blue:checked ~ .boxes > .blue,
+.green:checked ~ .boxes > .green {
+  opacity: 1;
+  border: 1px #efb31f;
+}
+
+.red:checked ~ .labels > .r-label,
+.blue:checked ~ .labels > .bl-label,
+.green:checked ~ .labels > .g-label {
+  background-color: #efb31f;
+}
+
+/*START for labels style*/
+
+.labels {
+  align-self: flex-start;
+  z-index: 2;
+  /* position: relative;
+  bottom: 0;
+  left: 0; */
+  /* transform: translateX(-50%); */
+}
+
+.s-index {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  background-color: $mainBlue;
+  text-align: right;
+  display: inline-block;
+  margin-right: 6px;
+  cursor: pointer;
+  /* border: 1px solid; */
+}
+
+.s-index:last-of-type {
+  margin-right: 0;
+}
+
+.rnav {
+  display: none;
+}
