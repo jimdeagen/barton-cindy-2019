@@ -20,8 +20,8 @@
   }
 
   @mixin 800plus and (orientation: landscape) and (max-width: 1099px) {
-    width: 400px;
-    height: 460px;
+    width: 580px;
+    height: 400px;
   }
 }
 .box {
@@ -36,7 +36,7 @@
   transition: opacity 1s ease-in-out;
 
   @mixin 800plus {
-    padding: 0 0 0 4.5rem;
+    padding: 1rem 0 0 0;
   }
 }
 .box.transparent {
@@ -61,7 +61,7 @@
 
 .labels {
   align-self: flex-start;
-  z-index: 2;
+  z-index: 4;
   /* position: relative;
   bottom: 0;
   left: 0; */
@@ -71,17 +71,22 @@
 .s-index {
   width: 30px;
   height: 30px;
-  /* border-radius: 50%; */
   background-color: $mainBlue;
   text-align: right;
   display: inline-block;
   margin-right: 6px;
   cursor: pointer;
-  /* border: 1px solid; */
+  border-radius: 3px;
 }
 
 .s-index:last-of-type {
   margin-right: 0;
+}
+
+.s-index:hover {
+  outline: 1px solid rgba($mainBlue, 0.35);
+  outline-offset: 2px;
+  border-radius: 0;
 }
 
 .rnav {

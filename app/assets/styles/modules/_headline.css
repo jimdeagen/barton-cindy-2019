@@ -98,6 +98,10 @@
       margin-right: 0;
       margin-left: auto;
     }
+
+    @mixin 800plus {
+      margin: 0;
+    }
   }
 
   &--tmargin-large {
@@ -123,7 +127,7 @@
   &__list {
     padding-top: 0;
     padding-left: 5rem;
-    color: &mainBlue;
+    color: $mainBlue;
     font-size: 1.5rem;
     line-height: 1.65;
     font-weight: 300;

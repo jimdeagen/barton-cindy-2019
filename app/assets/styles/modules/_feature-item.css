@@ -18,7 +18,7 @@
   padding-bottom: 2rem;
   border: 1px solid rgba($mainTan, 0.5);
   background-color: khaki;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 25px 8px -20px rgba(0, 0, 0, 0.2);
   max-width: 100%;
   transform: scale(1);
   transition: all 0.4s ease-out !important;
@@ -34,9 +34,10 @@
     background-color: rgb(193, 223, 255);
     /* width: 100%; */
     &:hover {
-      animation: rotate 0.5 forward;
-      transform: rotate(-1deg);
+      animation: shortswing 3.5s forward;
+      transform: rotate(-1deg) translateY(-1.7rem);
       animation-direction: alternate;
+      box-shadow: -10px 75px 38px -40px rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -48,24 +49,21 @@
     max-width: 47%;
   }
 
-  @keyframes rotate {
+  @keyframes shortswing {
     0% {
       transform: rotate(-1deg) scale(1);
     }
+    20% {
+      transform: rotate(2.8deg) scale(1);
+    }
     40% {
-      transform: rotate(0.8deg) scale(1);
+      transform: rotate(-4.6deg) scale(1);
     }
-    65% {
-      transform: rotate(-0.6deg) scale(1);
+    60% {
+      transform: rotate(4.4deg) scale(1);
     }
-    75% {
-      transform: rotate(0.4deg) scale(1);
-    }
-    82% {
-      transform: rotate(-0.2deg) scale(1);
-    }
-    91% {
-      transform: rotate(0.1deg) scale(1);
+    80% {
+      transform: rotate(-2.2deg) scale(1);
     }
     100% {
       transform: rotate(0deg) scale(1.2);
@@ -84,7 +82,7 @@
     border: 1px solid $mainTan;
     /* outline: 1px dashed $mainTan; */
     outline-offset: -4px;
-    /* border-left: 1px solid transparent; */
+    border-right: 1px solid transparent;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
     background-image: linear-gradient(#ececec, $liteTan);
     margin: 0 auto;
@@ -143,7 +141,6 @@
 
   &__list {
     position: relative;
-    /* top: -3rem; */
     padding-top: 3rem;
     width: 100%;
     margin-left: auto;
@@ -178,10 +175,8 @@
     line-height: 1.65;
     font-weight: 200;
     letter-spacing: 0.16rem;
-    // margin-bottom: 1.5rem;
     padding-left: 2rem;
     padding-bottom: 1.2rem;
-    // margin-left: 2rem;
     border-bottom: 1px solid rgba(#778899, 0.15);
 
     & ul li {

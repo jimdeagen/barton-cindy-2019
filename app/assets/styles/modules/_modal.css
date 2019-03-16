@@ -50,6 +50,7 @@
     transform-origin: 100% 0;
     color: $mainBlue;
     cursor: pointer;
+    z-index: 150;
 
     &:hover {
       color: $mainOrange;

@@ -126,6 +126,7 @@
 
     @mixin 800plus {
       flex-direction: row;
+      border-radius: 4rem / 8rem;
     }
 
     &--slidein {
