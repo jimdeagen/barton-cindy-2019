@@ -54,9 +54,11 @@
     color: $mainOrange;
     cursor: pointer;
     z-index: 150;
-    width: 100%;
+    width: 70vw;
+    position: relative;
+    top: 8rem;
 
-    @mixin 800plus {
+    @mixin 530plus {
       width: 50rem;
     }
 

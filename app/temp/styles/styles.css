@@ -1875,7 +1875,7 @@ picture {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 3;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 
@@ -2410,10 +2410,12 @@ picture {
     color: #d59541;
     cursor: pointer;
     z-index: 150;
-    width: 100%;
+    width: 70vw;
+    position: relative;
+    top: 8rem;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .modal__close {
       width: 50rem
@@ -4131,7 +4133,7 @@ option {
 .labels {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  z-index: 4;
+  z-index: 2;
   /* position: relative;
   bottom: 0;
   left: 0; */
