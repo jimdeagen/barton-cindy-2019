@@ -123,6 +123,7 @@
     background-color: rgba($liteGray, 0.7);
     padding: 2rem;
     border: 2px solid $liteMediumGray;
+    border-radius: 4rem / 8rem;
 
     @mixin 800plus {
       flex-direction: row;

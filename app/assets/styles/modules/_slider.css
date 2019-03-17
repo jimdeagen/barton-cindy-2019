@@ -14,14 +14,14 @@
     width: 400px;
   }
 
-  @mixin 800plus {
+  /* @mixin 800plus {
     width: 700px;
     height: 340px;
-  }
+  } */
 
-  @mixin 800plus and (orientation: landscape) and (max-width: 1099px) {
-    width: 580px;
-    height: 400px;
+  @mixin 800plus {
+    width: 380px;
+    height: 600px;
   }
 }
 .box {
@@ -71,12 +71,14 @@
 .s-index {
   width: 30px;
   height: 30px;
-  background-color: $mainBlue;
-  text-align: right;
+  background-color: $mainOrange;
+  text-align: left;
   display: inline-block;
   margin-right: 6px;
   cursor: pointer;
   border-radius: 3px;
+  font-size: 2rem;
+  padding-left: 2px;
 }
 
 .s-index:last-of-type {
@@ -84,7 +86,8 @@
 }
 
 .s-index:hover {
-  outline: 1px solid rgba($mainBlue, 0.35);
+  /* outline: 1px solid rgba($mainBlue, 0.35); */
+  background-color: $mainBlue;
   outline-offset: 2px;
   border-radius: 0;
 }

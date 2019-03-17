@@ -131,7 +131,9 @@
   &--testimonials {
     width: 100%;
     /* border-radius: 0.8rem; */
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 
     @mixin 530plus and (max-width: 799px) {
       border: 1px solid rgba(0, 0, 0, 0.15);
@@ -182,6 +184,8 @@
       margin-right: 0;
       padding-right: 1rem;
       font-size: 3rem;
+      font-style: normal;
+      font-family: "Open Sans";
       color: #e8e8e8;
 
       @mixin 800plus {

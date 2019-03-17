@@ -1,6 +1,8 @@
 .primary-nav {
   display: block;
   width: 100%;
+  overflow: visible;
+  height: 0;
   padding-top: 0;
 
   ul {
@@ -11,7 +13,7 @@
     @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
       flex-direction: row;
       justify-content: center;
-      align-items: flex-start;
+      align-items: flex-end;
     }
   }
 

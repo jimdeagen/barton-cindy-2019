@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  z-index: 5;
+  z-index: 3;
   background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   bottom: 0;
@@ -19,9 +19,14 @@
 
   &__inner {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100vh;
+    /* top: 50%;
+    transform: translateY(-50%); */
   }
 
   &__description {
@@ -42,15 +47,18 @@
   }
 
   &__close {
-    position: absolute;
-    top: 60px;
-    right: 60px;
+    display: block;
+    text-align: right;
     font-size: 3.2rem;
     transform: scaleX(1.2);
-    transform-origin: 100% 0;
-    color: $mainBlue;
+    color: $mainOrange;
     cursor: pointer;
     z-index: 150;
+    width: 100%;
+
+    @mixin 800plus {
+      width: 50rem;
+    }
 
     &:hover {
       color: $mainOrange;
