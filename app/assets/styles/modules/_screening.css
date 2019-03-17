@@ -17,10 +17,12 @@
   }
 
   &--reqs {
+    background-color: rgba($liteMediumGray, 0.5);
+    padding: 2rem 1rem 1rem 4rem;
+    margin-bottom: 2rem;
     @mixin 800plus {
       grid-row: 1/2;
       grid-column: 1/2;
-      background-color: $liteGray;
       padding: 3rem 2rem 3rem 4rem;
     }
   }
@@ -63,7 +65,11 @@
   }
 
   p&__permission {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+
+    @mixin 530plus {
+      font-size: 1.4rem;
+    }
   }
 
   &__list {
@@ -88,6 +94,11 @@
   &__form-title {
     color: $mainOrange;
     font-size: 2.88rem;
+    text-align: center;
+
+    @mixin 530plus {
+      text-align: left;
+    }
   }
 
   &__form--input {

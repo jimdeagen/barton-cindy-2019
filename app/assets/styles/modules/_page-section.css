@@ -1,5 +1,5 @@
 .page-section {
-  padding: 6.2rem 0;
+  padding: 6.2rem 0 3.2rem 0;
 
   @mixin 800plus {
     padding: 7rem 0 18rem 0;
