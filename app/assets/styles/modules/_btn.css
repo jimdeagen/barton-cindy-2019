@@ -24,7 +24,7 @@
   }
 
   &-hover:hover {
-    background-color: rgba($liteMediumGray, 0.8);
+    background-color: rgba($liteGray, 1);
     color: #d59541;
     border: 1px solid #d59541;
   }

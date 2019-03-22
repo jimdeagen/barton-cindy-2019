@@ -1,0 +1,502 @@
+.deepdive {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: liteblue;
+  font-size: inherit;
+
+  &-section {
+    border-bottom: 1px solid $mainBlue;
+  }
+
+  &-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid transparent;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding: 0 0 2rem 0;
+    margin-bottom: 4rem;
+
+    @mixin 800plus {
+      margin-bottom: 3rem;
+      flex-direction: row;
+      height: 400px;
+    }
+
+    @mixin 530plus and (orientation: landscape) and (max-width: 1199px) {
+      /* color: red; */
+      height: auto;
+      border-top: 1px solid transparent;
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-left: 1px solid transparent;
+    }
+
+    &-left {
+      width: 100%;
+
+      @mixin 800plus {
+        width: 50%;
+      }
+
+      @mixin 530plus and (orientation: landscape) and (max-width: 899px) {
+        width: 100%;
+      }
+
+      &-image {
+        display: block;
+        height: auto;
+
+        @mixin 800plus {
+          height: auto;
+        }
+
+        @mixin 530plus and (orientation: landscape) and (max-width: 1199px) {
+          object-fit: contain;
+          margin: 3rem auto;
+        }
+      }
+    }
+
+    &-right {
+      width: 100%;
+      height: auto;
+
+      padding: 2rem;
+
+      @mixin 800plus {
+        border-top: 1px solid #ddd;
+        padding: 4rem;
+        width: 50%;
+      }
+
+      @mixin 530plus and (orientation: landscape) and (max-width: 899px) {
+        width: 100%;
+        padding: 2rem 4rem;
+        border-top: 1px solid transparent;
+      }
+
+      &-icon {
+        float: left;
+        margin-right: 3rem;
+        width: 80px;
+      }
+    }
+  }
+
+  &-1 {
+    display: block;
+    height: auto;
+    width: 100%;
+    /* background-color: pink; */
+    /* border: 1px solid $liteMediumGray; */
+    padding: 2.5rem 1rem;
+    background: linear-gradient(#f4f2f1, white);
+
+    @mixin 530plus and (max-width: 1099px) {
+      padding: 4rem;
+    }
+
+    @mixin 800plus {
+      border-radius: 8px;
+      width: 50%;
+      align-self: stretch;
+      padding: 7rem 4rem;
+    }
+
+    &a,
+    &b {
+      display: block;
+      width: 100%;
+      padding: 3rem 3rem 1rem;
+      background-color: $mainBlue;
+      color: white;
+
+      @mixin 530plus {
+        padding: 3rem 5rem 1rem;
+        margin-top: 8rem;
+      }
+    }
+
+    &b {
+      background-color: white;
+      border: 1px solid $mainBlue;
+      color: $mainBlue;
+      padding-bottom: 4rem;
+      margin-top: 3rem;
+
+      &-header {
+        @mixin 530plus {
+          padding: 0;
+        }
+      }
+
+      & p {
+        margin-top: 2.5rem;
+        margin-bottom: 0;
+
+        & span {
+          font-size: 1.6rem;
+          /* color: $mainOrange; */
+          font-weight: 700;
+        }
+      }
+
+      & li {
+        padding-bottom: 1rem;
+      }
+    }
+
+    &-p {
+      padding: 0 2rem;
+    }
+  }
+
+  &-2 {
+    width: 100%;
+    /* border: 1px solid $liteMediumGray; */
+    background: linear-gradient($liteTan, white);
+    padding: 2rem;
+
+    @mixin 530plus {
+      padding: 1rem 7rem;
+    }
+
+    @mixin 800plus {
+      width: 50%;
+    }
+
+    &a {
+      display: block;
+      /* background-color: orange; */
+      & ul ul li {
+        font-style: italic;
+        color: #999;
+        font-size: 1.2rem;
+        list-style: none;
+      }
+    }
+
+    &b {
+      display: block;
+      /* background-color: lightcoral; */
+
+      & p {
+        margin-top: 6rem;
+      }
+
+      & ul li {
+        padding: 0.8rem 0;
+      }
+    }
+
+    & ul li {
+      font-size: 1.6rem;
+      padding: 1.5rem 0;
+    }
+
+    &--screening {
+      background-color: white;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      padding: 3rem 3rem 3rem 5.5rem;
+
+      & span.small-italic {
+        font-style: italic;
+        font-size: 1.2rem;
+      }
+
+      & span.blue {
+        color: $mainBlue;
+        font-weight: 600;
+      }
+
+      @mixin 530plus {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &--faq {
+      background-color: white;
+      /* border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc; */
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: 1rem 3rem 1rem 5.5rem;
+
+      & span.small-italic {
+        font-style: italic;
+        font-size: 1.2rem;
+      }
+
+      & span.blue {
+        color: $mainBlue;
+        font-weight: 600;
+      }
+
+      @mixin 530plus {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-right: 1px solid $mainBlue;
+        border-left: 1px solid $mainBlue;
+      }
+    }
+  }
+
+  &-3 {
+    display: block;
+    width: 65%;
+    background-color: lightgreen;
+  }
+
+  &-4 {
+    display: block;
+    width: 65%;
+    background-color: lightblue;
+  }
+
+  &-5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 3rem 0;
+    /* border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; */
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    @mixin 530plus {
+      flex-direction: row;
+    }
+
+    &a {
+      align-self: center;
+      width: 100%;
+      background: linear-gradient(#f4f2f1, white);
+      padding: 3rem;
+      margin-right: 0;
+      border-top: 5px solid $mainTan;
+      border-bottom: 0px solid transparent;
+
+      @mixin 800plus {
+        border-top: 1px solid #ccc;
+        width: 22%;
+        padding: 3rem;
+        margin-right: 2rem;
+      }
+    }
+
+    &b {
+      width: 20%;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid $mainTan;
+      border-left: 0px solid transparent;
+      margin-top: 0;
+      display: block;
+      position: relative;
+
+      @mixin 800plus {
+        width: 13.5%;
+        border-left: 0 solid transparent;
+        border-top: 5px solid $mainTan;
+        display: block;
+      }
+
+      & img {
+        width: 80px;
+        position: relative;
+        top: 1.4rem;
+        left: 1rem;
+        /* transform: translateY(-50%); */
+
+        @mixin 530plus {
+          position: relative;
+          top: 40%;
+          left: 5rem;
+          transform: translateY(-50%);
+        }
+
+        @mixin 530plus and (orientation: landscape) and (max-width: 1199px) {
+          position: absolute;
+          top: 40%;
+          left: 5rem;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &c {
+      width: 80%;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid $mainTan;
+      padding: 0 4rem 4rem 1rem;
+      margin-top: 1rem;
+      text-align: right;
+
+      @mixin 800plus {
+        width: 100%;
+        border-top: 5px solid $mainTan;
+
+        border-bottom: 5px solid $mainTan;
+        width: 61.5%;
+        margin-top: 0;
+        padding: 2rem 6rem 2rem 0;
+        text-align: left;
+      }
+
+      & p {
+        font-size: 1.9rem;
+        margin: 1.5rem 0 0 0;
+
+        @mixin 800plus {
+          margin: 1.5rem 6rem 0 5rem;
+        }
+
+        & span {
+          color: $mainBlue;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &--barton {
+    /* border: 1px solid $mainBlue; */
+    padding: 1rem;
+    margin-top: 0;
+    width: 100%;
+
+    @mixin 800plus {
+      width: 50%;
+      padding: 1rem 0 4rem 4rem;
+    }
+
+    &--wrapper {
+      background-color: $mainBlue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2rem 2rem 6rem 2rem;
+      border-radius: 8px;
+      width: 100%;
+
+      @mixin 800plus {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 0 6rem 0;
+      }
+    }
+  }
+
+  &--session {
+    width: 100%;
+
+    @mixin 800plus {
+      width: 90%;
+    }
+
+    &__header {
+      color: white;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+
+    &--wrapper__p {
+      display: block;
+      margin-top: 6rem;
+
+      @mixin 530plus {
+        width: 90%;
+      }
+    }
+  }
+
+  &--levels {
+    width: 100%;
+
+    @mixin 800plus {
+      width: 90%;
+      margin-bottom: 4rem;
+    }
+
+    &__header {
+      color: white;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+
+    & ul {
+      list-style: none;
+      font-size: inherit;
+      padding-inline-start: 0;
+
+      @mixin 530plus {
+        padding-inline-start: 40px;
+      }
+
+      & li {
+        font-size: 1.6rem;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid #ddd;
+
+        @mixin 530plus {
+        }
+
+        &:nth-child(1) {
+          padding-top: 3rem;
+        }
+
+        &:last-child {
+          padding-bottom: 3rem;
+
+          border-bottom: 1px solid transparent;
+        }
+      }
+    }
+  }
+
+  & ol {
+    font-size: inherit;
+
+    & li {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding-bottom: 2rem;
+
+      &:nth-child(1) {
+        padding-top: 3rem;
+      }
+
+      &:last-child {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+}
+
+.question-wrap {
+  position: relative;
+  background-color: pink;
+
+  &-icon {
+    width: 5rem;
+    position: absolute;
+    top: 3.6rem;
+  }
+
+  &-indent {
+    padding: 3rem 3rem 3rem 7.5rem;
+  }
+}
