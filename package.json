@@ -34,6 +34,8 @@
     "postcss-nested": "2.0.4",
     "postcss-simple-vars": "4.0.0",
     "usemin": "^0.5.0",
-    "webpack": "3.4.0"
+    "webpack": "3.4.0",
+    "minimatch": ">=3.0.2",
+    "cryptiles": ">=4.1.2"
   }
 }
