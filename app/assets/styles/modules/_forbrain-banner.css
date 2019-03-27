@@ -1,0 +1,12 @@
+.forbrain-banner {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $liteTanGrad;
+  border-bottom: 1px solid #ddd;
+
+  & img {
+    text-align: center;
+  }
+}
