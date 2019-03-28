@@ -4978,6 +4978,7 @@ option {
 .forbrain-banner img {
     text-align: center;
     border-radius: 2rem;
+    margin-right: 1rem;
   }
 
 .forbrain-banner--right {
@@ -4992,11 +4993,12 @@ option {
             align-items: center;
     background: #d59541;
     height: 100px;
-    width: 200px;
+    width: 240px;
     color: white;
     text-align: center;
     -webkit-box-shadow: -16px 0 6px -6px rgba(0, 0, 0, 0.5);
             box-shadow: -16px 0 6px -6px rgba(0, 0, 0, 0.5);
+    border: 1px solid transparent;
   }
 
 .forbrain-banner--right-p {
@@ -5010,3 +5012,10 @@ option {
         line-height: 3.2rem;
         vertical-align: sub;
       }
+
+.forbrain-banner--right:hover {
+      background-color: white;
+      color: #d59541;
+      border: 1px solid #d59541;
+      cursor: pointer;
+    }
