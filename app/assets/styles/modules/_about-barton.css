@@ -4,8 +4,8 @@
 
     @mixin 800plus {
       display: grid;
-      grid-template-columns: 30% 30% 40%;
-      grid-template-rows: 500px 500px 270px;
+      grid-template-columns: 30% 40% 30%;
+      grid-template-rows: 1fr 500px 260px;
       grid-row-gap: 6rem;
       grid-column-gap: 0rem;
     }
@@ -71,12 +71,12 @@
     }
 
     &--conclusion {
-      background-color: rgba($mainOrange, 0.15);
+      background: radial-gradient(white, #dce4ea);
       border-top: 1px solid #ddd;
       border-right: 1px solid transparent;
       border-bottom: 1px solid #ddd;
       border-left: 1px solid transparent;
-      margin: 0;
+      margin: 4rem 0 0 0;
       font-size: 2rem;
       text-align: center;
       letter-spacing: 0.2rem;
@@ -90,79 +90,87 @@
   }
 
   &--blockquote {
-    padding-top: 7rem;
-    padding-left: 5rem;
+    /* padding-top: 17rem; */
+    padding-left: 8rem;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     @mixin 530plus {
-      padding-top: 12rem;
-    }
-
-    @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
-      padding-top: 7rem;
+      padding: 6rem 4rem 1rem 6rem;
     }
 
     @mixin 800plus {
+      padding-top: 12rem;
+    }
+
+    /* @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
+      padding-top: 7rem;
+    } */
+
+    @mixin 800plus {
       grid-row: 2 / 4;
+      /* padding-top: 17rem; */
+      padding-left: 4rem;
     }
 
     & span {
       font-size: 1.2rem;
     }
+
+    &-p {
+      line-height: 3.5rem;
+      padding-bottom: 2rem;
+
+      @mixin 800plus {
+        line-height: 3rem;
+      }
+
+      @mixin 1200plus {
+        line-height: 4.5rem;
+      }
+    }
   }
 
   &--local-market {
     margin-top: 0;
-    display: grid;
-    padding-top: 6rem;
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-    display: grid;
+    display: inline-grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
     justify-items: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 370px;
-    grid-column-gap: 0;
+    background-color: rgba($liteGray, 0.88);
+    border-top: 1px solid $liteMediumGray;
+    border-right: 0 solid $liteMediumGray;
+    border-bottom: 1px solid $liteMediumGray;
+    border-left: 0 solid $liteMediumGray;
 
     @mixin 530plus {
-      grid-template-columns: 80% 20%;
-      grid-template-rows: 200px;
     }
 
     @mixin 800plus {
-      grid-template-columns: 85% 10%;
-      grid-template-rows: 120px;
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
     }
 
     @mixin 530plus and (max-width: 1199px) {
-      grid-template-columns: 70% 30%;
-      grid-template-rows: 200px;
     }
 
     @mixin 1200plus {
-      grid-template-columns: 80% 20%;
-      grid-template-rows: 120px;
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      grid-template-rows: 190px;
     }
 
     &--p {
       display: inline-block;
+      grid-column: 2 / 4;
       text-align: right;
-
-      background-color: rgba($liteGray, 0.88);
-      border-top: 1px solid $liteMediumGray;
-      border-right: 0 solid $liteMediumGray;
-      border-bottom: 1px solid $liteMediumGray;
-      border-left: 0 solid $liteMediumGray;
-      padding: 5rem 5rem;
+      padding: 2rem 5rem 2rem 2rem;
       margin: 0;
-      grid-columns: 1 / 3;
-      justify-self: start;
-      align-self: start;
 
       @mixin 530plus {
-        grid-columns: 1 / 2;
-        justify-self: end;
-        align-self: end;
       }
 
       /* @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
@@ -171,54 +179,42 @@
       } */
 
       @mixin 800plus {
-        justify-self: right;
         align-self: center;
       }
 
       @mixin 530plus and (max-width: 1199px) {
-        padding: 4rem 5rem 4rem 10rem;
-        max-width: 500px;
+        max-width: 85%;
       }
 
       @mixin 1200plus {
-        text-align: right;
-        max-width: 1000px;
       }
     }
 
     &--image {
-      grid-columns: 2 / 3;
-      justify-self: start;
-      align-self: start;
-      display: none;
+      display: inline-block;
+      margin-top: 2rem;
+      border-radius: 0.6rem;
 
       @mixin 530plus {
         display: inline-block;
-        justify-self: start;
+        margin-top: 0;
+        grid-column: 1 / 2;
         align-self: center;
-        grid-columns: 2 / 3;
       }
 
       @mixin 800plus {
-        justify-self: start;
-        align-self: end;
+        align-self: center;
       }
 
       @mixin 530plus and (max-width: 1199px) {
-        justify-self: center;
-        align-self: start;
-        outline: 1px solid rgba($liteGray, 0.3);
-        outline-offset: 7px;
       }
 
       @mixin 1200plus {
-        justify-self: center;
-        align-self: end;
       }
     }
   }
 
-  & picture {
+  /* & picture {
     display: grid;
-  }
+  } */
 }

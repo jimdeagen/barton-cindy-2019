@@ -130,7 +130,7 @@
 
   &--testimonials {
     width: 100%;
-    /* border-radius: 0.8rem; */
+    border-radius: 8px;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: italic;

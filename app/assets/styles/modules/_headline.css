@@ -57,7 +57,7 @@
   }
 
   &__sub--orange {
-    color: $mainOrange;
+    color: rgb(219, 128, 109);
   }
 
   &--small {

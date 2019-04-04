@@ -100,7 +100,7 @@
   @mixin 800plus {
     display: block;
     padding-top: 0rem;
-    width: 68%;
+    width: 72%;
     /* border-radius: 4rem 6rem 6rem 4rem / 8rem 1rem 1rem 8rem; */
     transform: translateX(-5vw);
   }
@@ -151,7 +151,7 @@
   }
 
   @mixin 530plus and (orientation: landscape) and (max-width: 820px) {
-    width: 41%;
+    width: 58%;
     height: 55px;
   }
 }

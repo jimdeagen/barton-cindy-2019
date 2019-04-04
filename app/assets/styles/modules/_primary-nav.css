@@ -79,9 +79,16 @@
     font-size: 1.6rem;
     margin-top: 10px;
     margin-bottom: 12px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 
     @mixin 800plus {
       padding: 8px 10px;
+    }
+
+    &:hover {
+      color: $hoverGray;
+
+      text-shadow: none;
     }
 
     &.is-current-link {

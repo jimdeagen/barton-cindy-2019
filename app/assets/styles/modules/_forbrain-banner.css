@@ -1,15 +1,27 @@
 .forbrain-banner {
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #eee;
-  /* border-bottom: 1px solid #ddd; */
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  background: radial-gradient(white, #ddd);
+  padding: 1rem 0;
+
+  @mixin 530plus {
+    flex-direction: row;
+  }
 
   & img {
     text-align: center;
     border-radius: 2rem;
     margin-right: 1rem;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: 1px solid $mainBlue;
   }
 
   &--right {
