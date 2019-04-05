@@ -2816,7 +2816,7 @@ p.screening__permission {
 
 .screening__form-title {
       text-align: left;
-      margin-top: 4rem
+      margin-top: 2.4rem
   }
   }
 
@@ -3554,6 +3554,11 @@ option {
   max-width: 50px;
   max-height: 50px;
 }
+
+.paypal:hover {
+    background-image: url("../../../assets/images/icons/icon_paypal-orange-hover.png");
+    background-size: cover;
+  }
 
 .paypal__img {
     display: block;
@@ -4477,13 +4482,6 @@ option {
         padding-bottom: 1rem;
       }
 
-.deepdive-1b .info-button {
-        -ms-flex-item-align: end;
-            align-self: flex-end;
-        border-radius: 4px;
-        font-size: 1.3rem;
-      }
-
 .deepdive-1-p {
       padding: 0 2rem;
     }
@@ -4642,8 +4640,8 @@ option {
       -ms-flex-item-align: center;
           align-self: center;
       width: 100%;
-      background: -webkit-gradient(linear, left top, left bottom, from(#f4f2f1), to(white));
-      background: linear-gradient(#f4f2f1, white);
+      background-color: #2f5572;
+      color: white;
       padding: 3rem;
       margin-right: 0;
       border-top: 5px solid #c4bdb4;
@@ -4972,6 +4970,11 @@ option {
 .info-button {
   margin-top: 2rem;
   padding: 0.6rem 1rem;
+  background-color: #d59541;
+  border: 1px solid #d59541;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 1.1rem;
 }
 
 .info-button a {
@@ -4980,8 +4983,12 @@ option {
   }
 
 .info-button:hover {
-    background-color: #d59541;
+    background-color: rgb(250, 250, 250);
   }
+
+.info-button:hover a {
+      color: #d59541;
+    }
 
 .forbrain-banner {
   text-align: center;

@@ -154,12 +154,6 @@
       & li {
         padding-bottom: 1rem;
       }
-
-      & .info-button {
-        align-self: flex-end;
-        border-radius: 4px;
-        font-size: 1.3rem;
-      }
     }
 
     &-p {
@@ -291,7 +285,8 @@
     &a {
       align-self: center;
       width: 100%;
-      background: linear-gradient(#f4f2f1, white);
+      background-color: $mainBlue;
+      color: white;
       padding: 3rem;
       margin-right: 0;
       border-top: 5px solid $mainTan;

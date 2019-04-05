@@ -2,6 +2,11 @@
   max-width: 50px;
   max-height: 50px;
 
+  &:hover {
+    background-image: url("../../../assets/images/icons/icon_paypal-orange-hover.png");
+    background-size: cover;
+  }
+
   &__img {
     display: block;
     transform: scale(0.7);
