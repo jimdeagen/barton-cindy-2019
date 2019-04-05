@@ -9,6 +9,8 @@
   text-align: left;
   outline: none;
   font-size: 1.7rem;
+  /* border-radius: 8px; */
+  margin-bottom: 0.2rem;
 }
 
 .active,
@@ -36,7 +38,7 @@
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   background-color: #f1f6fa;
-  /* border-bottom: 1px solid #888; */
+  border-bottom: 1px solid $mainBlue;
   border-right: 1px solid $mainBlue;
   border-left: 1px solid $mainBlue;
 }

@@ -1,5 +1,6 @@
 .about-cindy-section {
-  background-color: rgba(213, 149, 65, 0.1);
+  /* background-color: rgba(213, 149, 65, 0.1); */
+  background-color: #eee;
 
   @mixin 800plus {
     padding-bottom: 6rem;
@@ -180,7 +181,8 @@
       align-items: center;
       width: 100%;
       /* background-color: #e8e8e8; */
-      background-color: rgb(240, 234, 226);
+      /* background-color: rgb(240, 234, 226); */
+      background-color: #ddd;
       margin-right: 0;
       padding-right: 1rem;
       font-size: 3rem;

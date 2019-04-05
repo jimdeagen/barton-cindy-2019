@@ -534,6 +534,10 @@ li {
   font-size: 1.4rem;
 }
 
+.g-recaptcha {
+  margin-bottom: 2rem;
+}
+
 /* @import "base/_outline-map"; */
 
 .large-hero {
@@ -2915,7 +2919,8 @@ option {
 }
 
 .about-cindy-section {
-  background-color: rgba(213, 149, 65, 0.1);
+  /* background-color: rgba(213, 149, 65, 0.1); */
+  background-color: #eee;
 }
 
 @media (min-width: 800px) {
@@ -3166,7 +3171,8 @@ option {
               align-items: center;
       width: 100%;
       /* background-color: #e8e8e8; */
-      background-color: rgb(240, 234, 226);
+      /* background-color: rgb(240, 234, 226); */
+      background-color: #ddd;
       margin-right: 0;
       padding-right: 1rem;
       font-size: 3rem;
@@ -3446,7 +3452,8 @@ option {
 
 .about-barton-section--local-market {
       grid-column: 1 / 3;
-      grid-row: 3 / 4
+      grid-row: 3 / 4;
+      grid-template-rows: 190px
   }
   }
 
@@ -3458,7 +3465,7 @@ option {
 .about-barton-section--local-market {
       grid-column: 1 / 3;
       grid-row: 3 / 4;
-      grid-template-rows: 190px
+      grid-template-rows: 240px
   }
   }
 
@@ -4003,6 +4010,10 @@ option {
 }
   }
 
+.lone-quote--shadow {
+    margin: 0 auto;
+  }
+
 .lone-quote__section-2 {
   margin-top: 0;
   justify-self: end;
@@ -4389,8 +4400,8 @@ option {
     /* background-color: pink; */
     /* border: 1px solid $liteMediumGray; */
     padding: 2.5rem 1rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f4f2f1), to(white));
-    background: linear-gradient(#f4f2f1, white);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#f4f2f1), color-stop(#f4f2f1), to(white));
+    background: linear-gradient(white, #f4f2f1, #f4f2f1, white);
   }
 
 @media (min-width: 530px) {
@@ -4435,6 +4446,13 @@ option {
       color: #2f5572;
       padding-bottom: 4rem;
       margin-top: 3rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 
 @media (min-width: 530px) {
@@ -4457,6 +4475,13 @@ option {
 
 .deepdive-1b li {
         padding-bottom: 1rem;
+      }
+
+.deepdive-1b .info-button {
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+        border-radius: 4px;
+        font-size: 1.3rem;
       }
 
 .deepdive-1-p {
@@ -4628,7 +4653,7 @@ option {
 @media (min-width: 800px) {
 
 .deepdive-5a {
-        border-top: 1px solid #ccc;
+        border-top: 0px solid #ccc;
         width: 22%;
         padding: 3rem;
         margin-right: 2rem
@@ -4637,8 +4662,8 @@ option {
 
 .deepdive-5b {
       width: 20%;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid #c4bdb4;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid #c4bdb4;
       border-left: 0px solid transparent;
       margin-top: 0;
       display: block;
@@ -4650,7 +4675,7 @@ option {
 .deepdive-5b {
         width: 13.5%;
         border-left: 0 solid transparent;
-        border-top: 5px solid #c4bdb4;
+        border-top: 2px solid #c4bdb4;
         display: block
     }
   }
@@ -4688,23 +4713,33 @@ option {
 
 .deepdive-5c {
       width: 80%;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid #c4bdb4;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid #c4bdb4;
       padding: 0 4rem 4rem 1rem;
       margin-top: 1rem;
       text-align: right;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
 
 @media (min-width: 800px) {
 
 .deepdive-5c {
         width: 100%;
-        border-top: 5px solid #c4bdb4;
+        border-top: 2px solid #c4bdb4;
 
-        border-bottom: 5px solid #c4bdb4;
+        border-bottom: 2px solid #c4bdb4;
         width: 61.5%;
         margin-top: 0;
-        padding: 2rem 6rem 2rem 0;
+        padding: 0 6rem 0 0;
         text-align: left
     }
   }
@@ -4717,7 +4752,8 @@ option {
 @media (min-width: 800px) {
 
 .deepdive-5c p {
-          margin: 1.5rem 6rem 0 5rem
+          margin: 0 6rem 0 5rem;
+          padding: 0 0 2rem 0
       }
   }
 
@@ -4898,6 +4934,8 @@ option {
   text-align: left;
   outline: none;
   font-size: 1.7rem;
+  /* border-radius: 8px; */
+  margin-bottom: 0.2rem;
 }
 
 .active,
@@ -4926,7 +4964,7 @@ option {
   -webkit-transition: max-height 0.3s ease-out;
   transition: max-height 0.3s ease-out;
   background-color: #f1f6fa;
-  /* border-bottom: 1px solid #888; */
+  border-bottom: 1px solid #2f5572;
   border-right: 1px solid #2f5572;
   border-left: 1px solid #2f5572;
 }
@@ -4950,6 +4988,7 @@ option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

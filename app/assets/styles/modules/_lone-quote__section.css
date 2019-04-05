@@ -63,6 +63,10 @@
   @mixin 530plus {
     padding-bottom: 4rem;
   }
+
+  &--shadow {
+    margin: 0 auto;
+  }
 }
 
 .lone-quote__section-2 {
