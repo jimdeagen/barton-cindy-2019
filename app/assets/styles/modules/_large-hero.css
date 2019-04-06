@@ -239,11 +239,3 @@
     }
   }
 }
-
-.forbrain-link {
-  display: none;
-
-  @mixin 530plus {
-    display: block;
-  }
-}

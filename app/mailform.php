@@ -4,7 +4,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "jim@jimdeagen.com";
+    $email_to = "jim@jimdeagen.com, jimdeagen@comcast.net";
 	$email_subject = "Another Barton request";
 
     function died($error) {
