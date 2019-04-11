@@ -124,6 +124,23 @@ $headers = 'From: Barton contact'."\r\n".
 }
  
  
- 
+ // recaptcha
+$public_key = "6LdefpwUAAAAAAiVaCPbmskMnzCn4MP4tIh3sB4k";
+$private_key = "6LdefpwUAAAAANXxVGNTtUJ0Zq2sQGdP6zUueeLa";
+$url = "https://www.google.com/recaptcha/api/siteverify";
+
+if(array_key_exists('submit', $_POST))
+{
+  $response_key = $POST['g-recaptcha-response'];
+  $response = file_get_contents($url.'?secret='.$private_key.'response='.$response_key.'&remoteip='.$_SERVER['REMOTE_ADDR']);
+  $response = json_decode($response);
+
+  if($response->success == 1) {
+    echo "Your information was valid...";
+  } else {
+    echo "You are a robot.";
+  }
+}
+
  
 ?>
