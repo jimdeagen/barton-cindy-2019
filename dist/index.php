@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -16,9 +15,7 @@
       name="description"
       content="Cindy tutors using the Barton system to empower those with reading and spelling difficulties in Folsom, Granite Bay, Roseville, California."
     />
-    <!-- build:css /assets/styles/styles.css -->
-    <link rel="stylesheet" href="temp/styles/styles.css" />
-    <!-- endbuild -->
+    <link rel="stylesheet" href="/assets/styles/styles-cc838c6591.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -977,8 +974,42 @@
           <div class="screening__form-section">
             <div class="screening__form-section--form">
               <h2 class="screening__form-title">Request Your Screening</h2>
+              <?php
+    $public_key = "6LdefpwUAAAAAAiVaCPbmskMnzCn4MP4tIh3sB4k";
+    $private_key = "6LdefpwUAAAAANXxVGNTtUJ0Zq2sQGdP6zUueeLa";
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+    
+    if(array_key_exists('submit_form', $_POST)) {
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
+
+        $response_key = $_POST['g-recaptcha-response'];
+        $response = file_get_contents($url.'?secret='.$private_key.'&response='.$response_key.'&remoteip='.$_SERVER['REMOTE_ADDR']);
+        $response = json_decode($response);
+        
+        echo "<pre>";
+        print_r($response);
+        echo "</pre>";
+
+        if($response -> success == 1) {
+            echo "Thanks for requesting a screening. I will contact you soon.";
+        } else {
+            echo "Request was not submitted.";
+        }
+    }
+?>
+
+<form method="post" action="mailform.php">
+    <input type="text" name="your_name" placeholder="name" /><br><br>
+    <input type="text" name="email" placeholder="email" /><br><br>
+    <div class="g-recaptcha" data-sitekey="<?php print $public_key; ?>"></div>
+    <input type="submit" name="submit_form" value="Submit Your Information" />
+</form>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
               
-              <form
+              <!-- <form
                 name="contactform"
                 action="mailform.php"
                 method="post"
@@ -1059,7 +1090,7 @@
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LdefpwUAAAAAAiVaCPbmskMnzCn4MP4tIh3sB4k"></div>
                 <input type="submit" id="submit" class="form-submit" value="submit request" />
-              </form>
+              </form> -->
             </div>
             
           </div>
@@ -1389,9 +1420,7 @@
       
     </div>
     
-    <!-- build:js /assets/scripts/App.js -->
-    <script src="/temp/scripts/App.js"></script>
-    <!-- endbuild -->
+    <script src="/assets/scripts/App-b0da94140e.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script>
@@ -1410,8 +1439,6 @@
           });
         }
         </script>
-    <!-- build:js /assets/scripts/footercontroller.js -->
-    <script src="assets/scripts/footercontroller.js"></script>
-    <!-- endbuild -->
+    <script src="/assets/scripts/footercontroller-a4e76b043d.js"></script>
   </body>
 </html>
