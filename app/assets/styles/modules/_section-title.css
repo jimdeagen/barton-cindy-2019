@@ -19,11 +19,13 @@
     max-width: 90%;
     margin-right: auto;
     margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.1);
 
     @mixin 800plus {
-      max-width: 60%;
+      max-width: 80%;
       margin-right: auto;
       margin-left: auto;
+      padding: 2rem 5rem;
     }
   }
 

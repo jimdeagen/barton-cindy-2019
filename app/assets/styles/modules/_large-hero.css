@@ -235,7 +235,7 @@
     max-width: 180px;
 
     @mixin 530plus {
-      max-width: 150px;
+      max-width: 210px;
     }
   }
 }
