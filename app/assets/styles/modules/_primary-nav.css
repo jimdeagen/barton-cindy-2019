@@ -87,7 +87,7 @@
 
     &:hover {
       color: $hoverGray;
-
+      background-color: rgba(#a0b1be, 0.4);
       text-shadow: none;
     }
 

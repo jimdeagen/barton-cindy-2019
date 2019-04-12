@@ -538,6 +538,12 @@ li {
   margin-bottom: 2rem;
 }
 
+span.special-char {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+
 /* @import "base/_outline-map"; */
 
 .large-hero {
@@ -2345,7 +2351,7 @@ li {
 
 .primary-nav a:hover {
       color: #46525e;
-
+      background-color: rgba(160,177,190, 0.4);
       text-shadow: none;
     }
 
