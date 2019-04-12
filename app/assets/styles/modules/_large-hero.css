@@ -196,17 +196,17 @@
     width: 100vw;
     background-color: rgba(red, 0.75);
 
-    /* border-bottom: 1px solid $mainBlue; */
+    border-bottom: 1px solid $liteMediumGray;
     padding: 5.125rem 0 6.8rem 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    background: rgba(148, 165, 176, 0.2);
 
     @mixin 530plus {
       flex-direction: row;
       justify-content: space-around;
-      background: radial-gradient(circle, white, $liteTan, $liteTan, $liteTan);
-      background: #eee;
       background-position: 5rem 1rem;
+      background: rgba(148, 165, 176, 0.4);
     }
   }
 

@@ -812,10 +812,11 @@ span.special-char {
     width: 100vw;
     background-color: rgba(red, 0.75);
 
-    /* border-bottom: 1px solid $mainBlue; */
+    border-bottom: 1px solid #dadada;
     padding: 5.125rem 0 6.8rem 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    background: rgba(148, 165, 176, 0.2);
   }
 
 @media (min-width: 530px) {
@@ -827,9 +828,8 @@ span.special-char {
               flex-direction: row;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      background: radial-gradient(circle, white, #e2deda, #e2deda, #e2deda);
-      background: #eee;
-      background-position: 5rem 1rem
+      background-position: 5rem 1rem;
+      background: rgba(148, 165, 176, 0.4)
   }
   }
 
