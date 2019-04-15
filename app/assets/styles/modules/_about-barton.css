@@ -14,7 +14,9 @@
   &--img--image {
     display: block;
     width: 400px;
-    margin: 4rem auto 2rem auto;
+    /* margin: 4rem auto 2rem auto; */
+    margin: 0;
+    border-radius: 8px;
   }
 
   &--intro {
@@ -22,12 +24,14 @@
     grid-row: 1 / 2;
     align-self: center;
     background: linear-gradient(white, #f4f2f1);
+    border: 1px solid rgba(244, 242, 241, 0.5);
 
     &--p {
       padding: 4rem 3rem 2rem 3rem;
+      margin: 0;
 
       @mixin 1200plus {
-        padding: 8rem 10rem 8rem 12rem;
+        padding: 4rem 10rem 4rem 12rem;
       }
     }
   }

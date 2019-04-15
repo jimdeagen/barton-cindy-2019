@@ -232,7 +232,7 @@
 
   &__cert-image {
     display: block;
-    max-width: 180px;
+    max-width: 270px;
 
     @mixin 530plus {
       max-width: 210px;
