@@ -519,8 +519,8 @@
         <div class="section-title">
           <img
             class="section-title__icon"
-            src="assets/images/icons/icon_quote-bubble.png"
-            alt="icon - quote bubble"
+            src="assets/images/icons/icon_headlight.png"
+            alt="icon - headlight"
           />
           <h2 class="headline headline--push-up">Deeper <strong>Dive</strong></h2>
           <p>
@@ -532,7 +532,39 @@
         
         <div class="deepdive-top">
           <div class="deepdive-top-left">
-            <img class="deepdive-top-left-image" src="assets/images/girl_reading_bench_450x300.png" alt="young girl reading while on a park bench">
+            <!-- <img class="deepdive-top-left-image" src="assets/images/girl_reading_bench_450x300.jpg" alt="young girl reading while on a park bench"> -->
+            <picture>
+              <source
+                media="(max-width: 440px)"
+                srcset="assets/images/girl_reading_bench_450x300.jpg"
+              />
+    
+              <source
+                media="(min-width: 440px) and (max-width: 519px)"
+                srcset="assets/images/girl_reading_bench_450x300.jpg"
+              />
+    
+              <source
+                media="(min-width: 520px) and (max-width: 799px)"
+                srcset="assets/images/girl_reading_bench_800x533.jpg"
+              />
+    
+              <source
+                media="(min-width: 1200px) and (max-width: 1599px) and (orientation: landscape)"
+                srcset="assets/images/girl_reading_bench_450x300.jpg"
+              />
+    
+              <source
+                media="(min-width: 1600px) and (orientation: landscape)"
+                srcset="assets/images/girl_reading_bench_800x533.jpg"
+              />
+    
+              <img
+                class="large-hero__image"
+                src="assets/images/girl_reading_bench_450x300.jpg"
+                alt="school age girl reading book on park bench"
+              />
+            </picture>
           </div>
           <div class="deepdive-top-right">
               <img class="deepdive-top-right-icon" src="assets/images/icons/icon-trekking-blue.png" alt="icon - hiker">
@@ -779,7 +811,7 @@
                 </div>
                 <div class="deepdive-2a"><p>These Barton-approved modules are available as separate sessions:</p>
                   <ul>
-                    <li>Excellence in Writing (EIW) once students have mastered Barton Level 4</li>
+                    <li>Institute for Excellence in Writing (IEW) once students have mastered Barton Level 4</li>
                         <li>Handwriting instruction using Barton-approved <em>Handwriting Without Tears</em></li>
                   </ul>
                   

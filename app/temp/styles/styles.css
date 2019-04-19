@@ -3267,9 +3267,15 @@ option {
 .about-barton-section--img--image {
     display: block;
     width: 400px;
-    /* margin: 4rem auto 2rem auto; */
-    margin: 0;
+    margin: 5rem auto;
     border-radius: 8px;
+  }
+
+@media (min-width: 530px) {
+
+.about-barton-section--img--image {
+      margin: 7rem auto
+  }
   }
 
 .about-barton-section--intro {
@@ -3415,6 +3421,7 @@ option {
     }
 
 .about-barton-section--blockquote-p {
+      text-align: right;
       line-height: 3.5rem;
       padding-bottom: 2rem;
     }
@@ -4230,6 +4237,13 @@ option {
   bottom: 0;
   left: 0; */
   /* transform: translateX(-50%); */
+  width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .s-index {
@@ -4245,8 +4259,22 @@ option {
   padding-left: 2px;
 }
 
-.s-index:last-of-type {
-  margin-right: 0;
+.r-label {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.g-label {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.b-label {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .s-index:hover {
@@ -4306,7 +4334,7 @@ option {
 @media (min-width: 800px) {
 
 .deepdive-top {
-      margin-bottom: 3rem;
+      margin-bottom: 0;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -4331,17 +4359,17 @@ option {
       width: 100%;
     }
 
-@media (min-width: 800px) {
-
-.deepdive-top-left {
-        width: 50%
-    }
-  }
-
 @media (min-width: 530px) {
 
 .deepdive-top-left {
         width: 100%
+    }
+  }
+
+@media (min-width: 800px) {
+
+.deepdive-top-left {
+        width: 108%
     }
   }
 
@@ -4353,7 +4381,8 @@ option {
 @media (min-width: 800px) {
 
 .deepdive-top-left-image {
-          height: auto
+          height: auto;
+          border-radius: 8px
       }
   }
 
@@ -4422,7 +4451,8 @@ option {
       width: 50%;
       -ms-flex-item-align: stretch;
           align-self: stretch;
-      padding: 7rem 4rem
+      padding: 7rem 4rem;
+      border: 1px solid rgba(244, 242, 241, 0.7)
   }
   }
 

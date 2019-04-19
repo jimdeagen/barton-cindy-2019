@@ -25,7 +25,7 @@
     margin-bottom: 4rem;
 
     @mixin 800plus {
-      margin-bottom: 3rem;
+      margin-bottom: 0;
       flex-direction: row;
       height: 400px;
     }
@@ -42,12 +42,12 @@
     &-left {
       width: 100%;
 
-      @mixin 800plus {
-        width: 50%;
-      }
-
       @mixin 530plus and (orientation: landscape) and (max-width: 899px) {
         width: 100%;
+      }
+
+      @mixin 800plus {
+        width: 108%;
       }
 
       &-image {
@@ -56,6 +56,7 @@
 
         @mixin 800plus {
           height: auto;
+          border-radius: 8px;
         }
 
         @mixin 530plus and (orientation: landscape) and (max-width: 1199px) {
@@ -109,6 +110,7 @@
       width: 50%;
       align-self: stretch;
       padding: 7rem 4rem;
+      border: 1px solid rgba(244, 242, 241, 0.7);
     }
 
     &a,

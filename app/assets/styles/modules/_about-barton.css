@@ -14,9 +14,12 @@
   &--img--image {
     display: block;
     width: 400px;
-    /* margin: 4rem auto 2rem auto; */
-    margin: 0;
+    margin: 5rem auto;
     border-radius: 8px;
+
+    @mixin 530plus {
+      margin: 7rem auto;
+    }
   }
 
   &--intro {
@@ -125,6 +128,7 @@
     }
 
     &-p {
+      text-align: right;
       line-height: 3.5rem;
       padding-bottom: 2rem;
 

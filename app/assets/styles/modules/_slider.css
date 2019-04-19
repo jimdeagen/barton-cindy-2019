@@ -66,6 +66,9 @@
   bottom: 0;
   left: 0; */
   /* transform: translateX(-50%); */
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .s-index {
@@ -81,8 +84,16 @@
   padding-left: 2px;
 }
 
-.s-index:last-of-type {
-  margin-right: 0;
+.r-label {
+  order: 3;
+}
+
+.g-label {
+  order: 1;
+}
+
+.b-label {
+  order: 2;
 }
 
 .s-index:hover {
