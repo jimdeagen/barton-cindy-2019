@@ -115,7 +115,7 @@ $headers = 'From: Barton contact'."\r\n".
 'X-Mailer: PHP/' . phpversion();
  
 @mail($email_to, $email_subject, $email_message, $headers);  
- header('Location:thankyou.html');
+ header('Location:index.html#thankyou__modal');
  
  
  

@@ -11840,10 +11840,11 @@ var Modal = function () {
     _classCallCheck(this, Modal);
 
     this.openModalButton = (0, _jquery2.default)(".open-modal");
+    // this.openModal2Button = $(".open-modal-2");
     this.modal = (0, _jquery2.default)(".modal");
-    this.modal2 = (0, _jquery2.default)(".modal-2");
+    // this.modal2 = $(".modal-2");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
-    this.closeModal2Button = (0, _jquery2.default)(".modal-2__close");
+    // this.closeModal2Button = $(".modal-2__close");
     this.events();
   }
 
@@ -11853,11 +11854,14 @@ var Modal = function () {
       // clicking the open modal button
       this.openModalButton.click(this.openModal.bind(this));
 
+      // clicking the open modal button
+      // this.openModal2Button.click(this.openModal.bind(this));
+
       // clicking the x close modal button
       this.closeModalButton.click(this.closeModal.bind(this));
 
       // clicking the x close modal button
-      this.closeModal2Button.click(this.closeModal2.bind(this));
+      // this.closeModal2Button.click(this.closeModal2.bind(this));
 
       // pushes any key
       (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
@@ -11875,16 +11879,23 @@ var Modal = function () {
       this.modal.addClass("modal--is-visible");
       return false;
     }
+
+    // openModal2() {
+    //   this.modal2.addClass("modal-2--is-visible");
+    //   console.log("modal 2");
+    //   return false;
+    // }
+
   }, {
     key: "closeModal",
     value: function closeModal() {
       this.modal.removeClass("modal--is-visible");
     }
-  }, {
-    key: "closeModal2",
-    value: function closeModal2() {
-      this.modal2.addClass("modal-2--is-not-visible");
-    }
+
+    // closeModal2() {
+    //   this.modal2.removeClass("modal-2--is-visible");
+    // }
+
   }]);
 
   return Modal;
