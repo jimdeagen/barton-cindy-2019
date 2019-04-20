@@ -1,10 +1,10 @@
 import $ from "jquery";
 
-class Modal2 {
+class Modal {
   constructor() {
     this.openModalButton = $(".open-modal");
     // this.openModal2Button = $(".open-modal-2");
-    this.modal = $("#thankyou__modal");
+    this.modal = $("#contactme__modal");
     // this.modal2 = $("#thankyou__modal");
     this.closeModalButton = $(".modal__close");
     // this.closeModal2Button = $(".modal-2__close");
@@ -54,4 +54,4 @@ class Modal2 {
   // }
 }
 
-export default Modal2;
+export default Modal;
