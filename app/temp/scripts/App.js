@@ -11844,9 +11844,9 @@ var Modal2 = function () {
   function Modal2() {
     _classCallCheck(this, Modal2);
 
-    this.openModalButton = (0, _jquery2.default)(".open-modal-2");
+    this.openModalButton = (0, _jquery2.default)(".open-modal");
     // this.openModal2Button = $(".open-modal-2");
-    this.modal = (0, _jquery2.default)("#thankyou__modal");
+    this.modal = (0, _jquery2.default)("#contactme__modal");
     // this.modal2 = $("#thankyou__modal");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
     // this.closeModal2Button = $(".modal-2__close");
@@ -11933,9 +11933,9 @@ var Modal = function () {
   function Modal() {
     _classCallCheck(this, Modal);
 
-    this.openModalButton = (0, _jquery2.default)(".open-modal");
+    this.openModalButton = (0, _jquery2.default)(".open-modal-2");
     // this.openModal2Button = $(".open-modal-2");
-    this.modal = (0, _jquery2.default)("#contactme__modal");
+    this.modal = (0, _jquery2.default)("#thankyou__modal");
     // this.modal2 = $("#thankyou__modal");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
     // this.closeModal2Button = $(".modal-2__close");
