@@ -2399,7 +2399,7 @@ span.special-char {
 .modal {
   position: fixed;
   z-index: 3;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   bottom: 0;
   left: 0;
@@ -2410,6 +2410,19 @@ span.special-char {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal--is-visible {
@@ -2420,7 +2433,7 @@ span.special-char {
   }
 
 .modal__inner {
-    position: absolute;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2434,11 +2447,30 @@ span.special-char {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    height: 100vh;
-    /* top: 50%;
-    transform: translateY(-50%); */
+    width: 90%;
+    height: 80vh;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #2f5572;
+    padding: 0 2rem 0;
   }
+
+@media (min-width: 530px) {
+
+.modal__inner {
+      width: 90%;
+      max-width: 1400px;
+      height: 80vh;
+      border-radius: 2rem;
+      padding: 0 7rem 4rem
+  }
+  }
+
+.modal__inner .section-title {
+      -webkit-margin-before: 0.5rem;
+              margin-block-start: 0.5rem;
+    }
 
 .modal__description {
     text-align: center;
@@ -2449,15 +2481,16 @@ span.special-char {
 
 @media (min-width: 530px) {
 
+.modal__description {
+      padding: 0 12rem
+  }
+  }
+
+@media (min-width: 530px) {
+
 .modal {
     font-size: 2rem
 }
-  }
-
-.modal__description--last {
-    margin-bottom: 80px;
-    width: 70%;
-    margin: 3rem auto;
   }
 
 .modal__close {
@@ -2471,7 +2504,7 @@ span.special-char {
     z-index: 150;
     width: 70vw;
     position: relative;
-    top: 8rem;
+    top: 1rem;
   }
 
 @media (min-width: 530px) {

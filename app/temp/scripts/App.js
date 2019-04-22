@@ -11844,7 +11844,7 @@ var Modal2 = function () {
   function Modal2() {
     _classCallCheck(this, Modal2);
 
-    this.openModalButton = (0, _jquery2.default)(".open-modal");
+    this.openModalButton = (0, _jquery2.default)(".open-modal-2");
     // this.openModal2Button = $(".open-modal-2");
     this.modal = (0, _jquery2.default)("#thankyou__modal");
     // this.modal2 = $("#thankyou__modal");
