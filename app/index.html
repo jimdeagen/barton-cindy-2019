@@ -991,9 +991,10 @@
                   name="message"
                   placeholder="Place message or comments here"
                   id="message"
+                  required
                 ></textarea>
                 </div>
-                <input type="submit" id="submit" class="form-submit open-modal-2" value="submit request" />
+                <input type="submit" id="submit" class="form-submit" value="submit request" />
               </form>
             </div>
             
@@ -1303,7 +1304,7 @@
     <div class="modal" id="thankyou__modal">
       <div class="modal__inner">
           <div class="modal__close"><a href="#">X</a></div>
-        <h2 class="section-title section-title--tan section-title--less-margin modal-2__section-title">
+        <h2 class="section-title section-title--tan section-title--less-margin">
           <img
             class="section-title__icon modal__icon"
             src="assets/images/icons/icon-family.png"
@@ -1327,23 +1328,25 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            } 
-          });
-        }
-        </script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+
     <!-- build:js /assets/scripts/footercontroller.js -->
     <script src="assets/scripts/footercontroller.js"></script>
     <!-- endbuild -->
+
   </body>
 </html>

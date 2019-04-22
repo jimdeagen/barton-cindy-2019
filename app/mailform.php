@@ -5,7 +5,7 @@ if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
     $email_to = "jim@jimdeagen.com, jimdeagen@comcast.net";
-	$email_subject = "Another Barton request";
+	  $email_subject = "Another Barton request";
 
     function died($error) {
  
@@ -72,7 +72,7 @@ if(isset($_POST['email'])) {
  
   if(strlen($message) < 2) {
  
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    $error_message .= 'The message field is not completed.<br />';
  
   }
  
@@ -117,15 +117,8 @@ $headers = 'From: Barton contact'."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);  
  header('Location:index.html#thankyou__modal');
  
- 
- 
- 
- 
 }
- 
- 
- // recaptcha
-
-
- 
+else {
+  console.log('what?');
+}
 ?>
