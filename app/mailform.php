@@ -52,7 +52,7 @@ if(isset($_POST['email'])) {
  
   if(!preg_match($email_exp,$email_from)) {
  
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= 'The email address you entered does not appear to be valid.<br />';
  
   }
  
@@ -115,10 +115,7 @@ $headers = 'From: Barton contact'."\r\n".
 'X-Mailer: PHP/' . phpversion();
  
 @mail($email_to, $email_subject, $email_message, $headers);  
- header('Location:index.html#thankyou__modal');
- 
-}
-else {
-  console.log('what?');
+ //header('Location:index.html#thankyou__modal');
+ header('Location:index.html');
 }
 ?>
