@@ -97,3 +97,10 @@
     }
   }
 }
+
+#contact-cindy:hover {
+  color: $hoverGray;
+  background-color: white;
+  text-shadow: none;
+  border: 1px solid $hoverGray;
+}

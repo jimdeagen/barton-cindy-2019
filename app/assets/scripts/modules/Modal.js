@@ -3,11 +3,8 @@ import $ from "jquery";
 class Modal {
   constructor() {
     this.openModalButton = $(".open-modal");
-    // this.openModal2Button = $(".open-modal-2");
     this.modal = $("#contactme__modal");
-    // this.modal2 = $("#thankyou__modal");
     this.closeModalButton = $(".modal__close");
-    // this.closeModal2Button = $(".modal-2__close");
     this.events();
   }
 
@@ -15,14 +12,8 @@ class Modal {
     // clicking the open modal button
     this.openModalButton.click(this.openModal.bind(this));
 
-    // clicking the open modal button
-    // this.openModal2Button.click(this.openModal.bind(this));
-
     // clicking the x close modal button
     this.closeModalButton.click(this.closeModal.bind(this));
-
-    // clicking the x close modal button
-    // this.closeModal2Button.click(this.closeModal2.bind(this));
 
     // pushes any key
     $(document).keyup(this.keyPressHandler.bind(this));
@@ -39,19 +30,9 @@ class Modal {
     return false;
   }
 
-  // openModal2() {
-  //   this.modal2.addClass("modal-2--is-visible");
-  //   console.log("modal 2");
-  //   return false;
-  // }
-
   closeModal() {
     this.modal.removeClass("modal--is-visible");
   }
-
-  // closeModal2() {
-  //   this.modal2.removeClass("modal-2--is-visible");
-  // }
 }
 
 export default Modal;

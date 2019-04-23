@@ -11840,33 +11840,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Modal2 = function () {
-  function Modal2() {
-    _classCallCheck(this, Modal2);
+var Modal = function () {
+  function Modal() {
+    _classCallCheck(this, Modal);
 
     this.openModalButton = (0, _jquery2.default)(".open-modal");
-    // this.openModal2Button = $(".open-modal-2");
     this.modal = (0, _jquery2.default)("#contactme__modal");
-    // this.modal2 = $("#thankyou__modal");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
-    // this.closeModal2Button = $(".modal-2__close");
     this.events();
   }
 
-  _createClass(Modal2, [{
+  _createClass(Modal, [{
     key: "events",
     value: function events() {
       // clicking the open modal button
       this.openModalButton.click(this.openModal.bind(this));
 
-      // clicking the open modal button
-      // this.openModal2Button.click(this.openModal.bind(this));
-
       // clicking the x close modal button
       this.closeModalButton.click(this.closeModal.bind(this));
-
-      // clicking the x close modal button
-      // this.closeModal2Button.click(this.closeModal2.bind(this));
 
       // pushes any key
       (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
@@ -11884,29 +11875,17 @@ var Modal2 = function () {
       this.modal.addClass("modal--is-visible");
       return false;
     }
-
-    // openModal2() {
-    //   this.modal2.addClass("modal-2--is-visible");
-    //   console.log("modal 2");
-    //   return false;
-    // }
-
   }, {
     key: "closeModal",
     value: function closeModal() {
       this.modal.removeClass("modal--is-visible");
     }
-
-    // closeModal2() {
-    //   this.modal2.removeClass("modal-2--is-visible");
-    // }
-
   }]);
 
-  return Modal2;
+  return Modal;
 }();
 
-exports.default = Modal2;
+exports.default = Modal;
 
 /***/ }),
 /* 8 */
@@ -11929,33 +11908,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Modal = function () {
-  function Modal() {
-    _classCallCheck(this, Modal);
+var Modal2 = function () {
+  function Modal2() {
+    _classCallCheck(this, Modal2);
 
     this.openModalButton = (0, _jquery2.default)(".open-modal-2");
-    // this.openModal2Button = $(".open-modal-2");
     this.modal = (0, _jquery2.default)("#thankyou__modal");
-    // this.modal2 = $("#thankyou__modal");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
-    // this.closeModal2Button = $(".modal-2__close");
     this.events();
   }
 
-  _createClass(Modal, [{
+  _createClass(Modal2, [{
     key: "events",
     value: function events() {
       // clicking the open modal button
       this.openModalButton.click(this.openModal.bind(this));
 
-      // clicking the open modal button
-      // this.openModal2Button.click(this.openModal.bind(this));
-
       // clicking the x close modal button
       this.closeModalButton.click(this.closeModal.bind(this));
-
-      // clicking the x close modal button
-      // this.closeModal2Button.click(this.closeModal2.bind(this));
 
       // pushes any key
       (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
@@ -11963,7 +11933,7 @@ var Modal = function () {
   }, {
     key: "keyPressHandler",
     value: function keyPressHandler(e) {
-      if (e.keyCode == 27) {
+      if (e.keyCode > 8 && e.keyCode < 222) {
         this.closeModal();
       }
     }
@@ -11973,29 +11943,17 @@ var Modal = function () {
       this.modal.addClass("modal--is-visible");
       return false;
     }
-
-    // openModal2() {
-    //   this.modal2.addClass("modal-2--is-visible");
-    //   console.log("modal 2");
-    //   return false;
-    // }
-
   }, {
     key: "closeModal",
     value: function closeModal() {
       this.modal.removeClass("modal--is-visible");
     }
-
-    // closeModal2() {
-    //   this.modal2.removeClass("modal-2--is-visible");
-    // }
-
   }]);
 
-  return Modal;
+  return Modal2;
 }();
 
-exports.default = Modal;
+exports.default = Modal2;
 
 /***/ })
 /******/ ]);

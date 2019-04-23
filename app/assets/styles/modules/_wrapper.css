@@ -11,10 +11,10 @@
     max-width: 800px;
   }
 
-  @mixin 530plus and (orientation: landscape) and (max-width: 1199px) {
+  /* @mixin 530plus and (orientation: landscape) and (max-width: 1199px) {
     min-width: 700px;
     max-width: 950px;
-  }
+  } */
 
   @mixin 1200plus {
     max-width: 1236px;

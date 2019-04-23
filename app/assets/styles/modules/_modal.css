@@ -55,7 +55,7 @@
     line-height: 1.65;
 
     @mixin 530plus {
-      padding: 0 12rem;
+      padding: 0 6rem;
     }
   }
 
