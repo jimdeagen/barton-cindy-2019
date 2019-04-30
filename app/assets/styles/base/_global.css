@@ -41,9 +41,14 @@ strong {
   font-weight: 600;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 a {
   color: $mainOrange;
   text-decoration: none;
+  font-weight: 700;
 }
 
 a:hover {

@@ -494,9 +494,14 @@ strong {
   font-weight: 600;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 a {
   color: #d59541;
   text-decoration: none;
+  font-weight: 700;
 }
 
 a:hover {
@@ -4562,8 +4567,8 @@ option {
 
 .deepdive-5b {
       width: 20%;
-      border-top: 2px solid transparent;
-      border-bottom: 2px solid #c4bdb4;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid #2f5572;
       border-left: 0px solid transparent;
       margin-top: 0;
       display: block;
@@ -4575,7 +4580,7 @@ option {
 .deepdive-5b {
         width: 13.5%;
         border-left: 0 solid transparent;
-        border-top: 2px solid #c4bdb4;
+        border-top: 1px solid #2f5572;
         display: block
     }
   }
@@ -4613,8 +4618,8 @@ option {
 
 .deepdive-5c {
       width: 80%;
-      border-top: 2px solid transparent;
-      border-bottom: 2px solid #c4bdb4;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid #2f5572;
       padding: 0 4rem 4rem 1rem;
       margin-top: 1rem;
       text-align: right;
@@ -4634,12 +4639,12 @@ option {
 
 .deepdive-5c {
         width: 100%;
-        border-top: 2px solid #c4bdb4;
+        border-top: 1px solid #2f5572;
 
-        border-bottom: 2px solid #c4bdb4;
+        border-bottom: 1px solid #2f5572;
         width: 61.5%;
         margin-top: 0;
-        padding: 0 6rem 0 0;
+        padding: 0 4rem 0 4rem;
         text-align: left
     }
   }

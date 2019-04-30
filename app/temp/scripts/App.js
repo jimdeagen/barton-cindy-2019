@@ -11933,7 +11933,7 @@ var Modal2 = function () {
   }, {
     key: "keyPressHandler",
     value: function keyPressHandler(e) {
-      if (e.keyCode > 8 && e.keyCode < 222) {
+      if (e.keyCode > 27) {
         this.closeModal();
       }
     }

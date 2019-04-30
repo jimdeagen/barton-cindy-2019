@@ -4,7 +4,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "jim@jimdeagen.com, jimdeagen@comcast.net";
+    $email_to = "bartonwithcindy@gmail.com, jimdeagen@comcast.net";
 	  $email_subject = "Another Barton request";
 
     function died($error) {
@@ -115,6 +115,6 @@ $headers = 'From: Barton contact'."\r\n".
 'X-Mailer: PHP/' . phpversion();
  
 @mail($email_to, $email_subject, $email_message, $headers);  
- header('Location:index.html#forward');
+ header('Location:index.php#screening');
 }
 ?>

@@ -304,8 +304,8 @@
 
     &b {
       width: 20%;
-      border-top: 2px solid transparent;
-      border-bottom: 2px solid $mainTan;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid $mainBlue;
       border-left: 0px solid transparent;
       margin-top: 0;
       display: block;
@@ -314,7 +314,7 @@
       @mixin 800plus {
         width: 13.5%;
         border-left: 0 solid transparent;
-        border-top: 2px solid $mainTan;
+        border-top: 1px solid $mainBlue;
         display: block;
       }
 
@@ -343,8 +343,8 @@
 
     &c {
       width: 80%;
-      border-top: 2px solid transparent;
-      border-bottom: 2px solid $mainTan;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid $mainBlue;
       padding: 0 4rem 4rem 1rem;
       margin-top: 1rem;
       text-align: right;
@@ -354,12 +354,12 @@
 
       @mixin 800plus {
         width: 100%;
-        border-top: 2px solid $mainTan;
+        border-top: 1px solid $mainBlue;
 
-        border-bottom: 2px solid $mainTan;
+        border-bottom: 1px solid $mainBlue;
         width: 61.5%;
         margin-top: 0;
-        padding: 0 6rem 0 0;
+        padding: 0 4rem 0 4rem;
         text-align: left;
       }
 
