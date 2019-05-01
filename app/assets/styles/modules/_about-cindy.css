@@ -170,6 +170,7 @@
   &--testimonial {
     width: 100%;
     /* background-color: pink; */
+    margin-top: 6rem;
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -199,6 +200,7 @@
 
       & p {
         width: 85%;
+        padding: 2rem;
         font-size: 2.8rem;
         text-align: right;
         color: $mainBlue;
@@ -210,9 +212,9 @@
     }
     &-copy {
       width: 100%;
-      padding-top: 5rem;
+      padding-top: 0;
       background-color: transparent;
-      overflow: scroll;
+      overflow-y: scroll;
       /* border: 2px solid #e8e8e8; */
     }
   }

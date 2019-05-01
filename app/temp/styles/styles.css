@@ -831,8 +831,9 @@ span.special-char {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       background-position: 5rem 1rem;
       background: rgba(148, 165, 176, 0.4)
   }
@@ -869,7 +870,16 @@ span.special-char {
 @media (min-width: 530px) {
 
 .large-hero__cert-image {
-      max-width: 210px
+      max-width: 140px
+  }
+  }
+
+@media (min-width: 800px) {
+
+.large-hero__cert-image {
+      max-width: 340px;
+      padding: 0 6rem;
+      margin: 0 6rem
   }
   }
 
@@ -3023,9 +3033,9 @@ option {
 
 .about-cindy-section--testimonial {
     width: 100%;
+    /* background-color: pink; */
+    margin-top: 6rem;
   }
-
-/* background-color: pink; */
 
 .about-cindy-section--testimonial:last-of-type {
       margin-bottom: 0;
@@ -3068,6 +3078,7 @@ option {
 
 .about-cindy-section--testimonial-header p {
         width: 85%;
+        padding: 2rem;
         font-size: 2.8rem;
         text-align: right;
         color: #2f5572;
@@ -3079,9 +3090,9 @@ option {
 
 .about-cindy-section--testimonial-copy {
       width: 100%;
-      padding-top: 5rem;
+      padding-top: 0;
       background-color: transparent;
-      overflow: scroll;
+      overflow-y: scroll;
       /* border: 2px solid #e8e8e8; */
     }
 
@@ -3332,6 +3343,10 @@ option {
   }
 
 @media (min-width: 530px) {
+
+.about-barton-section--local-market {
+      grid-template-columns: 30% 70%
+  }
   }
 
 @media (min-width: 800px) {
@@ -3361,6 +3376,7 @@ option {
       text-align: right;
       padding: 2rem 5rem 2rem 2rem;
       margin: 0;
+      justify-self: end;
     }
 
 @media (min-width: 800px) {
@@ -3374,7 +3390,7 @@ option {
 @media (min-width: 530px) {
 
 .about-barton-section--local-market--p {
-        max-width: 75%
+        max-width: 95%
     }
   }
 
@@ -3385,6 +3401,7 @@ option {
       display: inline-block;
       margin-top: 2rem;
       border-radius: 0.6rem;
+      justify-self: end;
     }
 
 @media (min-width: 530px) {
@@ -3393,16 +3410,17 @@ option {
         display: inline-block;
         margin-top: 0;
         grid-column: 1 / 2;
-        -ms-flex-item-align: center;
-            align-self: center
+        -ms-flex-item-align: start;
+            align-self: start;
+        position: relative;
+        top: 2rem
     }
   }
 
 @media (min-width: 800px) {
 
 .about-barton-section--local-market--image {
-        -ms-flex-item-align: center;
-            align-self: center
+        top: 5rem
     }
   }
 
@@ -4034,9 +4052,9 @@ option {
   width: 300px;
   height: 580px;
   margin: 0 auto;
+  /* border: 3px solid red; */
+  overflow: scroll;
 }
-
-/* border: 3px solid red; */
 
 @media (min-width: 530px) {
 
@@ -4053,28 +4071,33 @@ option {
 @media (min-width: 800px) {
 
 .boxes {
-    width: 380px;
+    width: 90%;
     height: 600px
 }
   }
 
 .box {
   width: 100%;
-  height: 200px;
-  position: absolute;
+  height: auto;
+  position: relative;
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 1;
+  border-bottom: 1px solid rgba(47,85,114, 0.5);
 
   padding: 0 0 0 0;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
+.box:last-of-type {
+    border-bottom: 1px solid transparent;
+  }
+
 @media (min-width: 800px) {
 
 .box {
-    padding: 1rem 0 0 0
+    padding: 1rem 3rem
 }
   }
 
@@ -4084,12 +4107,12 @@ option {
 
 /*use of 'checked' state to turn on image opacity*/
 
-.red:checked ~ .boxes > .red,
+/* .red:checked ~ .boxes > .red,
 .blue:checked ~ .boxes > .blue,
 .green:checked ~ .boxes > .green {
   opacity: 1;
   border: 1px #efb31f;
-}
+} */
 
 .red:checked ~ .labels > .r-label,
 .blue:checked ~ .labels > .bl-label,
@@ -4129,23 +4152,17 @@ option {
   padding-left: 2px;
 }
 
-.r-label {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+/* .r-label {
+  order: 3;
 }
 
 .g-label {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
 }
 
 .b-label {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
+  order: 2;
+} */
 
 .s-index:hover {
   /* outline: 1px solid rgba($mainBlue, 0.35); */

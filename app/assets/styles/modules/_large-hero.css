@@ -204,7 +204,7 @@
 
     @mixin 530plus {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
       background-position: 5rem 1rem;
       background: rgba(148, 165, 176, 0.4);
     }
@@ -235,7 +235,13 @@
     max-width: 270px;
 
     @mixin 530plus {
-      max-width: 210px;
+      max-width: 140px;
+    }
+
+    @mixin 800plus {
+      max-width: 340px;
+      padding: 0 6rem;
+      margin: 0 6rem;
     }
   }
 }

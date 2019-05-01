@@ -9,6 +9,7 @@
   height: 580px;
   margin: 0 auto;
   /* border: 3px solid red; */
+  overflow: scroll;
 
   @mixin 530plus {
     width: 400px;
@@ -20,23 +21,28 @@
   } */
 
   @mixin 800plus {
-    width: 380px;
+    width: 90%;
     height: 600px;
   }
 }
 .box {
   width: 100%;
-  height: 200px;
-  position: absolute;
+  height: auto;
+  position: relative;
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 1;
+  border-bottom: 1px solid rgba($mainBlue, 0.5);
+
+  &:last-of-type {
+    border-bottom: 1px solid transparent;
+  }
 
   padding: 0 0 0 0;
   transition: opacity 1s ease-in-out;
 
   @mixin 800plus {
-    padding: 1rem 0 0 0;
+    padding: 1rem 3rem;
   }
 }
 .box.transparent {
@@ -44,12 +50,12 @@
 }
 
 /*use of 'checked' state to turn on image opacity*/
-.red:checked ~ .boxes > .red,
+/* .red:checked ~ .boxes > .red,
 .blue:checked ~ .boxes > .blue,
 .green:checked ~ .boxes > .green {
   opacity: 1;
   border: 1px #efb31f;
-}
+} */
 
 .red:checked ~ .labels > .r-label,
 .blue:checked ~ .labels > .bl-label,
@@ -84,7 +90,7 @@
   padding-left: 2px;
 }
 
-.r-label {
+/* .r-label {
   order: 3;
 }
 
@@ -94,7 +100,7 @@
 
 .b-label {
   order: 2;
-}
+} */
 
 .s-index:hover {
   /* outline: 1px solid rgba($mainBlue, 0.35); */

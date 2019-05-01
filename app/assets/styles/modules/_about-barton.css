@@ -155,6 +155,7 @@
     border-left: 0 solid $liteMediumGray;
 
     @mixin 530plus {
+      grid-template-columns: 30% 70%;
     }
 
     @mixin 800plus {
@@ -178,13 +179,14 @@
       text-align: right;
       padding: 2rem 5rem 2rem 2rem;
       margin: 0;
+      justify-self: end;
 
       @mixin 800plus {
         align-self: center;
       }
 
       @mixin 530plus and (max-width: 1199px) {
-        max-width: 75%;
+        max-width: 95%;
       }
 
       @mixin 1200plus {
@@ -195,16 +197,19 @@
       display: inline-block;
       margin-top: 2rem;
       border-radius: 0.6rem;
+      justify-self: end;
 
       @mixin 530plus {
         display: inline-block;
         margin-top: 0;
         grid-column: 1 / 2;
-        align-self: center;
+        align-self: start;
+        position: relative;
+        top: 2rem;
       }
 
       @mixin 800plus {
-        align-self: center;
+        top: 5rem;
       }
 
       @mixin 530plus and (max-width: 1199px) {
