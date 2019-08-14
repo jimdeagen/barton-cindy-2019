@@ -549,6 +549,10 @@ span.special-char {
   bottom: 0.5rem;
 }
 
+.baseGray {
+  color: red;
+}
+
 /* @import "base/_outline-map"; */
 
 .large-hero {
@@ -2982,7 +2986,7 @@ option {
 .about-cindy-section--testimonials {
     width: 100%;
     border-radius: 8px;
-    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-style: italic;
   }
@@ -3025,9 +3029,11 @@ option {
   }
   }
 
-.about-cindy-section--testimonials p {
+.about-cindy-section--testimonials-p {
+      display: inline-block;
       font-size: 1.75rem;
-      color: #393939;
+      font-weight: 700;
+      color: #2f5572;
       letter-spacing: 0.08rem;
     }
 
@@ -3051,9 +3057,9 @@ option {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       width: 100%;
       /* background-color: #e8e8e8; */
       /* background-color: rgb(240, 234, 226); */
@@ -3087,6 +3093,32 @@ option {
 .about-cindy-section--testimonial-header img {
         max-height: 7rem;
       }
+
+.about-cindy-section--testimonial--square {
+      display: none;
+      position: relative;
+      top: 2.7rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: rgba(47,85,114, 0.5);
+    }
+
+@media (min-width: 530px) {
+
+.about-cindy-section--testimonial--square {
+        display: inline-block;
+        top: 11.5rem;
+        width: 2rem
+    }
+  }
+
+@media (min-width: 800px) {
+
+.about-cindy-section--testimonial--square {
+        top: 9.7rem;
+        width: 2rem
+    }
+  }
 
 .about-cindy-section--testimonial-copy {
       width: 100%;
@@ -3345,7 +3377,7 @@ option {
 @media (min-width: 530px) {
 
 .about-barton-section--local-market {
-      grid-template-columns: 30% 70%
+      grid-template-columns: 15% 70%
   }
   }
 
@@ -3374,7 +3406,7 @@ option {
       display: inline-block;
       grid-column: 2 / 4;
       text-align: right;
-      padding: 2rem 5rem 2rem 2rem;
+      padding: 5rem 5rem 5rem 2rem;
       margin: 0;
       justify-self: end;
     }
@@ -3413,7 +3445,7 @@ option {
         -ms-flex-item-align: start;
             align-self: start;
         position: relative;
-        top: 2rem
+        top: 4rem
     }
   }
 
@@ -4050,7 +4082,7 @@ option {
 .boxes {
   position: relative;
   width: 300px;
-  height: 580px;
+  height: auto;
   margin: 0 auto;
   /* border: 3px solid red; */
   overflow: scroll;
@@ -4059,7 +4091,7 @@ option {
 @media (min-width: 530px) {
 
 .boxes {
-    width: 400px
+    width: 500px
 }
   }
 
@@ -4071,8 +4103,7 @@ option {
 @media (min-width: 800px) {
 
 .boxes {
-    width: 90%;
-    height: 600px
+    width: 90%
 }
   }
 
@@ -4084,8 +4115,7 @@ option {
   left: 0;
   opacity: 1;
   border-bottom: 1px solid rgba(47,85,114, 0.5);
-
-  padding: 0 0 0 0;
+  padding: 3rem;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
@@ -4867,6 +4897,10 @@ option {
 
 .active:after {
   content: "\2212";
+}
+
+.collapsible span {
+  font-size: 1.2rem;
 }
 
 .content {

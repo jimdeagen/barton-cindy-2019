@@ -132,7 +132,7 @@
   &--testimonials {
     width: 100%;
     border-radius: 8px;
-    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-style: italic;
 
@@ -160,9 +160,11 @@
       margin-top: 3rem;
     }
 
-    & p {
+    &-p {
+      display: inline-block;
       font-size: 1.75rem;
-      color: $baseGray;
+      font-weight: 700;
+      color: $mainBlue;
       letter-spacing: 0.08rem;
     }
   }
@@ -179,7 +181,7 @@
       /* flex-direction: column; */
       flex-wrap: wrap;
       justify-content: flex-end;
-      align-items: center;
+      align-items: flex-start;
       width: 100%;
       /* background-color: #e8e8e8; */
       /* background-color: rgb(240, 234, 226); */
@@ -210,6 +212,27 @@
         max-height: 7rem;
       }
     }
+
+    &--square {
+      display: none;
+      position: relative;
+      top: 2.7rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: rgba($mainBlue, 0.5);
+
+      @mixin 530plus {
+        display: inline-block;
+        top: 11.5rem;
+        width: 2rem;
+      }
+
+      @mixin 800plus {
+        top: 9.7rem;
+        width: 2rem;
+      }
+    }
+
     &-copy {
       width: 100%;
       padding-top: 0;

@@ -89,3 +89,7 @@ span.special-char {
   position: relative;
   bottom: 0.5rem;
 }
+
+.baseGray {
+  color: red;
+}
