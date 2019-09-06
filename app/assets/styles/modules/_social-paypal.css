@@ -1,0 +1,133 @@
+.share-buttons {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  max-width: 1900px;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: flex-start;
+  align-content: flex-end; */
+  overflow: hidden;
+  z-index: 5;
+
+  @mixin 800plus {
+    top: 64px;
+    right: 0;
+    justify-content: flex-start;
+  }
+}
+.share-buttons .share-button:after {
+  clear: both;
+  display: table;
+}
+
+.share-button {
+  position: relative;
+  height: 30px;
+  width: 60px;
+  margin-top: 6px;
+
+  @mixin 800plus {
+    width: 200px;
+  }
+}
+.share-button:hover {
+  cursor: pointer;
+}
+.share-button:hover .share-button-primary {
+  box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.1);
+}
+.share-button:hover .share-button-secondary {
+  overflow: visible;
+}
+.share-button:hover .share-button-secondary-content {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(-30px, 0, 0);
+}
+
+.share-button-primary {
+  position: absolute;
+  background: #fff;
+  max-width: 80px;
+  height: 30px;
+  border-radius: 15px 0 0 15px;
+  right: 0px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.share-button-icon {
+  display: block;
+  color: #242424;
+  position: absolute;
+  width: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  margin-top: 1px;
+}
+
+/* img {
+  position: relative;
+} */
+
+.share-button-secondary {
+  overflow: hidden;
+  margin-left: 15px;
+  height: 30px;
+  display: none;
+
+  @mixin 800plus {
+    display: block;
+  }
+}
+
+.share-button-secondary-content {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  background: $mainOrange;
+  display: none;
+  height: 30px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 28px;
+  line-height: 30px;
+  color: white;
+  /* border-radius: 15px; */
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  transition: -webkit-transform 175ms ease;
+  transition: transform 175ms ease;
+  transition: transform 175ms ease, -webkit-transform 175ms ease;
+  border: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+  @mixin 800plus {
+    display: block;
+  }
+}
+
+.margin-adjust {
+  position: relative;
+  right: 1rem;
+  outline: none;
+}
+
+.anim {
+  opacity: 0;
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

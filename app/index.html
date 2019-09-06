@@ -76,6 +76,42 @@
       </div>
     </header>
 
+    <div class="share-buttons anim">
+      <div class="share-button">
+        <div class="share-button-secondary">
+          <div class="share-button-secondary-content">
+            pay with paypal
+          </div>
+        </div>
+        <div class="share-button-primary">
+          <form
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+            target="_blank"
+            class="paypal__form">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="GFDKH6H5QNVWN" />
+            <input
+              id="paypal-center"
+              type="image"
+              class="icon margin-adjust"
+              src="assets/images/paypal.jpg"
+              border="0"
+              name="submit"
+              alt="PayPal - The safer, easier way to pay online!"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
+        </div>
+      </div> <!--share button-->
+    </div>
+    
     <div class="large-hero">
       <div class="wrapper__wide">
         <picture>
@@ -124,6 +160,7 @@
           <a href="remote.html">Remote Barton Tutoring</a> available nationwide 
         </p>
       </div>
+    <!-- </div> -->
     </div>
 
     <div class="large-hero__sub-section">
@@ -1376,6 +1413,22 @@
     <!-- build:js /assets/scripts/footercontroller.js -->
     <script src="assets/scripts/footercontroller.js"></script>
     <!-- endbuild -->
+
+    <script>
+      const paypal = document.querySelector('.anim');
+
+      observer = new IntersectionObserver((entries) => {
+        console.log(entries);
+
+        if(entries[0].intersectionRatio > 0) {
+          entries[0].target.style.animation = 'anim1 2s 2.5s forwards ease-out';
+        } else {
+          entries[0].target.style.animation = 'none';
+        }
+      })
+
+      observer.observe(paypal);
+    </script>
 
   </body>
 </html>
