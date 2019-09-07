@@ -5027,7 +5027,7 @@ option {
 }
 
 .share-buttons {
-  position: absolute;
+  position: fixed;
   top: 48px;
   left: 0;
   width: 100%;
@@ -5048,7 +5048,7 @@ option {
   /* align-items: flex-start;
   align-content: flex-end; */
   overflow: hidden;
-  z-index: 5;
+  z-index: 15;
 }
 
 @media (min-width: 800px) {

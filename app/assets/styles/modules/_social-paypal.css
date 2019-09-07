@@ -1,5 +1,5 @@
 .share-buttons {
-  position: absolute;
+  position: fixed;
   top: 48px;
   left: 0;
   width: 100%;
