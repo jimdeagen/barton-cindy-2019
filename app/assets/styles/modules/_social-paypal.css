@@ -12,7 +12,7 @@
   /* align-items: flex-start;
   align-content: flex-end; */
   overflow: hidden;
-  z-index: 5;
+  z-index: 15;
 
   @mixin 800plus {
     top: 64px;
