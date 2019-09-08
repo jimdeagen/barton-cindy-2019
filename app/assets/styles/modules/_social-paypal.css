@@ -3,14 +3,12 @@
   top: 48px;
   left: 0;
   width: 100%;
-  max-width: 1900px;
+  max-width: 2000px;
   height: auto;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /* align-items: flex-start;
-  align-content: flex-end; */
   overflow: hidden;
   z-index: 15;
 
@@ -97,7 +95,6 @@
   padding-right: 28px;
   line-height: 30px;
   color: white;
-  /* border-radius: 15px; */
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   transition: -webkit-transform 175ms ease;
@@ -122,11 +119,23 @@
 }
 
 @keyframes anim1 {
-  from {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  80% {
     transform: translateX(-100px);
     opacity: 0;
   }
-  to {
+  89% {
+    transform: translateX(47px);
+    opacity: 0.59;
+  }
+  94% {
+    transform: translateX(3px);
+    opacity: 0.94;
+  }
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
