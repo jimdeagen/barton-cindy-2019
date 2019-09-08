@@ -5048,7 +5048,7 @@ option {
   /* align-items: flex-start;
   align-content: flex-end; */
   overflow: hidden;
-  z-index: 15;
+  z-index: 5;
 }
 
 @media (min-width: 800px) {
@@ -5072,6 +5072,7 @@ option {
   height: 30px;
   width: 60px;
   margin-top: 6px;
+  opacity: 1;
 }
 
 @media (min-width: 800px) {
@@ -5175,10 +5176,10 @@ option {
 }
 
 .anim {
-  opacity: 0;
+  opacity: 1;
 }
 
-@-webkit-keyframes anim1 {
+@keyframes anim1 {
   from {
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);
@@ -5191,7 +5192,7 @@ option {
   }
 }
 
-@keyframes anim1 {
+@-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);

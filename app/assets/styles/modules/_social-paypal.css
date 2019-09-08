@@ -30,6 +30,7 @@
   height: 30px;
   width: 60px;
   margin-top: 6px;
+  opacity: 1;
 
   @mixin 800plus {
     width: 200px;
@@ -118,10 +119,21 @@
 }
 
 .anim {
-  opacity: 0;
+  opacity: 1;
 }
 
 @keyframes anim1 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anim1 {
   from {
     transform: translateX(-100px);
     opacity: 0;
