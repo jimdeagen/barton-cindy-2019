@@ -5187,7 +5187,7 @@ option {
 }
 
 .anim {
-  opacity: 0;
+  opacity: 1;
 }
 
 @keyframes anim1 {
