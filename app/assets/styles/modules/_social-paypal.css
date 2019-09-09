@@ -12,10 +12,18 @@
   overflow: hidden;
   z-index: 15;
 
+  @mixin 530plus {
+    top: 130px;
+  }
+
   @mixin 800plus {
-    top: 64px;
+    top: 124px;
     right: 0;
     justify-content: flex-start;
+  }
+
+  @mixin 1060plus {
+    top: 64px;
   }
 }
 .share-buttons .share-button:after {

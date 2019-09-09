@@ -5049,14 +5049,28 @@ option {
   z-index: 15;
 }
 
+@media (min-width: 530px) {
+
+.share-buttons {
+    top: 130px
+}
+  }
+
 @media (min-width: 800px) {
 
 .share-buttons {
-    top: 64px;
+    top: 124px;
     right: 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start
+}
+  }
+
+@media (min-width: 1060px) {
+
+.share-buttons {
+    top: 64px
 }
   }
 
