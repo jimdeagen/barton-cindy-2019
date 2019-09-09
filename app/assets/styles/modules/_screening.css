@@ -40,6 +40,10 @@
 
   &__image {
     @mixin 800plus {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 2rem auto;
     }
   }
 
