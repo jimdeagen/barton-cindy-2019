@@ -42,7 +42,7 @@ if(isset($_POST['email'])) {
 
     $age = $_POST['age']; // not required
  
-    $message = $_POST['message']; // required
+    // $message = $_POST['message']; // required
  
      
  
@@ -70,11 +70,11 @@ if(isset($_POST['email'])) {
  
   }*/
  
-  if(strlen($message) < 2) {
+  // if(strlen($message) < 2) {
  
-    $error_message .= 'The message field is not completed.<br />';
+  //   $error_message .= 'The message field is not completed.<br />';
  
-  }
+  // }
  
   if(strlen($error_message) > 0) {
  
@@ -103,7 +103,7 @@ if(isset($_POST['email'])) {
 
     $email_message .= "Age: ".clean_string($age)."\n\n";
  
-    $email_message .= "Message: ".clean_string($message)."\n";
+    // $email_message .= "Message: ".clean_string($message)."\n";
      
  
 // create email headers
