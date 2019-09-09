@@ -5173,21 +5173,16 @@ option {
 }
 
 .anim {
-  opacity: 1;
+  opacity: 0;
 }
 
-<<<<<<< HEAD
 @keyframes anim1 {
-  from {
-=======
-@-webkit-keyframes anim1 {
   0% {
     -webkit-transform: translateX(-200px);
             transform: translateX(-200px);
     opacity: 0;
   }
   80% {
->>>>>>> paypal
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);
     opacity: 0;
@@ -5209,33 +5204,13 @@ option {
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes anim1 {
   from {
-=======
-@keyframes anim1 {
-  0% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-    opacity: 0;
-  }
-  80% {
->>>>>>> paypal
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px);
     opacity: 0;
   }
-  89% {
-    -webkit-transform: translateX(47px);
-            transform: translateX(47px);
-    opacity: 0.59;
-  }
-  94% {
-    -webkit-transform: translateX(3px);
-            transform: translateX(3px);
-    opacity: 0.94;
-  }
-  100% {
+  to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
