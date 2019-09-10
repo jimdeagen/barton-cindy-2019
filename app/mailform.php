@@ -3,6 +3,13 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
+
+    $recipients = array(
+      "bartonwithcindy@gmail.com",
+      "jimdeagen@comcast.net"
+      // more emails
+    );
+    $email_to = implode(',', $recipients); // your email address
  
     $email_to = "bartonwithcindy@gmail.com, jimdeagen@comcast.net";
 	  $email_subject = "Another Barton request";
