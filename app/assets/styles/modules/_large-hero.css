@@ -24,7 +24,7 @@
   &__text-content {
     padding: 1rem 1rem;
     position: absolute;
-    top: 18%;
+    top: 11%;
     left: 0;
     background-color: rgba(255, 255, 255, 0.4);
     width: 56%;
@@ -42,7 +42,7 @@
 
     @mixin 530plus {
       padding: 3rem 3rem;
-      top: 20%;
+      top: 16%;
       left: 15px;
       width: 48%;
     }
@@ -52,6 +52,7 @@
       top: 20%;
       left: 40px;
       width: 40%;
+      border-radius: 8px 75px 8px 75px;
     }
 
     @mixin 530plus and (orientation: landscape) and (max-width: 820px) {
@@ -113,10 +114,14 @@
     max-width: 100%;
     padding: 1rem 0;
     background: $mainBlue;
-    border-radius: 6px;
+    border-radius: 4px 20px 4px 20px;
 
     @mixin 530plus {
       font-size: 1.8rem;
+    }
+
+    @mixin 800plus {
+      border-radius: 4px 40px 4px 40px;
     }
 
     @mixin 1200plus {
