@@ -586,7 +586,7 @@ span.special-char {
 .large-hero__text-content {
     padding: 1rem 1rem;
     position: absolute;
-    top: 18%;
+    top: 11%;
     left: 0;
     background-color: rgba(255, 255, 255, 0.4);
     width: 56%;
@@ -610,7 +610,7 @@ span.special-char {
 
 .large-hero__text-content {
       padding: 3rem 3rem;
-      top: 20%;
+      top: 16%;
       left: 15px;
       width: 48%
   }
@@ -622,7 +622,8 @@ span.special-char {
       padding: 3rem 3rem;
       top: 20%;
       left: 40px;
-      width: 40%
+      width: 40%;
+      border-radius: 8px 75px 8px 75px
   }
   }
 
@@ -703,13 +704,20 @@ span.special-char {
     max-width: 100%;
     padding: 1rem 0;
     background: #2f5572;
-    border-radius: 6px;
+    border-radius: 4px 20px 4px 20px;
   }
 
 @media (min-width: 530px) {
 
 .large-hero__subtitle {
       font-size: 1.8rem
+  }
+  }
+
+@media (min-width: 800px) {
+
+.large-hero__subtitle {
+      border-radius: 4px 40px 4px 40px
   }
   }
 
