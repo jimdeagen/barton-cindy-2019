@@ -3198,8 +3198,8 @@ option {
 .about-barton-section--grid {
       display: grid;
       grid-template-columns: 30% 40% 30%;
-      grid-template-rows: 1fr 500px 440px;
-      grid-row-gap: 6rem;
+      grid-template-rows: 1fr 488px 440px;
+      grid-row-gap: 0;
       grid-column-gap: 0rem
   }
   }
@@ -3339,7 +3339,8 @@ option {
 @media (min-width: 800px) {
 
 .about-barton-section--blockquote {
-      padding-top: 12rem
+      padding-top: 12rem;
+      border-radius: 0 5rem 0 0
   }
   }
 
@@ -3391,6 +3392,7 @@ option {
     border-right: 0 solid #dadada;
     border-bottom: 1px solid #dadada;
     border-left: 0 solid #dadada;
+    border-radius: 0 0 0 5rem;
   }
 
 @media (min-width: 530px) {

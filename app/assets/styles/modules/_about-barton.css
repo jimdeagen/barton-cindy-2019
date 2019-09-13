@@ -5,8 +5,8 @@
     @mixin 800plus {
       display: grid;
       grid-template-columns: 30% 40% 30%;
-      grid-template-rows: 1fr 500px 440px;
-      grid-row-gap: 6rem;
+      grid-template-rows: 1fr 488px 440px;
+      grid-row-gap: 0;
       grid-column-gap: 0rem;
     }
   }
@@ -111,6 +111,7 @@
 
     @mixin 800plus {
       padding-top: 12rem;
+      border-radius: 0 5rem 0 0;
     }
 
     /* @mixin 530plus and (orientation: landscape) and (max-width: 799px) {
@@ -153,6 +154,7 @@
     border-right: 0 solid $liteMediumGray;
     border-bottom: 1px solid $liteMediumGray;
     border-left: 0 solid $liteMediumGray;
+    border-radius: 0 0 0 5rem;
 
     @mixin 530plus {
       grid-template-columns: 15% 70%;
