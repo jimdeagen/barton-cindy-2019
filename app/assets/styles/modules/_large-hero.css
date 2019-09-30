@@ -24,8 +24,8 @@
   &__text-content {
     padding: 1rem 1rem;
     position: absolute;
-    top: 18%;
-    left: 0;
+    top: 10%;
+    left: 1%;
     background-color: rgba(255, 255, 255, 0.4);
     width: 56%;
     text-align: center;
@@ -35,9 +35,15 @@
 
     @mixin 400plus {
       padding: 3rem 3rem;
-      top: 16%;
+      top: 12%;
       left: 10px;
       width: 55%;
+    }
+
+    @mixin 450pluslandscape {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      top: 50px;
     }
 
     @mixin 530plus {
@@ -175,6 +181,7 @@
       padding: 0.6rem 3rem;
       border-radius: 4px;
       width: 90%;
+      margin-top: 2rem;
 
       @mixin 530plus {
         font-size: 2rem;
@@ -194,13 +201,11 @@
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    background-color: rgba(red, 0.75);
-
     border-bottom: 1px solid $liteMediumGray;
     padding: 5.125rem 0 6.8rem 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background: rgba(148, 165, 176, 0.2);
+    background: linear-gradient(90deg, $liteTan, white, $liteTan);
 
     @mixin 530plus {
       flex-direction: row;
