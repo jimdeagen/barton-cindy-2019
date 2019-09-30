@@ -4,6 +4,12 @@
   }
 }
 
+@define-mixin 450pluslandscape {
+  @media (min-width: 450px) and (orientation: landscape) and (max-width: 470px) {
+    @mixin-content;
+  }
+}
+
 @define-mixin 530plus {
   @media (min-width: 530px) {
     @mixin-content;

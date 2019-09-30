@@ -461,6 +461,7 @@ html ::-webkit-scrollbar {
 body {
   font-family: "Open Sans", sans-serif;
   color: #333;
+  display: relative;
 }
 
 p,
@@ -586,8 +587,13 @@ span.special-char {
 .large-hero__text-content {
     padding: 1rem 1rem;
     position: absolute;
+<<<<<<< HEAD
     top: 11%;
     left: 0;
+=======
+    top: 10%;
+    left: 1%;
+>>>>>>> paypal
     background-color: rgba(255, 255, 255, 0.4);
     width: 56%;
     text-align: center;
@@ -600,9 +606,18 @@ span.special-char {
 
 .large-hero__text-content {
       padding: 3rem 3rem;
-      top: 16%;
+      top: 12%;
       left: 10px;
       width: 55%
+  }
+  }
+
+@media (min-width: 450px) and (orientation: landscape) and (max-width: 470px) {
+
+.large-hero__text-content {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      top: 50px
   }
   }
 
@@ -795,6 +810,7 @@ span.special-char {
       padding: 0.6rem 3rem;
       border-radius: 4px;
       width: 90%;
+      margin-top: 2rem;
     }
 
 @media (min-width: 530px) {
@@ -827,13 +843,12 @@ span.special-char {
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
-    background-color: rgba(red, 0.75);
-
     border-bottom: 1px solid #dadada;
     padding: 5.125rem 0 6.8rem 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background: rgba(148, 165, 176, 0.2);
+    background: -webkit-gradient(linear, left top, right top, from(#e2deda), color-stop(white), to(#e2deda));
+    background: linear-gradient(90deg, #e2deda, white, #e2deda);
   }
 
 @media (min-width: 530px) {
@@ -2366,6 +2381,13 @@ span.special-char {
     margin-top: 10px;
     margin-bottom: 12px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+@media (min-width: 450px) and (orientation: landscape) and (max-width: 470px) {
+
+.primary-nav a {
+      padding: 0
+  }
   }
 
 @media (min-width: 800px) {
@@ -5048,52 +5070,42 @@ option {
 }
 
 .share-buttons {
-  position: fixed;
-  top: 48px;
-  left: 0;
+  position: relative;
   width: 100%;
-  max-width: 2000px;
+  /* max-width: 2000px; */
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
-  z-index: 15;
-}
 
-@media (min-width: 530px) {
+  background: -webkit-gradient(linear, left top, right top, from(#e2deda), color-stop(white), to(#e2deda));
 
-.share-buttons {
-    top: 130px
-}
+  background: linear-gradient(90deg, #e2deda, white, #e2deda);
+
+  /* @mixin 530plus {
+    top: 130px;
   }
 
-@media (min-width: 800px) {
-
-.share-buttons {
+  @mixin 800plus {
     top: 124px;
     right: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start
-}
+    justify-content: flex-start;
   }
 
-@media (min-width: 1060px) {
-
-.share-buttons {
-    top: 64px
+  @mixin 1060plus {
+    top: 64px;
+  } */
 }
-  }
 
 .share-buttons .share-button:after {
   clear: both;
@@ -5103,17 +5115,14 @@ option {
 .share-button {
   position: relative;
   height: 30px;
-  width: 60px;
-  margin-top: 6px;
+  width: 140px;
+  margin: 16px auto;
   opacity: 1;
-}
 
-@media (min-width: 800px) {
-
-.share-button {
-    width: 200px
+  /* @mixin 800plus {
+    width: 200px;
+  } */
 }
-  }
 
 .share-button:hover {
   cursor: pointer;
@@ -5128,20 +5137,20 @@ option {
   overflow: visible;
 }
 
-.share-button:hover .share-button-secondary-content {
+/* .share-button:hover .share-button-secondary-content {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(-30px, 0, 0);
-}
+} */
 
 .share-button-primary {
-  position: absolute;
+  position: relative;
   background: #fff;
-  max-width: 80px;
+  max-width: 140px;
   height: 30px;
-  border-radius: 15px 0 0 15px;
+  /* border-radius: 15px 0 0 15px;
   right: 0px;
   top: 50%;
-  margin-top: -15px;
+  margin-top: -15px; */
 }
 
 .share-button-icon {
@@ -5172,11 +5181,11 @@ option {
 }
   }
 
-.share-button-secondary-content {
+/* .share-button-secondary-content {
   font-family: sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
-  background: #d59541;
+  background: $mainOrange;
   display: none;
   height: 30px;
   text-align: center;
@@ -5187,23 +5196,18 @@ option {
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   transition: -webkit-transform 175ms ease;
-  -webkit-transition: -webkit-transform 175ms ease;
   transition: transform 175ms ease;
   transition: transform 175ms ease, -webkit-transform 175ms ease;
   border: none;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
 
-@media (min-width: 800px) {
-
-.share-button-secondary-content {
-    display: block
-}
+  @mixin 800plus {
+    display: block;
   }
+} */
 
 .margin-adjust {
   position: relative;
-  right: 1rem;
   outline: none;
 }
 
