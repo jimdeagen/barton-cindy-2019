@@ -587,13 +587,8 @@ span.special-char {
 .large-hero__text-content {
     padding: 1rem 1rem;
     position: absolute;
-<<<<<<< HEAD
     top: 11%;
     left: 0;
-=======
-    top: 10%;
-    left: 1%;
->>>>>>> paypal
     background-color: rgba(255, 255, 255, 0.4);
     width: 56%;
     text-align: center;
