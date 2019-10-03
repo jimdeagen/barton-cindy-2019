@@ -3067,11 +3067,27 @@ option {
 
 .about-cindy-section--testimonials-p {
       display: inline-block;
-      font-size: 1.75rem;
+      font-size: 1.45rem;
       font-weight: 700;
       color: #2f5572;
       letter-spacing: 0.08rem;
     }
+
+@media (min-width: 400px) {
+
+.about-cindy-section--testimonials-p {
+        font-size: 1.55rem;
+        font-weight: 700
+    }
+  }
+
+@media (min-width: 530px) {
+
+.about-cindy-section--testimonials-p {
+        font-size: 1.75rem;
+        font-weight: 700
+    }
+  }
 
 .about-cindy-section--testimonial {
     width: 100%;

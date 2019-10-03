@@ -162,10 +162,20 @@
 
     &-p {
       display: inline-block;
-      font-size: 1.75rem;
+      font-size: 1.45rem;
       font-weight: 700;
       color: $mainBlue;
       letter-spacing: 0.08rem;
+
+      @mixin 400plus {
+        font-size: 1.55rem;
+        font-weight: 700;
+      }
+
+      @mixin 530plus {
+        font-size: 1.75rem;
+        font-weight: 700;
+      }
     }
   }
 
