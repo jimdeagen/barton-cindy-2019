@@ -3672,9 +3672,9 @@ option {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -3686,13 +3686,23 @@ option {
   padding: 0 2rem;
 }
 
+@media (min-width: 400px) {
+
+.badge {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start
+}
+  }
+
 @media (min-width: 530px) {
 
 .badge {
     min-width: 72%;
     max-width: 72%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start
 }
   }
 
@@ -3746,6 +3756,7 @@ option {
     margin: 0 0 0 0;
     -ms-flex-item-align: center;
         align-self: center;
+    padding: 1rem 0;
   }
 
 .badge__p span {
@@ -3759,6 +3770,14 @@ option {
     border: 5px solid #dadada;
     border-radius: 50%;
     padding: 1rem;
+    display: none;
+  }
+
+@media (min-width: 400px) {
+
+.badge__image {
+      display: inline
+  }
   }
 
 @media (min-width: 800px) and (orientation: landscape) {
